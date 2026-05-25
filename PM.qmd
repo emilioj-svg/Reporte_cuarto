@@ -1,6 +1,6 @@
 ---
 title: "Pastos Marinos"
-author: "Ana, Emilio, Jonathan, Michelle Tejeda, ,"
+author: "Ana María Saldaña-Munive, Emilio Alejandro Jiménez-Ibarra, Jonathan Morffi-Montalvo & Ángeles Michelle Tejeda-Rejón"
 format: pdf
 editor: visual
 ---
