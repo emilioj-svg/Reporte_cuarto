@@ -1,5 +1,5 @@
 ---
-title: "Pastos Marinos"
+title: "Pastos marinos"
 author: "Ana María Saldaña-Munive, Emilio Alejandro Jiménez-Ibarra, Jonathan Morffi-Montalvo & Ángeles Michelle Tejeda-Rejón"
 format: pdf
 editor: visual
