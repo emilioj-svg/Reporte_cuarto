@@ -38,6 +38,20 @@ $$\begin{aligned}
 
 # Materiales y métodos {#materials-and-methods .unnumbered}
 
+## Área de estudio
+El estudio se realizó en una zona de pastos marinos en el municipio de Dzilam del Bravo, ubicado en el norte de Yucatán, México (21°20’ y 21°33’ N, 88°24’ y 88°59 W). Este lugar se caracteriza por tener un clima semiseco cálido con una temperatura media anual entre 24 y 26°C y una precipitación anual que varía entre 500 a 700 mm (INEGI, 2010). La zona presenta una variedad de fondos que van desde arenosos hasta piedras, los cuales promueven una diversidad de hábitats vegetales subacuáticos compuestos por macroalgas y angiospermas (50-90%) (Renan-Galindo et al. 2003).
+
+## Diseño de muestreo
+
+## Identificación taxonómica de macroalgas y pastos marinos 
+
+## Identificación taxonómica de anfípodos 
+
+## Análisis de datos 
+
+
+
+
 Nulla mi mi, Fig [\[fig1\]](#fig1){reference-type="ref"
 reference="fig1"} venenatis sed ipsum varius, volutpat euismod diam.
 Proin rutrum vel massa non gravida. Quisque tempor sem et dignissim
