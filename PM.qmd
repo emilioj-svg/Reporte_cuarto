@@ -1,6 +1,6 @@
 ---
 title: "Pastos Marinos"
-author: "Ana, Emilio, Jonathan, Michelle, ,"
+author: "Ana, Emilio, Jonathan, Michelle Tejeda, ,"
 format: pdf
 editor: visual
 ---
