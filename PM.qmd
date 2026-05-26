@@ -108,7 +108,8 @@ $cell1 row2$ & cell2 row 2 & cell3 row 2 & cell4 row 2 & cell5 row 2 &
 cell6 row 2 & cell7 row 2 & cell8 row 2\
 $cell1 row3$ & cell2 row 3 & cell3 row 3 & cell4 row 3 & cell5 row 3 &
 cell6 row 3 & cell7 row 3 & cell8 row 3\
-:::
+
+::: {#tbl-especies}
 
 | Comunidad bentónica | Peces |
 |:---|:---|
@@ -128,7 +129,8 @@ cell6 row 3 & cell7 row 3 & cell8 row 3\
 | | Familias de sardinas: Atherinidae, Clupeidae y Engraulidae |
 | | Familia de peces aguja: *Belonidae* |
 
-: Tabla 1. Listado de especies de la comunidad bentónica y peces observados durante el muestreo {#eq-especies}
+Tabla 1. Listado de especies de la comunidad bentónica y peces observados en el muestreo
+:::
 
 ::: flushleft
 Table notes Phasellus venenatis, tortor nec vestibulum mattis, massa
