@@ -48,6 +48,18 @@ cuales promueven una diversidad de hábitats vegetales subacuáticos compuestos 
 macroalgas y angiospermas (50-90%) (Renan-Galindo et al. 2003).
 
 ## Diseño de muestreo
+Seguimos el “Protocolo para el monitoreo ecosistémico de en Áreas Naturales Protegidas 2022” a partir del cual medimos
+4 de los 13 indicadores. Inicialmente nos alejamos de la orilla de la playa a una distancia aproximada de 15 m; posteriormente, 
+tomamos las coordenadas geográficas del sitio elegido con un GPS y medimos los parámetros fisicoquímicos del agua con ayuda de
+un multiparamétrico (indicador 1). Después, colocamos un transecto de 20 m sobre el cual se distribuyeron 4 cuadrantes lo más
+equidistante posible. En cada uno de ellos tomamos una fotografía del cuadrante, se calculó el porcentaje de dosel (indicador 3),
+y luego se tomó la altura de la vegetación (indicador 6). Posteriormente, procedimos a obtener las muestras, en este paso, si el 
+paisaje de la pradera era homogénea solo se tomaba una muestra, pero en caso de que fuera más heterogénea se colectó una muestra
+representativa y otra dónde había la mayor densidad. Cada muestra se colocó en una bandeja marcada con el número del cuadrante 
+correspondiente para garantizar su posterior identificación. Finalmente, antes de recoger el transecto, se realizó un recorrido 
+visual a lo largo del mismo con el propósito de identificar fauna bentónica y especies de peces (indicador 11). Todo el procedimiento 
+descrito se realizó en dos horarios, uno en la mañana (6:30 am) y otro en la tarde (4:30 pm), debido a que en el horario vespertino
+la marea baja permitía alejarnos más de la orilla. 
 
 ## Identificación taxonómica de macroalgas y pastos marinos 
 
