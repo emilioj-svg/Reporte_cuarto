@@ -57,11 +57,10 @@ iniciando in situ mediante el vertido cuidadoso del material vegetal y el agua d
 En esta etapa, se realizó una inspección visual minuciosa agitando suavemente la vegetación para desprender a los organismos epibiontes; 
 la presencia y el movimiento de los anfípodos fueron examinados directamente en el recipiente, procediendo a su recolección selectiva 
 individual con el auxilio de pinzas de disección de punta fina y pipetas Pasteur para evitar daños estructurales en los ejemplares. 
-El total de los organismos capturados se transfirió inmediatamente a tubos plásticos herméticos que contenían alcohol etílico al 70% 
-para garantizar su fijación y conservación óptima. Finalmente, la fase de determinación taxonómica se llevó a cabo en el gabinete 
-mediante el uso de un estereomicroscopio óptico, herramienta con la cual se analizaron detalladamente los caracteres morfológicos 
-diagnósticos esenciales del grupo —tales como la estructura, la morfología de las antenas, los urópodos y el telson—, lo que permitió 
-clasificar a los ejemplares hasta el nivel biológico de familia empleando claves dicotómicas especializadas para crustáceos peracáridos. 
+Los organismos capturados se transfirieron a microtubos con alcohol etílico al 70% para garantizar su fijación y conservación óptima. 
+Finalmente, la fase de determinación taxonómica se realizó mediante el uso de un estereomicroscopio óptico. Se analizaron detalladamente }
+los caracteres morfológicos diagnósticos esenciales del grupo —tales como la estructura, la morfología de las antenas, los urópodos y el telson—, 
+lo que permitió clasificar a los ejemplares hasta el nivel biológico de familia. 
 
 ## Análisis de datos 
 
