@@ -20,17 +20,14 @@ Los autores contribuyeron equitativamente en este trabajo.
 :::
 
 # Introducción {#introduction .unnumbered}
+Dentro de los paisajes marinos y costeros los ecosistemas que los forman cumplen funciones vitales, una de las más importantes 
+es la protección ante el impacto de desastres naturales como huracanes (Herzka et al., 2020). Dentro de estos ecosistemas 
+podemos destacar a las praderas de pastos marinos, que se caracterizan por su flora la cual se encuentran creciendo en sedimentos 
+arenosos, limosos e incluso rocosos dentro del mar en zonas someras donde llega más la luz (Herzka et al., 2020). 
+Estos ecosistemas tienen un papel fundamental en los ciclos de vida de una gran variedad de especies de vertebrados e invertebrados, 
+forman flujos de nutrientes y tienen una importante relación de conectividad con los manglares y los arrecifes de coral, lo que 
+crea un paisaje costero-marino crucial para la salud de los mares y costas (Herzka et al., 2020; Odériz et al., 2020).
 
-Lorem ipsum dolor sit [@bib1] amet, consectetur adipiscing elit.
-Curabitur eget porta erat. Morbi consectetur est vel gravida pretium.
-Suspendisse ut dui eu ante cursus gravida non sed sem. Nullam
-Eq ([\[eq:schemeP\]](#eq:schemeP){reference-type="ref"
-reference="eq:schemeP"}) sapien tellus, commodo id velit id, eleifend
-volutpat quam. Phasellus mauris velit, dapibus finibus elementum vel,
-pulvinar non tellus. Nunc pellentesque pretium diam, quis maximus dolor
-faucibus id. [@bib2] Nunc convallis sodales ante, ut ullamcorper est
-egestas vitae. Nam sit amet enim ultrices, ultrices elit pulvinar,
-volutpat risus.
 
 $$\begin{aligned}
 \label{eq:schemeP}
