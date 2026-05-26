@@ -76,9 +76,6 @@ lo que permitió clasificar a los ejemplares hasta el nivel biológico de famili
 
 ## Análisis de datos 
 
-
-
-
 Nulla mi mi, Fig [\[fig1\]](#fig1){reference-type="ref"
 reference="fig1"} venenatis sed ipsum varius, volutpat euismod diam.
 Proin rutrum vel massa non gravida. Quisque tempor sem et dignissim
@@ -112,6 +109,26 @@ cell6 row 2 & cell7 row 2 & cell8 row 2\
 $cell1 row3$ & cell2 row 3 & cell3 row 3 & cell4 row 3 & cell5 row 3 &
 cell6 row 3 & cell7 row 3 & cell8 row 3\
 :::
+
+| Comunidad bentónica | Peces |
+|:---|:---|
+| *Cerithium sp.* | *Abudefduf saxatilis* |
+| *Echinaster* | *Anisotremus virginicus* |
+| *Ecteinascidia turbinata* | *Archosargus probatocephalus* |
+| *Eucinostomus sp.* | *Archosargus rhomboidalis* |
+| *Haliclona sp.* | *Centropomus undecimalis* |
+| *Holothuria floridana* | *Haemulon parra* |
+| *Modulus modulus* | *Kyphosus sp.* |
+| Platelminto | *Lutjanus griseus* |
+| *Urobatis jamaicensis* | *Mayaheros urophthalmus* |
+| | *Opsanus beta* |
+| | *Sparisoma frondosum* |
+| | *Sphoeroides testudineus* |
+| | *Sphyraena barracuda* |
+| | Familias de sardinas: Atherinidae, Clupeidae y Engraulidae |
+| | Familia de peces aguja: *Belonidae* |
+
+: Tabla 1. Listado de especies de la comunidad bentónica y peces observados durante el muestreo {#eq-especies}
 
 ::: flushleft
 Table notes Phasellus venenatis, tortor nec vestibulum mattis, massa
