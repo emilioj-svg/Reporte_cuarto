@@ -64,15 +64,8 @@ la marea baja permitía alejarnos más de la orilla.
 ## Identificación taxonómica de macroalgas y pastos marinos 
 
 ## Identificación taxonómica de anfípodos 
-El procesamiento y la caracterización taxonómica de la fauna asociada se centró exclusivamente en el orden Amphipoda, 
-iniciando in situ mediante el vertido cuidadoso del material vegetal y el agua de la muestra en una charola plástica de color blanco. 
-En esta etapa, se realizó una inspección visual minuciosa agitando suavemente la vegetación para desprender a los organismos epibiontes; 
-la presencia y el movimiento de los anfípodos fueron examinados directamente en el recipiente, procediendo a su recolección selectiva 
-individual con el auxilio de pinzas de disección de punta fina y pipetas Pasteur para evitar daños estructurales en los ejemplares. 
-Los organismos capturados se transfirieron a microtubos con alcohol etílico al 70% para garantizar su fijación y conservación óptima. 
-Finalmente, la fase de determinación taxonómica se realizó mediante el uso de un estereomicroscopio óptico. Se analizaron detalladamente
-los caracteres morfológicos diagnósticos esenciales del grupo —tales como la estructura, la morfología de las antenas, los urópodos y el telson—, 
-lo que permitió clasificar a los ejemplares hasta el nivel biológico de familia. 
+Posteriormente, se llevó a cabo el procesamiento de los anfípodos (orden Amphipoda). Con la muestra que restó después de la identificación taxonómica de macroalgas y pastos marinos se hizo una recolecta de anfípodos durante 15-20 minutos  con ayuda de pinzas de disección y pipetas pasteur, los anfípodos colectados se depositaron en microtubos eppendorf (1.5 mL) marcados con el ID de la muestra junto con alcohol etílico al 70% para su fijación y conservación óptima. Si visualmente ya no se encontraron más anfípodos, la muestra se pasó por un tamiz y fue vertida en frascos, marcados con el ID de la muestra, junto con alcohol etílico al 70% para luego continuar su recolecta bajo estereoscopio. 
+La identificación taxonómica de los anfípodos colectados se llevó a cabo con un estereoscopio, se analizó detalladamente los caracteres morfológicos diagnósticos esenciales del grupo (la estructura, la morfología de las antenas, los urópodos y el telson), y con ayuda de claves dicotómicas especializadas para crustáceos peracáridos se contabilizaron y clasificaron los ejemplares hasta el nivel de familia. Todos los datos fueron anotados en una bitácora.
 
 ## Análisis de datos 
 
