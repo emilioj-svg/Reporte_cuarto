@@ -4,7 +4,7 @@ title: "Pastos marinos"
 format: pdf
 editor: visual
 \
-Ana María1 Saldaña-Munive^1, Emilio Alejandro2 Jiménez-Ibarra^1, Jonathan3 Morffi-Montalvo^1, Ángeles Michelle4
+Ana María1 Saldaña-Munive^1, Emilio Alejandro2 Jiménez-Ibarra^1, Jonathan3 Morffi-Montalvo^1, Ángeles Michelle
 Tejeda-Rejón^1, 
 \
 **1** Escuela Nacional de Estudios Superiores (ENES), Universidad Autónoma de México (UNAM), Mérida, Yucatán,
