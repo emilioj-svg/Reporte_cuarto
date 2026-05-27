@@ -138,6 +138,56 @@ total de 149 individuos y, asimismo, la más frecuente, registrada en más del 9
 las familias menos frecuentes y abundantes fueron Maeridae, Aordae y Anamixidae, con una frecuencia de aparición menor 
 al 5% y representadas únicamente por un individuo cada una (Figura X y Figura X). 
 
+#GRÁFICO DE FRECUENCIA----------------------------------------------- 
+library(tidyverse)
+
+# 1. Cargar los datos
+datos <- a
+
+# 2. Procesar datos para Frecuencia (Corregido)
+frecuencia_df <- datos %>% # Seleccionar las familias
+  select(Anamixidae:Isopodae) %>% # Pasamos de formato ancho a largo
+  pivot_longer(cols = everything(), names_to = "Familia", values_to = "Conteo") %>% # Limpiamr espacios en blanco 
+  mutate(Familia = trimws(Familia)) %>%  # Agrupamos por familia
+  group_by(Familia) %>% # Calculamos frecuencia
+  summarise(
+    Muestras_Presente = sum(Conteo > 0),
+    Total_Muestras = n(),
+    Porcentaje_Frecuencia = (Muestras_Presente / Total_Muestras) * 100
+  ) %>%
+  arrange(desc(Porcentaje_Frecuencia))
+
+# 3. Graficar Frecuencia
+ggplot(frecuencia_df, aes(x = reorder(Familia, Porcentaje_Frecuencia), y = Porcentaje_Frecuencia, fill = Porcentaje_Frecuencia)) +
+  geom_bar(stat = "identity", show.legend = FALSE) +
+  coord_flip() + 
+  scale_fill_viridis_c(option = "YlOrRd") +
+  labs(
+    x = "Familia",
+    y = "Porcentaje de frecuencia en las muestras(%)"
+  ) +
+  theme_minimal()
+#####GRÁFICO DE ABUNDANCIA 
+
+#GRÁFICO DE ABUNDANCIA-------------------------------------------
+# 1. Procesar datos para Abundancia
+abundancia_df <- datos %>%
+  select(Anamixidae:Isopodae) %>% 
+  pivot_longer(cols = everything(), names_to = "Familia", values_to = "Conteo") %>%
+  group_by(Familia) %>%
+  summarise(Abundancia_Total = sum(Conteo)) %>%
+  arrange(desc(Abundancia_Total))
+
+# 2. Graficar Abundancia
+ggplot(abundancia_df, aes(x = reorder(Familia, Abundancia_Total), y = Abundancia_Total, fill = Abundancia_Total)) +
+  geom_bar(stat = "identity", show.legend = FALSE) +
+  coord_flip() + 
+  scale_fill_viridis_c(option = "viridis") +
+  labs(
+    x = "Familia",
+    y = "Número de individuos"
+  ) +
+  theme_minimal()
 
 ## Comunidad bentónica y peces 
 Se identificaron nueve especies bentónicas (excluyendo a Amphipoda) y 14 especies de peces así como la familia Belonidae
@@ -149,6 +199,47 @@ presencia, seguidas por la raya amarilla (Urobatis jamaicensis) con 75% y el pep
 presentes la estrella de mar (Echinaster), la esponja (Haliclona sp.) y el mero carbonero (Hypoplectrus nigricans). Mientras 
 que en la tarde, se registró Poliqueto sp. y el organismo registrado como “pez delineado”, debido a su identificación inexacta, 
 tuvieron avistamientos únicamente vespertinos (Figura X). 
+
+####FAUNA BENTÓNICA 
+#Diferencia de horario
+
+library(tidyverse)
+
+# 1. Cargar los nuevos datos
+datos_fauna <- fauna
+
+# 2. Procesar los datos
+# Calcularemos qué % de los muestreos de la Mañana y qué % de la Tarde registran cada especie
+fauna_horario <- datos_fauna %>%
+  # Pasamos a formato largo manteniendo la columna 'Hora'
+  pivot_longer(cols = -Hora, names_to = "Especie", values_to = "Presencia") %>%
+  # Limpiamos nombres de especies por si tienen espacios extras
+  mutate(Especie = trimws(Especie)) %>%
+  # Agrupamos por Hora (M/T) y por Especie
+  group_by(Hora, Especie) %>%
+  summarise(
+    Muestras_Presente = sum(Presencia > 0),
+    Total_Muestras_Horario = n(),
+    Porcentaje_Presencia = (Muestras_Presente / Total_Muestras_Horario) * 100,
+    .groups = 'drop'
+  )
+
+# 3. Graficar la comparación
+ggplot(fauna_horario, aes(x = reorder(Especie, Porcentaje_Presencia), y = Porcentaje_Presencia, fill = Hora)) +
+  # 'position = position_dodge()' pone las barras de M y T una al lado de la otra
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
+  coord_flip() + 
+  scale_fill_manual(
+    values = c("M" = "#F1C40F", "T" = "#75C3ff"), 
+    labels = c("M" = "Mañana", "T" = "Tarde")
+  ) +
+  labs(
+    x = "Especie / Fauna",
+    y = "Porcentaje de Presencia (%)",
+    fill = "Horario"
+  ) +
+  theme_minimal() 
+
 
 ::: {#tbl-especies}
 
@@ -208,96 +299,7 @@ mauris tellus, vel dapibus arcu suscipit sed.
 ## **LOREM** and **IPSUM** nunc blandit a tortor {#lorem-and-ipsum-nunc-blandit-a-tortor .unnumbered}
 
 ### 3rd level heading {#rd-level-heading .unnumbered}
-#GRÁFICO DE FRECUENCIA----------------------------------------------- 
-library(tidyverse)
 
-# 1. Cargar los datos
-datos <- a
-
-# 2. Procesar datos para Frecuencia (Corregido)
-frecuencia_df <- datos %>% # Seleccionar las familias
-  select(Anamixidae:Isopodae) %>% # Pasamos de formato ancho a largo
-  pivot_longer(cols = everything(), names_to = "Familia", values_to = "Conteo") %>% # Limpiamr espacios en blanco 
-  mutate(Familia = trimws(Familia)) %>%  # Agrupamos por familia
-  group_by(Familia) %>% # Calculamos frecuencia
-  summarise(
-    Muestras_Presente = sum(Conteo > 0),
-    Total_Muestras = n(),
-    Porcentaje_Frecuencia = (Muestras_Presente / Total_Muestras) * 100
-  ) %>%
-  arrange(desc(Porcentaje_Frecuencia))
-
-# 3. Graficar Frecuencia
-ggplot(frecuencia_df, aes(x = reorder(Familia, Porcentaje_Frecuencia), y = Porcentaje_Frecuencia, fill = Porcentaje_Frecuencia)) +
-  geom_bar(stat = "identity", show.legend = FALSE) +
-  coord_flip() + 
-  scale_fill_viridis_c(option = "YlOrRd") +
-  labs(
-    x = "Familia",
-    y = "Porcentaje de frecuencia en las muestras(%)"
-  ) +
-  theme_minimal()
-#####GRÁFICO DE ABUNDANCIA 
-
-#GRÁFICO DE ABUNDANCIA-------------------------------------------
-# 1. Procesar datos para Abundancia
-abundancia_df <- datos %>%
-  select(Anamixidae:Isopodae) %>% 
-  pivot_longer(cols = everything(), names_to = "Familia", values_to = "Conteo") %>%
-  group_by(Familia) %>%
-  summarise(Abundancia_Total = sum(Conteo)) %>%
-  arrange(desc(Abundancia_Total))
-
-# 2. Graficar Abundancia
-ggplot(abundancia_df, aes(x = reorder(Familia, Abundancia_Total), y = Abundancia_Total, fill = Abundancia_Total)) +
-  geom_bar(stat = "identity", show.legend = FALSE) +
-  coord_flip() + 
-  scale_fill_viridis_c(option = "viridis") +
-  labs(
-    x = "Familia",
-    y = "Número de individuos"
-  ) +
-  theme_minimal()
-
-####FAUNA BENTÓNICA 
-#Diferencia de horario
-
-library(tidyverse)
-
-# 1. Cargar los nuevos datos
-datos_fauna <- fauna
-
-# 2. Procesar los datos
-# Calcularemos qué % de los muestreos de la Mañana y qué % de la Tarde registran cada especie
-fauna_horario <- datos_fauna %>%
-  # Pasamos a formato largo manteniendo la columna 'Hora'
-  pivot_longer(cols = -Hora, names_to = "Especie", values_to = "Presencia") %>%
-  # Limpiamos nombres de especies por si tienen espacios extras
-  mutate(Especie = trimws(Especie)) %>%
-  # Agrupamos por Hora (M/T) y por Especie
-  group_by(Hora, Especie) %>%
-  summarise(
-    Muestras_Presente = sum(Presencia > 0),
-    Total_Muestras_Horario = n(),
-    Porcentaje_Presencia = (Muestras_Presente / Total_Muestras_Horario) * 100,
-    .groups = 'drop'
-  )
-
-# 3. Graficar la comparación
-ggplot(fauna_horario, aes(x = reorder(Especie, Porcentaje_Presencia), y = Porcentaje_Presencia, fill = Hora)) +
-  # 'position = position_dodge()' pone las barras de M y T una al lado de la otra
-  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
-  coord_flip() + 
-  scale_fill_manual(
-    values = c("M" = "#F1C40F", "T" = "#75C3ff"), 
-    labels = c("M" = "Mañana", "T" = "Tarde")
-  ) +
-  labs(
-    x = "Especie / Fauna",
-    y = "Porcentaje de Presencia (%)",
-    fill = "Horario"
-  ) +
-  theme_minimal() 
 
 # Discusión {#discussion .unnumbered}
 
