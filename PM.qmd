@@ -72,8 +72,10 @@ macroalgas y angiospermas (50-90%) (Renan-Galindo et al. 2003).
 * Cajas de Petri
 * Microtubos eppendorf 
 * Alcohol etílico (70%)
-* Guía de identificación de anfípodos “An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida” (2000) Lecroy, Sara. Vol 1-3.
-* Guía de identificación taxonómica de pastos marinos y macroalgas “Marine plants of the caribbean: A field guide from Florida to Brazil” (1989). Littler D., Littler M., Bucher K. & Norris J.  
+* Guía de identificación de anfípodos “An illustrated identification guide to the nearshore marine and estuarine 
+gammaridean Amphipoda of Florida” (2000) Lecroy, Sara. Vol 1-3.
+* Guía de identificación taxonómica de pastos marinos y macroalgas “Marine plants of the caribbean: A field guide 
+from Florida to Brazil” (1989). Littler D., Littler M., Bucher K. & Norris J.  
 
 
 ## Diseño de muestreo
