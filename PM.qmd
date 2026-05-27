@@ -37,11 +37,6 @@ cambio de composición de la comunidad de anfípodos? y 3) ¿Hay un cambio en la
 de anfípodos entre los diferentes horarios, identificar una variable que explica mejor la variación de cambio de composición 
 de la comunidad de anfípodos y detectar un cambio de fauna móvil en diferentes horarios.
 
-
-$$\begin{aligned}
-\label{eq:schemeP}
-    \mathrm{P_Y} = \underbrace{H(Y_n) - H(Y_n|\mathbf{V}^{Y}_{n})}_{S_Y} + \underbrace{H(Y_n|\mathbf{V}^{Y}_{n})- H(Y_n|\mathbf{V}^{X,Y}_{n})}_{T_{X\rightarrow Y}},\end{aligned}$$
-
 # Materiales y métodos {#materials-and-methods .unnumbered}
 
 ## Área de estudio
