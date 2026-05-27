@@ -2,6 +2,8 @@
 
 title: "Pastos marinos"
 format: pdf
+execute:
+  echo: false
 editor: visual
 \
 Ana María1 Saldaña-Munive^1, Emilio Alejandro2 Jiménez-Ibarra^1, Jonathan3 Morffi-Montalvo^1, Ángeles Michelle
