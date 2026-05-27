@@ -20,13 +20,22 @@ Los autores contribuyeron equitativamente en este trabajo.
 :::
 
 # Introducción {#introduction .unnumbered}
-Dentro de los paisajes marinos y costeros los ecosistemas que los forman cumplen funciones vitales, una de las más importantes 
-es la protección ante el impacto de desastres naturales como huracanes (Herzka et al., 2020). Dentro de estos ecosistemas 
-podemos destacar a las praderas de pastos marinos, que se caracterizan por su flora la cual se encuentran creciendo en sedimentos 
-arenosos, limosos e incluso rocosos dentro del mar en zonas someras donde llega más la luz (Herzka et al., 2020). 
-Estos ecosistemas tienen un papel fundamental en los ciclos de vida de una gran variedad de especies de vertebrados e invertebrados, 
-forman flujos de nutrientes y tienen una importante relación de conectividad con los manglares y los arrecifes de coral, lo que 
-crea un paisaje costero-marino crucial para la salud de los mares y costas (Herzka et al., 2020; Odériz et al., 2020).
+Los ecosistemas que conforman los paisajes marinos y costeros cumplen funciones vitales, una de las más importantes, 
+es la protección frente a desastres naturales como huracanes (Herzka et al., 2020). Dentro de estos ecosistemas destacan 
+las praderas de pastos marinos, cuya flora característica, se encuentran creciendo en sedimentos arenosos, limosos e 
+incluso rocosos en zonas acuáticas someras donde penetra más la luz (Herzka et al., 2020). 
+Los pastos marinos tienen un papel fundamental en el ciclo de vida de una gran variedad de especies de vertebrados e 
+invertebrados, forman flujos de nutrientes y tienen una importante relación de conectividad con los manglares y los 
+arrecifes de coral, lo que crea un paisaje costero-marino crucial para la salud de los mares y costas 
+(Herzka et al., 2020; Odériz et al., 2020).
+El presente estudio midió parámetros de importancia para el monitoreo de los pastos marinos en un área de Dzilam de Bravo, 
+Yucatán, siguiendo el “Protocolo para el monitoreo ecosistémico de en Áreas Naturales Protegidas 2022”. Nos hicimos tres 
+preguntas clave que buscaron relacionar los resultados con la comunidad bentónica de los pastos marinos: 1) ¿Hay diferencia 
+en la composición de anfípodos en los diferentes horarios?, 2) ¿Hay variable o variables explican mejor la variación de 
+cambio de composición de la comunidad de anfípodos? y 3) ¿Hay un cambio en la composición de la comunidad de fauna móvil 
+(asociada a pastos marinos) en diferentes horarios?. Bajo este contexto, esperamos encontrar diferencias en la composición 
+de anfípodos entre los diferentes horarios, identificar una variable que explica mejor la variación de cambio de composición 
+de la comunidad de anfípodos y detectar un cambio de fauna móvil en diferentes horarios.
 
 
 $$\begin{aligned}
@@ -43,6 +52,29 @@ entre 24 y 26°C y una precipitación anual que varía entre 500 a 700 mm (INEGI
 La zona presenta una variedad de fondos que van desde arenosos hasta piedras, los 
 cuales promueven una diversidad de hábitats vegetales subacuáticos compuestos por 
 macroalgas y angiospermas (50-90%) (Renan-Galindo et al. 2003).
+
+## Materiales
+* GPS modelo Garmin etrex 22x
+* Multiparamétrico modelo Pro quatro 
+* Estereoscopio marca Zeiss 
+* Cinta métrica (30 m)
+* Soga (20 m)
+* Cuadrantes de PVC (1m x 1m) 
+* Bandejas plásticas
+* Tamiz de malla fina
+* Bolsas plásticas de sellado hermético (tipo Ziploc®)
+* Marcador indeleble
+* Papel piedra 
+* Bitácora de campo
+* Pinzas de disección
+* Pipetas Pasteur 
+* Tubos plásticos de polipropileno (tipo Falcon® o similares)
+* Cajas de Petri
+* Microtubos eppendorf 
+* Alcohol etílico (70%)
+* Guía de identificación de anfípodos “An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida” (2000) Lecroy, Sara. Vol 1-3.
+* Guía de identificación taxonómica de pastos marinos y macroalgas “Marine plants of the caribbean: A field guide from Florida to Brazil” (1989). Littler D., Littler M., Bucher K. & Norris J.  
+
 
 ## Diseño de muestreo
 Seguimos el “Protocolo para el monitoreo ecosistémico de en Áreas Naturales Protegidas 2022” a partir del cual medimos
@@ -65,16 +97,16 @@ de pastos marinos y macroalgas. Los residuos vegetales se juntaron en bolsas zip
 la identificación.
 
 ## Identificación taxonómica de anfípodos 
-Posteriormente, se llevó a cabo el procesamiento de los anfípodos (orden Amphipoda). Con la muestra que restó después de la 
-identificación taxonómica de macroalgas y pastos marinos se hizo una recolecta de anfípodos durante 15-20 minutos  con ayuda de pinzas 
-de disección y pipetas pasteur, los anfípodos colectados se depositaron en microtubos eppendorf (1.5 mL) marcados con el ID de la 
-muestra junto con alcohol etílico al 70% para su fijación y conservación óptima. Si visualmente ya no se encontraron más anfípodos, la 
-muestra se pasó por un tamiz y fue vertida en frascos, marcados con el ID de la muestra, junto con alcohol etílico al 70% para luego continuar 
-su recolecta bajo estereoscopio. 
-La identificación taxonómica de los anfípodos colectados se llevó a cabo con un estereoscopio, se analizó detalladamente los caracteres 
-morfológicos diagnósticos esenciales del grupo (la estructura, la morfología de las antenas, los urópodos y el telson), y con ayuda de 
-claves dicotómicas especializadas para crustáceos peracáridos se contabilizaron y clasificaron los ejemplares hasta el nivel de familia. 
-Todos los datos fueron anotados en una bitácora.
+Posteriormente, se llevó a cabo el procesamiento de los anfípodos (orden Amphipoda). Con la muestra que restó después 
+de la identificación taxonómica de macroalgas y pastos marinos se hizo una recolecta de anfípodos durante 15-20 minutos 
+con ayuda de pinzas de disección y pipetas pasteur, los anfípodos colectados se depositaron en microtubos eppendorf (1.5 mL)
+marcados con el ID de la muestra junto con alcohol etílico al 70% para su fijación y conservación óptima. Si visualmente 
+ya no se encontraron más anfípodos, la muestra se pasó por un tamiz y fue vertida en frascos, marcados con el ID de la 
+muestra, junto con alcohol etílico al 70% para luego continuar su recolecta bajo estereoscopio. 
+La identificación taxonómica de los anfípodos colectados se llevó a cabo con un estereoscopio, se analizó detalladamente 
+los caracteres morfológicos diagnósticos esenciales del grupo (la estructura, la morfología de las antenas, los urópodos 
+y el telson), y con ayuda de claves dicotómicas especializadas para crustáceos peracáridos se contabilizaron y clasificaron 
+los ejemplares hasta el nivel de familia. Todos los datos fueron anotados en una bitácora.
 
 ## Análisis de datos 
 
@@ -88,6 +120,32 @@ cursus, vel sagittis arcu lobortis. Aliquam in enim semper, aliquam
 massa id, cursus neque. Praesent faucibus semper libero.
 
 # Resultados {#results .unnumbered}
+## Algas y pastos marinos
+Se identificaron 6 géneros y 4 especies de macroalgas junto con 2 especies de pastos marinos [\[tableX\]]. La especie de 
+pasto marino con mayor abundancia y cobertura entre cuadrantes es Syringodium filiforme, y la especie de macroalga con 
+mayor abundancia y cobertura entre cuadrantes es Halimeda incrassata, mientras que la especie con menor abundancia entre
+los cuadrantes es Acanthophora spicifera y el género con menor cobertura es Bryopsis (Fig X y X). Los valores de la 
+altura del dosel variaron entre cuadrantes (Fig X), y el valor con mayor abundancia fue 25 cm, que fue medido en 8 cuadrantes.
+
+## Anfípodos 
+Se registraron un total de 12 familias de anfípodos. De todas ellas, la familia Ampithoidae fue la más abundante con un 
+total de 149 individuos y, asimismo, la más frecuente, registrada en más del 90% de las muestras totales. En contraste,
+las familias menos frecuentes y abundantes fueron Maeridae, Aordae y Anamixidae, con una frecuencia de aparición menor 
+al 5% y representadas únicamente por un individuo cada una (Figura X y Figura X). 
+
+
+##Comunidad bentónica y peces 
+Se identificaron nueve especies bentónicas (excluyendo a Amphipoda) y 14 especies de peces así como la familia Belonidae
+y diversas familias de sardinas (Tabla X). En la mañana, la especie con mayor porcentaje de presencia fue la estrella de
+mar (Echinaster, 80%), seguida por el pepino de mar (Holothuria floridana) y el caracol (Cerithium sp.) ambos con un 60%.
+En el horario vespertino, por otro lado, dos especies de caracol (Cerithium sp y Modulus modulus) alcanzaron el 100% de 
+presencia, seguidas por la raya amarilla (Urobatis jamaicensis) con 75% y el pepino de mar (Holothuria floridana) con el 
+50% de las observaciones. También se registraron especies exclusivas para cada horario. En la mañana, solo estuvieron
+presentes la estrella de mar (Echinaster), la esponja (Haliclona sp.) y el mero carbonero (Hypoplectrus nigricans). Mientras 
+que en la tarde, se registró Poliqueto sp. y el organismo registrado como “pez delineado”, debido a su identificación inexacta, 
+tuvieron avistamientos únicamente vespertinos (Figura X). 
+
+
 
 Nulla mi mi, venenatis sed ipsum varius,
 Table [\[table1\]](#table1){reference-type="ref" reference="table1"}
@@ -133,6 +191,9 @@ cell6 row 3 & cell7 row 3 & cell8 row 3\
 
 Tabla 1. Listado de especies de la comunidad bentónica y peces observados en el muestreo
 :::
+
+## 
+
 
 ::: flushleft
 Table notes Phasellus venenatis, tortor nec vestibulum mattis, massa
