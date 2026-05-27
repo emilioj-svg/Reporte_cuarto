@@ -1,29 +1,286 @@
----
-title: "Pastos Marinos"
-author: "Ana, Emilio, Jonathan, Michelle, ,"
+::: flushleft
+
+title: "Pastos marinos"
 format: pdf
+execute:
+  echo: false
 editor: visual
----
+\
+Ana María1 Saldaña-Munive^1, Emilio Alejandro2 Jiménez-Ibarra^1, Jonathan3 Morffi-Montalvo^1, Ángeles Michelle
+Tejeda-Rejón^1, 
+\
+**1** Escuela Nacional de Estudios Superiores (ENES), Universidad Autónoma de México (UNAM), Mérida, Yucatán,
+México\
 
-## Quarto
+Los autores contribuyeron equitativamente en este trabajo. 
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+\* 
+424045153@enesmerida.unam.mx
+321324348@enesmerida.unam.mx
+424490498@enesmerida.unam.mx
+424012177@enesmerida.unam.mx 
+:::
 
+<<<<<<< HEAD
 quarto use template quarto-journals/elsevier
 
 ## Running Code
+=======
+# Introducción {#introduction .unnumbered}
+Los ecosistemas que conforman los paisajes marinos y costeros cumplen funciones vitales, una de las más importantes, 
+es la protección frente a desastres naturales como huracanes (Herzka et al., 2020). Dentro de estos ecosistemas destacan 
+las praderas de pastos marinos, cuya flora característica, se encuentran creciendo en sedimentos arenosos, limosos e 
+incluso rocosos en zonas acuáticas someras donde penetra más la luz (Herzka et al., 2020). 
+Los pastos marinos tienen un papel fundamental en el ciclo de vida de una gran variedad de especies de vertebrados e 
+invertebrados, forman flujos de nutrientes y tienen una importante relación de conectividad con los manglares y los 
+arrecifes de coral, lo que crea un paisaje costero-marino crucial para la salud de los mares y costas 
+(Herzka et al., 2020; Odériz et al., 2020).
+El presente estudio midió parámetros de importancia para el monitoreo de los pastos marinos en un área de Dzilam de Bravo, 
+Yucatán, siguiendo el “Protocolo para el monitoreo ecosistémico de en Áreas Naturales Protegidas 2022”. Nos hicimos tres 
+preguntas clave que buscaron relacionar los resultados con la comunidad bentónica de los pastos marinos: 1) ¿Hay diferencia 
+en la composición de anfípodos en los diferentes horarios?, 2) ¿Hay variable o variables explican mejor la variación de 
+cambio de composición de la comunidad de anfípodos? y 3) ¿Hay un cambio en la composición de la comunidad de fauna móvil 
+(asociada a pastos marinos) en diferentes horarios?. Bajo este contexto, esperamos encontrar diferencias en la composición 
+de anfípodos entre los diferentes horarios, identificar una variable que explica mejor la variación de cambio de composición 
+de la comunidad de anfípodos y detectar un cambio de fauna móvil en diferentes horarios.
+>>>>>>> 0a21fa03db7442424fe7ab091d882c54fc0e868c
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+# Materiales y métodos {#materials-and-methods .unnumbered}
 
-```{r}
-1 + 1
-```
+## Área de estudio
+El estudio se realizó en una zona de pastos marinos en el municipio de 
+Dzilam del Bravo, ubicado en el norte de Yucatán, México (21°20’ y 21°33’ N, 88°24’ y 88°59 W). 
+Este lugar se caracteriza por tener un clima semiseco cálido con una temperatura media anual 
+entre 24 y 26°C y una precipitación anual que varía entre 500 a 700 mm (INEGI 2010). 
+La zona presenta una variedad de fondos que van desde arenosos hasta piedras, los 
+cuales promueven una diversidad de hábitats vegetales subacuáticos compuestos por 
+macroalgas y angiospermas (50-90%) (Renan-Galindo et al. 2003).
 
-You can add options to executable code like this
+## Materiales
+- GPS modelo Garmin etrex 22x
+- Multiparamétrico modelo Pro quatro 
+- Estereoscopio marca Zeiss 
+- Cinta métrica (30 m)
+- Soga (20 m)
+- Cuadrantes de PVC (1m x 1m) 
+- Bandejas plásticas
+- Tamiz de malla fina
+- Bolsas plásticas de sellado hermético (tipo Ziploc®)
+- Marcador indeleble
+- Papel piedra 
+- Bitácora de campo
+- Pinzas de disección
+- Pipetas Pasteur 
+- Tubos plásticos de polipropileno (tipo Falcon® o similares)
+- Cajas de Petri
+- Microtubos eppendorf 
+- Alcohol etílico (70%)
+- Guía de identificación de anfípodos “An illustrated identification guide to the nearshore marine and estuarine 
+gammaridean Amphipoda of Florida” (2000) Lecroy, Sara. Vol 1-3.
+- Guía de identificación taxonómica de pastos marinos y macroalgas “Marine plants of the caribbean: A field guide 
+from Florida to Brazil” (1989). Littler D., Littler M., Bucher K. & Norris J.  
 
-```{r}
-#| echo: false
-2 * 2
-```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+## Diseño de muestreo
+Seguimos el “Protocolo para el monitoreo ecosistémico de en Áreas Naturales Protegidas 2022” a partir del cual medimos
+4 de los 13 indicadores. Inicialmente nos alejamos de la orilla de la playa a una distancia aproximada de 15 m; posteriormente, 
+tomamos las coordenadas geográficas del sitio elegido con un GPS y medimos los parámetros fisicoquímicos del agua con ayuda de
+un multiparamétrico (indicador 1). Después, colocamos un transecto de 20 m sobre el cual se distribuyeron 4 cuadrantes lo más
+equidistante posible. En cada uno de ellos tomamos una fotografía del cuadrante, se calculó el porcentaje de dosel (indicador 3),
+y luego se tomó la altura de la vegetación (indicador 6). Posteriormente, procedimos a obtener las muestras, en este paso, si el 
+paisaje de la pradera era homogénea solo se tomaba una muestra, pero en caso de que fuera más heterogénea se colectó una muestra
+representativa y otra dónde había la mayor densidad. Cada muestra se colocó en una bandeja marcada con el número del cuadrante 
+correspondiente para garantizar su posterior identificación. Finalmente, antes de recoger el transecto, se realizó un recorrido 
+visual a lo largo del mismo con el propósito de identificar fauna bentónica y especies de peces (indicador 11). Todo el procedimiento 
+descrito se realizó en dos horarios, uno en la mañana (6:30 am) y otro en la tarde (4:30 pm), debido a que en el horario vespertino
+la marea baja permitía alejarnos más de la orilla. 
+
+## Identificación taxonómica de macroalgas y pastos marinos 
+Cada muestra se colocó en una bandeja marcada con el número del cuadrante. Primero se separaron los grupos de macroalgas y pastos 
+marinos basándonos en su morfología, para después identificar cada uno hasta nivel de género con ayuda de la guía de identificación 
+de pastos marinos y macroalgas. Los residuos vegetales se juntaron en bolsas ziploc y fueron desechados en el mar al terminar 
+la identificación.
+
+## Identificación taxonómica de anfípodos 
+Posteriormente, se llevó a cabo el procesamiento de los anfípodos (orden Amphipoda). Con la muestra que restó después 
+de la identificación taxonómica de macroalgas y pastos marinos se hizo una recolecta de anfípodos durante 15-20 minutos 
+con ayuda de pinzas de disección y pipetas pasteur, los anfípodos colectados se depositaron en microtubos eppendorf (1.5 mL)
+marcados con el ID de la muestra junto con alcohol etílico al 70% para su fijación y conservación óptima. Si visualmente 
+ya no se encontraron más anfípodos, la muestra se pasó por un tamiz y fue vertida en frascos, marcados con el ID de la 
+muestra, junto con alcohol etílico al 70% para luego continuar su recolecta bajo estereoscopio. 
+La identificación taxonómica de los anfípodos colectados se llevó a cabo con un estereoscopio, se analizó detalladamente 
+los caracteres morfológicos diagnósticos esenciales del grupo (la estructura, la morfología de las antenas, los urópodos 
+y el telson), y con ayuda de claves dicotómicas especializadas para crustáceos peracáridos se contabilizaron y clasificaron 
+los ejemplares hasta el nivel de familia. Todos los datos fueron anotados en una bitácora.
+
+## Análisis de datos 
+
+Nulla mi mi, Fig [\[fig1\]](#fig1){reference-type="ref"
+reference="fig1"} venenatis sed ipsum varius, volutpat euismod diam.
+Proin rutrum vel massa non gravida. Quisque tempor sem et dignissim
+rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+at justo vitae nulla elementum commodo eu id massa. In vitae diam ac
+augue semper tincidunt eu ut eros. Fusce fringilla erat porttitor lectus
+cursus, vel sagittis arcu lobortis. Aliquam in enim semper, aliquam
+massa id, cursus neque. Praesent faucibus semper libero.
+
+# Resultados {#results .unnumbered}
+## Algas y pastos marinos
+Se identificaron 6 géneros y 4 especies de macroalgas junto con 2 especies de pastos marinos [\[tableX\]]. La especie de 
+pasto marino con mayor abundancia y cobertura entre cuadrantes es Syringodium filiforme, y la especie de macroalga con 
+mayor abundancia y cobertura entre cuadrantes es Halimeda incrassata, mientras que la especie con menor abundancia entre
+los cuadrantes es Acanthophora spicifera y el género con menor cobertura es Bryopsis (Fig X y X). Los valores de la 
+altura del dosel variaron entre cuadrantes (Fig X), y el valor con mayor abundancia fue 25 cm, que fue medido en 8 cuadrantes.
+
+## Anfípodos 
+Se registraron un total de 12 familias de anfípodos. De todas ellas, la familia Ampithoidae fue la más abundante con un 
+total de 149 individuos y, asimismo, la más frecuente, registrada en más del 90% de las muestras totales. En contraste,
+las familias menos frecuentes y abundantes fueron Maeridae, Aordae y Anamixidae, con una frecuencia de aparición menor 
+al 5% y representadas únicamente por un individuo cada una (Figura X y Figura X). 
+
+
+## Comunidad bentónica y peces 
+Se identificaron nueve especies bentónicas (excluyendo a Amphipoda) y 14 especies de peces así como la familia Belonidae
+y diversas familias de sardinas (Tabla X). En la mañana, la especie con mayor porcentaje de presencia fue la estrella de
+mar (Echinaster, 80%), seguida por el pepino de mar (Holothuria floridana) y el caracol (Cerithium sp.) ambos con un 60%.
+En el horario vespertino, por otro lado, dos especies de caracol (Cerithium sp y Modulus modulus) alcanzaron el 100% de 
+presencia, seguidas por la raya amarilla (Urobatis jamaicensis) con 75% y el pepino de mar (Holothuria floridana) con el 
+50% de las observaciones. También se registraron especies exclusivas para cada horario. En la mañana, solo estuvieron
+presentes la estrella de mar (Echinaster), la esponja (Haliclona sp.) y el mero carbonero (Hypoplectrus nigricans). Mientras 
+que en la tarde, se registró Poliqueto sp. y el organismo registrado como “pez delineado”, debido a su identificación inexacta, 
+tuvieron avistamientos únicamente vespertinos (Figura X). 
+
+::: {#tbl-especies}
+
+| Comunidad bentónica | Peces |
+|:---|:---|
+| *Cerithium sp.* | *Abudefduf saxatilis* |
+| *Echinaster* | *Anisotremus virginicus* |
+| *Ecteinascidia turbinata* | *Archosargus probatocephalus* |
+| *Eucinostomus sp.* | *Archosargus rhomboidalis* |
+| *Haliclona sp.* | *Centropomus undecimalis* |
+| *Holothuria floridana* | *Haemulon parra* |
+| *Modulus modulus* | *Kyphosus sp.* |
+| Platelminto | *Lutjanus griseus* |
+| *Urobatis jamaicensis* | *Mayaheros urophthalmus* |
+| | *Opsanus beta* |
+| | *Sparisoma frondosum* |
+| | *Sphoeroides testudineus* |
+| | *Sphyraena barracuda* |
+| | Familias de sardinas: Atherinidae, Clupeidae y Engraulidae |
+| | Familia de peces aguja: *Belonidae* |
+
+Tabla 1. Listado de especies de la comunidad bentónica y peces observados en el muestreo
+:::
+
+Nulla mi mi, venenatis sed ipsum varius,
+Table [\[table1\]](#table1){reference-type="ref" reference="table1"}
+volutpat euismod diam. Proin rutrum vel massa non gravida. Quisque
+tempor sem et dignissim rutrum. Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Morbi at justo vitae nulla elementum commodo eu id
+massa. In vitae diam ac augue semper tincidunt eu ut eros. Fusce
+fringilla erat porttitor lectus cursus, vel sagittis arcu lobortis.
+Aliquam in enim semper, aliquam massa id, cursus neque. Praesent
+faucibus semper libero.
+
+::: adjustwidth
+-2.25in0in
+
+::: tabular
+\|l+l\|l\|l\|l\|l\|l\|l\| &\
+$cell1 row1$ & cell2 row 1 & cell3 row 1 & cell4 row 1 & cell5 row 1 &
+cell6 row 1 & cell7 row 1 & cell8 row 1\
+$cell1 row2$ & cell2 row 2 & cell3 row 2 & cell4 row 2 & cell5 row 2 &
+cell6 row 2 & cell7 row 2 & cell8 row 2\
+$cell1 row3$ & cell2 row 3 & cell3 row 3 & cell4 row 3 & cell5 row 3 &
+cell6 row 3 & cell7 row 3 & cell8 row 3\
+
+
+::: flushleft
+Table notes Phasellus venenatis, tortor nec vestibulum mattis, massa
+tortor interdum felis, nec pellentesque metus tortor nec nisl. Ut ornare
+mauris tellus, vel dapibus arcu suscipit sed.
+:::
+
+[]{#table1 label="table1"}
+:::
+
+## **LOREM** and **IPSUM** nunc blandit a tortor {#lorem-and-ipsum-nunc-blandit-a-tortor .unnumbered}
+
+### 3rd level heading {#rd-level-heading .unnumbered}
+
+
+# Discusión {#discussion .unnumbered}
+
+Nulla mi mi, venenatis sed ipsum varius,
+Table [\[table1\]](#table1){reference-type="ref" reference="table1"}
+volutpat euismod diam. Proin rutrum vel massa non gravida. Quisque
+tempor sem et dignissim rutrum. Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Morbi at justo vitae nulla elementum commodo eu id
+massa. In vitae diam ac augue semper tincidunt eu ut eros. Fusce
+fringilla erat porttitor lectus cursus, vel sagittis arcu lobortis.
+Aliquam in enim semper, aliquam massa id, cursus neque. Praesent
+faucibus semper libero [@bib3].
+
+# Supporting information {#supporting-information .unnumbered}
+
+#### S1 Fig. {#S1_Fig .unnumbered}
+
+**Bold the title sentence.** Add descriptive text after the title of the
+item (optional).
+
+#### S2 Fig. {#S2_Fig .unnumbered}
+
+**Lorem ipsum.** Maecenas convallis mauris sit amet sem ultrices
+gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
+ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
+consectetur pellentesque.
+
+#### S1 File. {#S1_File .unnumbered}
+
+**Lorem ipsum.** Maecenas convallis mauris sit amet sem ultrices
+gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
+ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
+consectetur pellentesque.
+
+#### S1 Video. {#S1_Video .unnumbered}
+
+**Lorem ipsum.** Maecenas convallis mauris sit amet sem ultrices
+gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
+ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
+consectetur pellentesque.
+
+#### S1 Appendix. {#S1_Appendix .unnumbered}
+
+**Lorem ipsum.** Maecenas convallis mauris sit amet sem ultrices
+gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
+ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
+consectetur pellentesque.
+
+#### S1 Table. {#S1_Table .unnumbered}
+
+**Lorem ipsum.** Maecenas convallis mauris sit amet sem ultrices
+gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
+ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
+consectetur pellentesque.
+
+# Acknowledgments {#acknowledgments .unnumbered}
+
+Cras egestas velit mauris, eu mollis turpis pellentesque sit amet.
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam id
+pretium nisi. Sed ac quam id nisi malesuada congue. Sed interdum aliquet
+augue, at pellentesque quam rhoncus vitae.
+
+::: thebibliography
+10
+
+Conant GC, Wolfe KH. . Nat Rev Genet. 2008 Dec;9(12):938--950.
+
+Ohno S. Evolution by gene duplication. London: George Alien & Unwin Ltd.
+Berlin, Heidelberg and New York: Springer-Verlag.; 1970.
+
+Magwire MM, Bayer F, Webster CL, Cao C, Jiggins FM. . PLoS Genet. 2011
+Oct;7(10):e1002337.
+:::
+
+
