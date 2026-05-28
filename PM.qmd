@@ -142,7 +142,7 @@ al 5% y representadas únicamente por un individuo cada una (Figura X y Figura X
 library(tidyverse)
 
 # 1. Cargar los datos
-datos <- a
+datos <- anfipodos
 
 # 2. Procesar datos para Frecuencia (Corregido)
 frecuencia_df <- datos %>% # Seleccionar las familias

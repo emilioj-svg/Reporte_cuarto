@@ -1,0 +1,10 @@
+Hora,Modulus modulus ,Cerithium sp.,Haliclona sp.,Urobatis jamaicensis,Holothuria floridana ,Echinaster  ,Poliqueto sp. ,Sphoeroides testudineus,Eucinostomus sp.,Gerres cinereus,Hypoplectrus nigricans,Pez delineado,Pez chico negro
+M,1,1,1,0,0,1,0,0,0,0,0,0,0
+M,0,1,1,1,1,1,0,1,0,0,1,0,0
+M,1,1,0,0,1,1,0,1,1,1,0,0,1
+M,0,0,0,0,1,0,0,0,0,0,0,0,0
+M,0,0,0,0,0,1,0,1,0,1,0,0,0
+T,1,1,0,0,0,0,1,0,0,0,0,1,0
+T,1,1,0,1,1,0,0,1,1,1,0,0,0
+T,1,1,0,1,0,0,0,0,0,0,0,0,1
+T,1,1,0,1,1,0,0,0,0,0,0,0,0
