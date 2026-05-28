@@ -303,15 +303,17 @@ mauris tellus, vel dapibus arcu suscipit sed.
 
 # Discusión {#discussion .unnumbered}
 
-Nulla mi mi, venenatis sed ipsum varius,
-Table [\[table1\]](#table1){reference-type="ref" reference="table1"}
-volutpat euismod diam. Proin rutrum vel massa non gravida. Quisque
-tempor sem et dignissim rutrum. Lorem ipsum dolor sit amet, consectetur
-adipiscing elit. Morbi at justo vitae nulla elementum commodo eu id
-massa. In vitae diam ac augue semper tincidunt eu ut eros. Fusce
-fringilla erat porttitor lectus cursus, vel sagittis arcu lobortis.
-Aliquam in enim semper, aliquam massa id, cursus neque. Praesent
-faucibus semper libero [@bib3].
+El presente estudio representa la implementación práctica del “Protocolo para el monitoreo ecosistémico de en 
+Áreas Naturales Protegidas 2022” para pastos marinos en las playas de Dzilam de Bravo, Yucatán, logrando 
+identificar 6 géneros y 4 especies de macroalgas junto con 2 especies de pastos marinos. La especie de pasto
+marino con mayor abundancia y cobertura entre cuadrantes fue Syringodium filiforme, especie pionera muy
+importante que coloniza zonas perturbadas o con sedimentos inestables, ayudando a fijar el sustrato marino 
+y abriendo paso al establecimiento de praderas estables y complejas de pastos marinos. Del total de las familias 
+de anfípodos reconocidas en este trabajo, de 12 familias registradas, Ampithoidae es la más abundante con un total 
+de 149 individuos y, asimismo, la más frecuente, registrada en más del 90% de las muestras totales. Al ser herbívoros
+activos consumen directamente macroalgas vivas y los tejidos de los pastos marinos.  Por ello, la preferencia
+alimentaria puede moldear la estructura, abundancia y composición de las especies de algas en la comunidad costera. 
+
 
 # Supporting information {#supporting-information .unnumbered}
 
