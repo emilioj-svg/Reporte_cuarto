@@ -88,23 +88,23 @@ pred_numeric <- pred_df %>%
 
 pred_numeric <- pred_numeric[-16,]
 
+sapply(pred_numeric, var, na.rm = TRUE)
+pred_numeric_filtrado <- pred_numeric[, sapply(pred_numeric, function(x) var(x, na.rm = TRUE) != 0)]
+
 
 # Escalar y hacer PCA (matriz de correlación)
-pca_env <- prcomp(pred_numeric, center = TRUE, scale. = TRUE) 
+
+pca_env <- prcomp(pred_numeric_filtrado, center = TRUE, scale. = TRUE)
+summary(pca_env)
 #Ese error es exactamente el mismo que te salió antes con el PCA: tienes columnas constantes
 #o de varianza cero en pred_numeric. Al usar scale.=TRUE, R intenta dividir cada variable 
 #por su desviación estándar, pero si esa desviación es cero, no puede hacerlo.
-
-sapply(pred_numeric, var, na.rm = TRUE)
-pred_numeric_filtrado <- pred_numeric[, sapply(pred_numeric, function(x) var(x, na.rm = TRUE) != 0)]
 
 #Si alguna columna es constante porque representa una condición fija 
 #(ej. todos los sitios muestreados a la misma hora), 
 #no aporta nada al PCA y está bien eliminarla.
 #Se eliminó presencia de pastos dado que estos se encontraron en todos los cuadrantes 
 
-pca_env <- prcomp(pred_numeric_filtrado, center = TRUE, scale. = TRUE)
-summary(pca_env)
 
 
 nrow(pca_env$x)        # número de observaciones en el PCA
@@ -146,10 +146,6 @@ set.seed(42)
 permanova_hora <- adonis2(dist_bray ~ Hora, data = pred_df, permutations = 999, by = "margin")
 permanova_hora
 
-# Si quieres incluir ambos efectos (Hora + PCs) en un solo modelo:
-set.seed(42)
-permanova_full <- adonis2(dist_bray ~ Hora + PC1_env + PC2_env, data = pred_df, permutations = 999, by = "margin")
-permanova_full
 
 # --- 7. Resultados y diagnóstico adicional ---
 # Mostrar resultados resumidos
@@ -158,9 +154,6 @@ print(permanova_env)
 
 print("PERMANOVA: Hora (M vs T)")
 print(permanova_hora)
-
-print("PERMANOVA: Modelo completo (Hora + PCs)")
-print(permanova_full)
 
 # Visualización rápida: ordination (PCA/NMDS) con vectores de predictores
 # PCA sobre anf_hell para visualizar ejes de composición
@@ -179,4 +172,11 @@ plot(ef, col = "red")
 #Si Amphithoidae domina: si su influencia sigue siendo excesiva tras Hellinger, 
 #prueba la opción comentada en el script (aplicar cuarta raíz a esa columna antes 
 #de Hellinger) y repite PERMANOVA para ver si los resultados cambian.
+
+
+#USAR DISTANCIAS EUCLIDIANAS PARA DATOS AMBIENTALES
+# LOS DATOS DE % DE COBERTURA NO SON INDEPENDIENTES PQ AMBOS SUMAN 100% (NO USAR)
+
+
+
 
