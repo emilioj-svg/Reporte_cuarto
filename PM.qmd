@@ -56,6 +56,45 @@ La zona presenta una variedad de fondos que van desde arenosos hasta piedras, lo
 cuales promueven una diversidad de hábitats vegetales subacuáticos compuestos por 
 macroalgas y angiospermas (50-90%) (Renan-Galindo et al. 2003).
 
+# MAPA DE PUNTOS DE MUESTREO 
+# 1. Instalar y cargar las librerías necesarias
+# (Quita el '#' si no las tienes instaladas)
+# install.packages(c("ggplot2", "sf", "ggspatial", "prettymapr"))
+
+library(ggplot2)
+library(sf)
+library(ggspatial)
+
+# 2. Crear el data frame con tus coordenadas convertidas a grados decimales
+sitios <- data.frame(
+  id = paste0("Punto_", 1:9),
+  latitud = c(21.39028, 21.39050, 21.39025, 21.39042, 21.39008, 21.39031, 21.39000, 21.39028, 21.39008),
+  longitud = c(-88.90864, -88.90878, -88.90914, -88.90914, -88.90969, -88.90969, -88.91014, -88.91014, -88.90944)
+)
+
+# 3. Convertir el data frame en un objeto espacial (sf) con coordenadas geográficas WGS84
+sitios_sf <- st_as_sf(sitios, coords = c("longitud", "latitud"), crs = 4326)
+
+# 4. Generar el mapa con ggplot2 y mapa base
+mapa <- ggplot(data = sitios_sf) +
+  # Añadir mapa base
+  annotation_map_tile(type = "osm", zoom = 17) + 
+  # Graficar los puntos de muestreo
+  geom_sf(color = "red", size = 3, alpha = 0.8) +
+  # Añadir etiquetas de los puntos para no perder el orden
+  geom_sf_label(aes(label = id), size = 2.5, nudge_y = 0.0001, fontface = "bold") +
+  # Configurar únicamente los nombres de los ejes
+  labs(x = "Longitud", y = "Latitud") +
+  # Añadir elementos cartográficos formales
+  annotation_scale(location = "bl", width_hint = 0.4) + # Barra de escala abajo a la izquierda
+  annotation_north_arrow(location = "tr", which_north = "true", 
+                         style = north_arrow_fancy_orienteering) + # Flecha de Norte arriba a la derecha
+  theme_bw()
+
+# 5. Visualizar el mapa 
+print(mapa)
+
+
 ## Materiales
 - GPS modelo Garmin etrex 22x
 - Multiparamétrico modelo Pro quatro 
