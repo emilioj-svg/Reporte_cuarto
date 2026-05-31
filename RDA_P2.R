@@ -5,7 +5,7 @@
 # 1. Cargar librerías necesarias
 library(vegan)
 library(tidyverse)
-
+library(readxl)
 # --- SUPOSICIÓN DE ESTRUCTURA DE DATOS ---
 # Asegurar de que las filas coincidan perfectamente por la columna ID.
 
@@ -17,7 +17,7 @@ env_raw  <- read.csv("ParametrosFQ.csv", row.names = 1)
 
 # 2. Aislar únicamente las columnas numéricas de abundancia de anfípodos
 # Quitamos columnas de diseño como 'Cuadrante', 'Hora', 'Dia' si están ahí
-anf_comunidad <- (anfipodos_raw[, 4:ncol(anfipodos_raw)])^(1/4) 
+anf_comunidad <- (anfipodos_raw[, 4:ncol(anfipodos_raw)])
 
 # 3. Aplicar pretratamiento (Transformación de Hellinger)
 #anf_bray <- vegdist(anf_comunidad, method = "bray")
@@ -35,11 +35,13 @@ env_filtrado <- env_raw %>%
 env_escalado <- as.data.frame(scale(env_filtrado))
 
 # C. Coberturas: Reducción por PCA para evitar datos composicionales (suma 100%)
-matriz_coberturas <- cobertura_raw[, !(names(cobertura_raw) %in% c("ID", "Dosel", "Cuadrante", "Hora", "Dia"))]
+matriz_coberturas <- cobertura_raw[, !(names(cobertura_raw) %in% c("ID", "Dosel"
+                                                , "Cuadrante", "Hora", "Dia"))]
 pca_cobertura <- rda(matriz_coberturas) # PCA de la vegetación
 
 # Extraemos los dos primeros ejes que resumen la estructura del hábitat
-habitat_ejes <- as.data.frame(scores(pca_cobertura, choices = c(1, 2), display = "sites"))
+habitat_ejes <- as.data.frame(scores(pca_cobertura, choices = c(1, 2), 
+                                     display = "sites"))
 colnames(habitat_ejes) <- c("Habitat_PC1", "Habitat_PC2")
 
 # D. Consolidar todas las variables predictoras limpias
@@ -56,6 +58,9 @@ predictores <- cbind(
 
 # A. Definir el modelo nulo (sin variables) y el modelo global (con todas)
 
+nrow(anf_hellinger)       
+nrow(predictores) 
+
 anf_hellinger <- anf_hellinger[-16,]
 
 rda_nulo   <- rda(anf_hellinger ~ 1, data = predictores)
@@ -67,14 +72,15 @@ rda_global <- rda(anf_hellinger ~ ., data = predictores)
 vif.cca(rda_global)
 
 
-# VIF de temperatura: 11.754535  (Correlacionada con otras variables: Hora,pH, DO) 
-# ELIMINAR 
+# VIF de temperatura: 11.754535  
+#(Correlacionada con otras variables: Hora,pH, DO) 
+# ELIMINAR?
 
-##El VIF (Factor de Inflación de la Varianza) mide el grado de multicolinealidad entre 
-#tus variables explicativas. En términos sencillos: evalúa si tus 
+##El VIF (Factor de Inflación de la Varianza) mide el grado de multicolinealidad
+#entre las variables explicativas. En términos sencillos: evalúa si las 
 #variables ambientales están tan correlacionadas entre sí que se están 
 #"robando" información la una a la otra, lo que desestabilizaría las 
-#estimaciones de tu Análisis de Redundancia (RDA).
+#estimaciones del Análisis de Redundancia (RDA).
 
 
 # B. SELECCIÓN HACIA ADELANTE (Forward Selection)
@@ -91,6 +97,8 @@ summary(mejor_modelo)
 # Evalúa si los efectos de las variables seleccionadas son reales
 permanova_resultado <- adonis2(formula(mejor_modelo), data = predictores, permutations = 999, by = "margin")
 print(permanova_resultado)
+summary(permanova_resultado)
+mejor_modelo$
 
 #¿Por qué usar adonis2 en lugar de PERMANOVA 2?
 
@@ -102,10 +110,6 @@ print(permanova_resultado)
 #(como Temperatura, pH o Salinidad) directamente en esta función, 
 #ni tampoco múltiples variables a la vez.
 
-# Esto te dará los coeficientes numéricos exactos de cada especie en los ejes
-cargas_vegetacion <- scores(pca_cobertura, display = "species", choices = c(1, 2))
-print(cargas_vegetacion)
-
 # ==========================================================
 # 4. VISUALIZACIÓN (Biplot del RDA)
 # ==========================================================
@@ -114,5 +118,3 @@ print(cargas_vegetacion)
 plot(mejor_modelo, scaling = 2, main = "RDA de la Comunidad de Anfípodos")
 orditorp(mejor_modelo, display = "species", col = "red", air = 0.5)
 text(mejor_modelo, display = "bp", col = "blue", cex = 1.2, font = 2)
-
-
