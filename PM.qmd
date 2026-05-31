@@ -153,7 +153,6 @@ y el telson), y con ayuda de claves dicotómicas especializadas para crustáceos
 los ejemplares hasta el nivel de familia. Todos los datos fueron anotados en una bitácora.
 
 ## Análisis de datos 
-
 Todos los análisis estadísticos se realizaron con Rstudio V 4.5.2. Las variables respuesta medidas en campo son la riqueza 
 y abundancia de anfípodos (composición de comunidad), riqueza de la fauna bentónica y riqueza y abundancia de algas y como 
 variables predictoras se tomó la hora del día (mañana o tarde), la altura del dosel (cm), el porcentaje de cobertura del 
