@@ -197,7 +197,6 @@ multivariada basada en distancias (PERMDISP) con la función betadisper. Además
 no paramétrica con 999 permutaciones aleatorias con la función permutest.
 Para la prueba se usó un PERMANOVA de dos vías que consta de tres subfunciones clave, suma de cuadrados, dispersión multivariada y 
 pseudo F modificado, para poder usar la función PERMANOVA2 con la que se evalúa la significancia estadística del pseudo F modificado. 
-Para finalizar, como un criterio de control los resultados se compararon con las respuestas de la función adonis2 (PERMANOVA).
 
 
 # Resultados {#results .unnumbered}
