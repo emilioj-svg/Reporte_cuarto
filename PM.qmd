@@ -1,6 +1,6 @@
 ::: flushleft
 
-title: "Pastos marinos"
+title: "El papel de los pastos marinos en la composición y abundancia de anfípodos bentónicos en Dzilam de bravo "
 format: pdf
 execute:
   echo: false
@@ -56,7 +56,7 @@ La zona presenta una variedad de fondos que van desde arenosos hasta piedras, lo
 cuales promueven una diversidad de hábitats vegetales subacuáticos compuestos por 
 macroalgas y angiospermas (50-90%) (Renan-Galindo et al. 2003).
 
-# MAPA DE PUNTOS DE MUESTREO 
+## Mapa de puntos de muestreo 
 # 1. Instalar y cargar las librerías necesarias
 # (Quita el '#' si no las tienes instaladas)
 # install.packages(c("ggplot2", "sf", "ggspatial", "prettymapr"))
@@ -152,12 +152,11 @@ los caracteres morfológicos diagnósticos esenciales del grupo (la estructura, 
 y el telson), y con ayuda de claves dicotómicas especializadas para crustáceos peracáridos se contabilizaron y clasificaron 
 los ejemplares hasta el nivel de familia. Todos los datos fueron anotados en una bitácora.
 
-## Análisis de datos 
+## Análisis estadísticos 
 Todos los análisis estadísticos se realizaron con Rstudio V 4.5.2. Las variables respuesta medidas en campo son la riqueza 
 y abundancia de anfípodos (composición de comunidad), riqueza de la fauna bentónica y riqueza y abundancia de algas y como 
 variables predictoras se tomó la hora del día (mañana o tarde), la altura del dosel (cm), el porcentaje de cobertura del 
 cuadrante con las especies de alga y pastos marinos correspondientes.
-
 Para poder contestar las primeras dos preguntas primero se limpiaron y dieron estructura a los datos usando las librerías 
 “tidyverse” y “readxl”. Para el análisis se llevaron a cabo un análisis de componentes principales (PCA) y análisis de varianza 
 multivariante permutacional (PERMANOVA) con el paquete “vegan” y para las representaciones gráficas (biplots) fueron usados los
@@ -186,20 +185,14 @@ fueron usados para cuantificar la proporción de la varianza comunitaria explica
 realizó otro PCA sobre la matriz comunitaria mediante un biplot.
 
 Por último, para responder la pregunta 3 se llevó a cabo un modelado multivariado mediante una modificación del PERMANOVA, 
-un PERMANOVA de dos vías, con la paquetería “vegan” y un código personalizado. Los datos se estructuraron con las paqueterías “readr” 
-y “tidyverse”.
-Como las variables predictoras se estableció un factor categórico binario que corresponde a la hora (mañana y tarde), y las 
-variables respuesta se construyó una matriz con los datos de abundancia de la fauna móvil. Para el tratamiento de los datos la 
-matriz de fauna fue transformada a distancias de Hellinger con la función decostand. Después, se calculó la matriz de disimilitud 
-de Bray-Curtis con la función vegdist.
+un PERMANOVA de dos vías, con la paquetería “vegan” y un código personalizado. Los datos se estructuraron con las paqueterías “readr” y “tidyverse”. Como las variables predictoras se estableció un factor categórico binario que corresponde a la hora (mañana y tarde), y las variables respuesta se construyó una matriz con los datos de abundancia de la fauna móvil. Para el tratamiento de los datos la matriz de fauna fue transformada a distancias de Hellinger con la función decostand. Después, se calculó la matriz de disimilitud de Bray-Curtis con la función vegdist.
 Antes de correr las pruebas se evaluó el supuesto de homogeneidad de dispersión multivariadas a través de un análisis de dispersión 
-multivariada basada en distancias (PERMDISP) con la función betadisper. Además, se hizo un ANOVA clásico y una prueba de permutación 
-no paramétrica con 999 permutaciones aleatorias con la función permutest.
-Para la prueba se usó un PERMANOVA de dos vías que consta de tres subfunciones clave, suma de cuadrados, dispersión multivariada y 
+multivariada basada en distancias (PERMDISP) con la función betadisper. Además, se hizo un ANOVA clásico y una prueba de permutación no paramétrica con 999 permutaciones aleatorias con la función permutest. Para la prueba se usó un PERMANOVA de dos vías que consta de tres subfunciones clave, suma de cuadrados, dispersión multivariada y 
 pseudo F modificado, para poder usar la función PERMANOVA2 con la que se evalúa la significancia estadística del pseudo F modificado. 
 
 
 # Resultados {#results .unnumbered}
+
 ## Algas y pastos marinos
 Se identificaron 6 géneros y 4 especies de macroalgas junto con 2 especies de pastos marinos [\[tableX\]]. La especie de 
 pasto marino con mayor abundancia y cobertura entre cuadrantes es Syringodium filiforme, y la especie de macroalga con 
@@ -207,8 +200,26 @@ mayor abundancia y cobertura entre cuadrantes es Halimeda incrassata, mientras q
 los cuadrantes es Acanthophora spicifera y el género con menor cobertura es Bryopsis (Fig X y X). Los valores de la 
 altura del dosel variaron entre cuadrantes (Fig X), y el valor con mayor abundancia fue 25 cm, que fue medido en 8 cuadrantes.
 
+::: {#tbl-especies}
 
-##tabla ---------
+| Pastos marinos | Macroalgas |
+|:---|:---|
+| *Thalassia testudinum* | *Cladocephalus sp.* |
+| *Syringodium filiforme* | *Laurencia sp.* |
+| ** | *Dictyota sp.* |
+| ** | *Bryopsis sp* |
+| ** | *Avrainvillea sp.* |
+| ** | *Chaetomorpha sp.* |
+| ** | *Acanthophora spicifera* |
+| ** | *Cladophora prolifera* |
+| ** | *Caulerpa sertularioides* |
+| ** | *Halimeda incrassata* |
+
+
+Tabla 1. Listado de especies y géneros de pastos marinos y macroalgas identificados en el área de estudio
+:::
+
+## Código algas y pastos !!! (3 imagenes)
 
 ## Anfípodos 
 Se registraron un total de 12 familias de anfípodos. De todas ellas, la familia Ampithoidae fue la más abundante con un 
@@ -216,7 +227,7 @@ total de 149 individuos y, asimismo, la más frecuente, registrada en más del 9
 las familias menos frecuentes y abundantes fueron Maeridae, Aordae y Anamixidae, con una frecuencia de aparición menor 
 al 5% y representadas únicamente por un individuo cada una (Figura X y Figura X). 
 
-#GRÁFICO DE FRECUENCIA----------------------------------------------- 
+### Gráfico de frecuencia ----------------------------------------------- 
 library(tidyverse)
 
 # 1. Cargar los datos
@@ -245,9 +256,8 @@ ggplot(frecuencia_df, aes(x = reorder(Familia, Porcentaje_Frecuencia), y = Porce
     y = "Porcentaje de frecuencia en las muestras(%)"
   ) +
   theme_minimal()
-#####GRÁFICO DE ABUNDANCIA 
 
-#GRÁFICO DE ABUNDANCIA-------------------------------------------
+##### Gráfico de abundancia
 # 1. Procesar datos para Abundancia
 abundancia_df <- datos %>%
   select(Anamixidae:Isopodae) %>% 
@@ -278,8 +288,30 @@ presentes la estrella de mar (Echinaster), la esponja (Haliclona sp.) y el mero 
 que en la tarde, se registró Poliqueto sp. y el organismo registrado como “pez delineado”, debido a su identificación inexacta, 
 tuvieron avistamientos únicamente vespertinos (Figura X). 
 
-####FAUNA BENTÓNICA 
-#Diferencia de horario
+::: {#tb2-especies}
+
+| Comunidad bentónica | Peces |
+|:---|:---|
+| *Cerithium sp.* | *Abudefduf saxatilis* |
+| *Echinaster* | *Anisotremus virginicus* |
+| *Ecteinascidia turbinata* | *Archosargus probatocephalus* |
+| *Eucinostomus sp.* | *Archosargus rhomboidalis* |
+| *Haliclona sp.* | *Centropomus undecimalis* |
+| *Holothuria floridana* | *Haemulon parra* |
+| *Modulus modulus* | *Kyphosus sp.* |
+| Platelminto | *Lutjanus griseus* |
+| *Urobatis jamaicensis* | *Mayaheros urophthalmus* |
+| | *Opsanus beta* |
+| | *Sparisoma frondosum* |
+| | *Sphoeroides testudineus* |
+| | *Sphyraena barracuda* |
+| | *Familias de sardinas: Atherinidae, Clupeidae y Engraulidae* |
+| | *Familia de peces aguja: *Belonidae* |
+
+Tabla 2. Listado de especies de la comunidad bentónica y peces observados en el muestreo
+:::
+
+#### Fauna bentónica 
 
 library(tidyverse)
 
@@ -318,44 +350,17 @@ ggplot(fauna_horario, aes(x = reorder(Especie, Porcentaje_Presencia), y = Porcen
   ) +
   theme_minimal() 
 
-
-::: {#tbl-especies}
-
-| Comunidad bentónica | Peces |
-|:---|:---|
-| *Cerithium sp.* | *Abudefduf saxatilis* |
-| *Echinaster* | *Anisotremus virginicus* |
-| *Ecteinascidia turbinata* | *Archosargus probatocephalus* |
-| *Eucinostomus sp.* | *Archosargus rhomboidalis* |
-| *Haliclona sp.* | *Centropomus undecimalis* |
-| *Holothuria floridana* | *Haemulon parra* |
-| *Modulus modulus* | *Kyphosus sp.* |
-| Platelminto | *Lutjanus griseus* |
-| *Urobatis jamaicensis* | *Mayaheros urophthalmus* |
-| | *Opsanus beta* |
-| | *Sparisoma frondosum* |
-| | *Sphoeroides testudineus* |
-| | *Sphyraena barracuda* |
-| | Familias de sardinas: Atherinidae, Clupeidae y Engraulidae |
-| | Familia de peces aguja: *Belonidae* |
-
-Tabla 1. Listado de especies de la comunidad bentónica y peces observados en el muestreo
-:::
-
-##código ***
-
-
 # 1) ¿Hay diferencia en la composición de anfípodos en los diferentes horarios?
 Retenemos la H0 pues no encontramos diferencias estadísticamente significativas en la composición de anfípodos 
 respecto a los diferentes horarios (p = 0.357). 
 
 # 2) ¿Hay variable o variables explican mejor la variación de cambio de composición de la comunidad de anfípodos? 
+PARTE EMI!!!
 
 # 3) ¿Hay un cambio en la composición de la comunidad de fauna móvil en diferentes horarios? 
 El grupo considerado “fauna móvil” comprendía todos los organismos de la comunidad bentónica a excepción de la 
 esponja morada (Haliclona sp.). La prueba estadística PERMANOVA 2 identificó diferencias significativas en la
 composición de la fauna móvil en diferentes horarios (p = 0.042) por lo que la H0 se rechazó. 
-
 
 # Discusión {#discussion .unnumbered}
 
@@ -403,6 +408,7 @@ ambientes neríticos y oceánicos porque el rango de migración vertical de los 
 muestreo se realizó en áreas someras  de máximo 2 m de profundidad los efectos de dicha migración no serían visibles y por lo tanto significativos. 
 
 ## 2) ¿Hay variable o variables explican mejor la variación de cambio en la abundancia de la comunidad de anfípodos? 
+El modelo no retuvo variables significativas que pudieran  explicar mejor la abundancia de la comunidad de anfípodos. Esto pudo ocasionarse debido a falta de poder estadístico, dado que los puntos donde se tomaron los valores no comprendía grandes distancias (10-15 m), los valores ambientales no mostraban grandes diferencias entre ellos y estos solamente se midieron por transecto y no por cuadrante. Diversos estudios de anfípodos han demostrado que las variables ambientales que  afectan el desarrollo de los anfípodos son principalmente la temperatura, la salinidad, el oxígeno disuelto (OD) y el pH (Peralta Soriano, 2006; Espinosa-Leal, 2014; Burridge et al., 2017; Violante-Huerta et al., 2025).  Diversos estudios se basan en la variación espacio-temporal en la estructura de la comunidad de anfípodos y su relación con variables ambientales, no obstante en su mayoría no encuentran diferencias significativas en la composición de anfípodos relacionado con variables fisicoquímicas. Sin embargo se destaca emplear estudios a grandes escalas con el fin de encontrar diferencias significativas. No obstante, las limitaciones metodológicas de este estudio no reflejan probablemente todo el efecto que cada una de ellas incide en la abundancia de la comunidad de anfípodos. Investigaciones que tomen en cuenta estas variables podrían aumentar la distancia entre sitios, integrar más horas de muestreo e incluso diversos sitios de la zona de Dzilam del Bravo. 
 
 
 ## 3) ¿Hay un cambio en la composición de la comunidad de fauna móvil (asociada a pastos marinos) en diferentes horarios? 
