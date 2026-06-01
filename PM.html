@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>pm</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="PM_files/libs/clipboard/clipboard.min.js"></script>
+<script src="PM_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="PM_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="PM_files/libs/quarto-html/popper.min.js"></script>
+<script src="PM_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="PM_files/libs/quarto-html/anchor.min.js"></script>
+<link href="PM_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="PM_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="PM_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="PM_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="PM_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<div class="flushleft">
+<p>title: “El papel de los pastos marinos en la composición y abundancia de anfípodos bentónicos en Dzilam de bravo” format: pdf execute: echo: false editor: visual<br>
+Ana María1 Saldaña-Munive^1, Emilio Alejandro2 Jiménez-Ibarra^1, Jonathan3 Morffi-Montalvo^1, Ángeles Michelle Tejeda-Rejón^1,<br>
+<strong>1</strong> Escuela Nacional de Estudios Superiores (ENES), Universidad Autónoma de México (UNAM), Mérida, Yucatán, México<br>
+</p>
+<p>Los autores contribuyeron equitativamente en este trabajo.</p>
+<p>* 424045153@enesmerida.unam.mx 321324348@enesmerida.unam.mx 424490498@enesmerida.unam.mx 424012177@enesmerida.unam.mx</p>
+</div>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD quarto use template quarto-journals/elsevier</p>
+<section id="running-code" class="level1">
+<h1>## Running Code</h1>
+</section>
+<section id="introduction" class="level1 unnumbered">
+<h1 class="unnumbered">Introducción</h1>
+<p>Los ecosistemas que conforman los paisajes marinos y costeros cumplen funciones vitales, una de las más importantes, es la protección frente a desastres naturales como huracanes (Herzka et al., 2020). Dentro de estos ecosistemas destacan las praderas de pastos marinos, cuya flora característica, se encuentran creciendo en sedimentos arenosos, limosos e incluso rocosos en zonas acuáticas someras donde penetra más la luz (Herzka et al., 2020). Los pastos marinos tienen un papel fundamental en el ciclo de vida de una gran variedad de especies de vertebrados e invertebrados, forman flujos de nutrientes y tienen una importante relación de conectividad con los manglares y los arrecifes de coral, lo que crea un paisaje costero-marino crucial para la salud de los mares y costas (Herzka et al., 2020; Odériz et al., 2020). El presente estudio midió parámetros de importancia para el monitoreo de los pastos marinos en un área de Dzilam de Bravo, Yucatán, siguiendo el “Protocolo para el monitoreo ecosistémico de en Áreas Naturales Protegidas 2022”. Nos hicimos tres preguntas clave que buscaron relacionar los resultados con la comunidad bentónica de los pastos marinos: 1) ¿Hay diferencia en la composición de anfípodos en los diferentes horarios?, 2) ¿Hay variable o variables explican mejor la variación de cambio de composición de la comunidad de anfípodos? y 3) ¿Hay un cambio en la composición de la comunidad de fauna móvil (asociada a pastos marinos) en diferentes horarios?. Bajo este contexto, esperamos encontrar diferencias en la composición de anfípodos entre los diferentes horarios, identificar una variable que explica mejor la variación de cambio de composición de la comunidad de anfípodos y detectar un cambio de fauna móvil en diferentes horarios. &gt;&gt;&gt;&gt;&gt;&gt;&gt; 0a21fa03db7442424fe7ab091d882c54fc0e868c</p>
+</section>
+<section id="materials-and-methods" class="level1 unnumbered">
+<h1 class="unnumbered">Materiales y métodos</h1>
+<section id="área-de-estudio" class="level2">
+<h2 class="anchored" data-anchor-id="área-de-estudio">Área de estudio</h2>
+<p>El estudio se realizó en una zona de pastos marinos en el municipio de Dzilam del Bravo, ubicado en el norte de Yucatán, México (21°20’ y 21°33’ N, 88°24’ y 88°59 W). Este lugar se caracteriza por tener un clima semiseco cálido con una temperatura media anual entre 24 y 26°C y una precipitación anual que varía entre 500 a 700 mm (INEGI 2010). La zona presenta una variedad de fondos que van desde arenosos hasta piedras, los cuales promueven una diversidad de hábitats vegetales subacuáticos compuestos por macroalgas y angiospermas (50-90%) (Renan-Galindo et al.&nbsp;2003).</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Mapa de puntos de muestreo </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Instalar y cargar las librerías necesarias</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># (Quita el '#' si no las tienes instaladas)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("ggplot2", "sf", "ggspatial", "prettymapr"))</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'sf' was built under R version 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.14.1, GDAL 3.12.1, PROJ 9.7.1; sf_use_s2() is TRUE</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggspatial)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggspatial' was built under R version 4.5.3</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(prettymapr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'prettymapr' was built under R version 4.5.3</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(raster)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'raster' was built under R version 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Cargando paquete requerido: sp</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'sp' was built under R version 4.5.3</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Crear el data frame con tus coordenadas convertidas a grados decimales</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>sitios <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> <span class="fu">paste0</span>(<span class="st">"Punto_"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>),</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">latitud =</span> <span class="fu">c</span>(<span class="fl">21.39028</span>, <span class="fl">21.39050</span>, <span class="fl">21.39025</span>, <span class="fl">21.39042</span>, <span class="fl">21.39008</span>, <span class="fl">21.39031</span>, <span class="fl">21.39000</span>, <span class="fl">21.39028</span>, <span class="fl">21.39008</span>),</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">longitud =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">88.90864</span>, <span class="sc">-</span><span class="fl">88.90878</span>, <span class="sc">-</span><span class="fl">88.90914</span>, <span class="sc">-</span><span class="fl">88.90914</span>, <span class="sc">-</span><span class="fl">88.90969</span>, <span class="sc">-</span><span class="fl">88.90969</span>, <span class="sc">-</span><span class="fl">88.91014</span>, <span class="sc">-</span><span class="fl">88.91014</span>, <span class="sc">-</span><span class="fl">88.90944</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Convertir el data frame en un objeto espacial (sf) con coordenadas geográficas WGS84</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>sitios_sf <span class="ot">&lt;-</span> <span class="fu">st_as_sf</span>(sitios, <span class="at">coords =</span> <span class="fu">c</span>(<span class="st">"longitud"</span>, <span class="st">"latitud"</span>), <span class="at">crs =</span> <span class="dv">4326</span>)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Generar el mapa con ggplot2 y mapa base</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>mapa <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> sitios_sf) <span class="sc">+</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Añadir mapa base</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotation_map_tile</span>(<span class="at">type =</span> <span class="st">"osm"</span>, <span class="at">zoom =</span> <span class="dv">17</span>) <span class="sc">+</span> </span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Graficar los puntos de muestreo</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Añadir etiquetas de los puntos para no perder el orden</span></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf_label</span>(<span class="fu">aes</span>(<span class="at">label =</span> id), <span class="at">size =</span> <span class="fl">2.5</span>, <span class="at">nudge_y =</span> <span class="fl">0.0001</span>, <span class="at">fontface =</span> <span class="st">"bold"</span>) <span class="sc">+</span></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Configurar únicamente los nombres de los ejes</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Longitud"</span>, <span class="at">y =</span> <span class="st">"Latitud"</span>) <span class="sc">+</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Añadir elementos cartográficos formales</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotation_scale</span>(<span class="at">location =</span> <span class="st">"bl"</span>, <span class="at">width_hint =</span> <span class="fl">0.4</span>) <span class="sc">+</span> <span class="co"># Barra de escala abajo a la izquierda</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotation_north_arrow</span>(<span class="at">location =</span> <span class="st">"tr"</span>, <span class="at">which_north =</span> <span class="st">"true"</span>, </span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>                         <span class="at">style =</span> north_arrow_fancy_orienteering) <span class="sc">+</span> <span class="co"># Flecha de Norte arriba a la derecha</span></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Visualizar el mapa </span></span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(mapa)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in st_point_on_surface.sfc(sf::st_zm(x)): st_point_on_surface may not
+give correct results for longitude/latitude data</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Zoom: 17</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="PM_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="materiales" class="level2">
+<h2 class="anchored" data-anchor-id="materiales">Materiales</h2>
+<ul>
+<li>GPS modelo Garmin etrex 22x</li>
+<li>Multiparamétrico modelo Pro quatro</li>
+<li>Estereoscopio marca Zeiss</li>
+<li>Cinta métrica (30 m)</li>
+<li>Soga (20 m)</li>
+<li>Cuadrantes de PVC (1m x 1m)</li>
+<li>Bandejas plásticas</li>
+<li>Tamiz de malla fina</li>
+<li>Bolsas plásticas de sellado hermético (tipo Ziploc®)</li>
+<li>Marcador indeleble</li>
+<li>Papel piedra</li>
+<li>Bitácora de campo</li>
+<li>Pinzas de disección</li>
+<li>Pipetas Pasteur</li>
+<li>Tubos plásticos de polipropileno (tipo Falcon® o similares)</li>
+<li>Cajas de Petri</li>
+<li>Microtubos eppendorf</li>
+<li>Alcohol etílico (70%)</li>
+<li>Guía de identificación de anfípodos “An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida” (2000) Lecroy, Sara. Vol 1-3.</li>
+<li>Guía de identificación taxonómica de pastos marinos y macroalgas “Marine plants of the caribbean: A field guide from Florida to Brazil” (1989). Littler D., Littler M., Bucher K. &amp; Norris J.</li>
+</ul>
+</section>
+<section id="diseño-de-muestreo" class="level2">
+<h2 class="anchored" data-anchor-id="diseño-de-muestreo">Diseño de muestreo</h2>
+<p>Seguimos el “Protocolo para el monitoreo ecosistémico de en Áreas Naturales Protegidas 2022” a partir del cual medimos 4 de los 13 indicadores. Inicialmente nos alejamos de la orilla de la playa a una distancia aproximada de 15 m; posteriormente, tomamos las coordenadas geográficas del sitio elegido con un GPS y medimos los parámetros fisicoquímicos del agua con ayuda de un multiparamétrico (indicador 1). Después, colocamos un transecto de 20 m sobre el cual se distribuyeron 4 cuadrantes lo más equidistante posible. En cada uno de ellos tomamos una fotografía del cuadrante, se calculó el porcentaje de dosel (indicador 3), y luego se tomó la altura de la vegetación (indicador 6). Posteriormente, procedimos a obtener las muestras, en este paso, si el paisaje de la pradera era homogénea solo se tomaba una muestra, pero en caso de que fuera más heterogénea se colectó una muestra representativa y otra dónde había la mayor densidad. Cada muestra se colocó en una bandeja marcada con el número del cuadrante correspondiente para garantizar su posterior identificación. Finalmente, antes de recoger el transecto, se realizó un recorrido visual a lo largo del mismo con el propósito de identificar fauna bentónica y especies de peces (indicador 11). Todo el procedimiento descrito se realizó en dos horarios, uno en la mañana (6:30 am) y otro en la tarde (4:30 pm), debido a que en el horario vespertino la marea baja permitía alejarnos más de la orilla.</p>
+</section>
+<section id="identificación-taxonómica-de-macroalgas-y-pastos-marinos" class="level2">
+<h2 class="anchored" data-anchor-id="identificación-taxonómica-de-macroalgas-y-pastos-marinos">Identificación taxonómica de macroalgas y pastos marinos</h2>
+<p>Cada muestra se colocó en una bandeja marcada con el número del cuadrante. Primero se separaron los grupos de macroalgas y pastos marinos basándonos en su morfología, para después identificar cada uno hasta nivel de género con ayuda de la guía de identificación de pastos marinos y macroalgas. Los residuos vegetales se juntaron en bolsas ziploc y fueron desechados en el mar al terminar la identificación.</p>
+</section>
+<section id="identificación-taxonómica-de-anfípodos" class="level2">
+<h2 class="anchored" data-anchor-id="identificación-taxonómica-de-anfípodos">Identificación taxonómica de anfípodos</h2>
+<p>Posteriormente, se llevó a cabo el procesamiento de los anfípodos (orden Amphipoda). Con la muestra que restó después de la identificación taxonómica de macroalgas y pastos marinos se hizo una recolecta de anfípodos durante 15-20 minutos con ayuda de pinzas de disección y pipetas pasteur, los anfípodos colectados se depositaron en microtubos eppendorf (1.5 mL) marcados con el ID de la muestra junto con alcohol etílico al 70% para su fijación y conservación óptima. Si visualmente ya no se encontraron más anfípodos, la muestra se pasó por un tamiz y fue vertida en frascos, marcados con el ID de la muestra, junto con alcohol etílico al 70% para luego continuar su recolecta bajo estereoscopio. La identificación taxonómica de los anfípodos colectados se llevó a cabo con un estereoscopio, se analizó detalladamente los caracteres morfológicos diagnósticos esenciales del grupo (la estructura, la morfología de las antenas, los urópodos y el telson), y con ayuda de claves dicotómicas especializadas para crustáceos peracáridos se contabilizaron y clasificaron los ejemplares hasta el nivel de familia. Todos los datos fueron anotados en una bitácora.</p>
+</section>
+<section id="análisis-estadísticos" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-estadísticos">Análisis estadísticos</h2>
+<p>Los análisis estadísticos se realizaron con Rstudio V 4.5.2. Las variables respuesta medidas en campo son la riqueza y abundancia de anfípodos (composición de comunidad) y abundancia de la fauna bentónica, como variables predictoras se tomó la hora del día (mañana o tarde), la altura del dosel (cm), el porcentaje de cobertura de cada cuadrante con las especies de alga y pastos marinos correspondientes así como parametros fisicoquímicos como Oxígeno disuelto D.O m.g/l, SAL , pH.Los datos fueron estructurados usando las librerías “tidyverse” y “readxl”. Para evaluar los cambios en la composición de la comunidad de anfípodos entre horarios de muestreo (mañana y tarde), se construyó una matriz de abundancias a partir de los registros de familias de anfípodos. La variable categórica Hora se definió como factor con dos niveles (M = mañana, T = tarde) Para evitar problemas causados por la desproporción de datos en los registros la matriz se filtró para excluir aquellos cuadrantes que presentaron una abundancia total de 0 (cuadrante C4T19 eliminado).</p>
+<p>Dado que los datos de abundancia presentan alta heterogeneidad y marcadas diferencias en escala entre familias (siendo Amphitoidae la familia más abundatne de todas), se aplicó la transformación de Hellinger (Legendre &amp; Gallagher, 2001), recomendada para análisis de comunidades ecológicas, con el fin de reducir la influencia de taxones dominantes y permitir el uso de distancias euclidianas y Bray–Curtis.Posteriormente, se implementó un análisis de varianza permutacional multivariante (PERMANOVA) siguiendo el enfoque de Anderson et al.&nbsp;(2017). Para ello se programaron funciones personalizadas en R que calculan la suma de cuadrados mediante el teorema de Huygen, la dispersión multivariante y un estadístico pseudo-F modificado. El procedimiento incluyó la generación de distribuciones nulas mediante 999 permutaciones aleatorias sin reemplazo, lo que permitió estimar la probabilidad de obtener un valor de pseudo-F igual o mayor al observado bajo la hipótesis nula de ausencia de diferencias en la composición entre horarios. El análisis se realizó sobre la matriz transformada de anfípodos utilizando distancia de Bray–Curtis. Los resultados se expresaron en términos del estadístico Pseudo-F y el valor de significancia permutacional (p(perm)).</p>
+<p>Para evaluar la relación entre la composición de la comunidad de anfípodos y las variables ambientales, se aplicó un Análisis de Redundancia (RDA).La matriz de anfípodos volvió a transformarse con el método de Hellinger. Las variables ambientales predictoras incluyeron parámetros fisicoquímicos (temperatura, pH, oxígeno disuelto, salinidad), la altura del dosel y la cobertura de algas y pastos marinos. Para evitar problemas de multicolinealidad, se eliminaron variables redundantes (p.&nbsp;ej. % de oxígeno disuelto, conductividad y sólidos disueltos totales) y se verificó el Factor de Inflación de la Varianza (VIF), considerando aceptables valores menores a 5.La matriz de coberturas de vegetación, al tratarse de datos composicionales que suman 100%, se redujo mediante un Análisis de Componentes Principales (PCA), del cual se extrajeron los dos primeros ejes (Habitat_PC1 y Habitat_PC2) como predictores sintéticos de la estructura del hábitat. Todas las variables continuas fueron estandarizadas (media = 0, desviación estándar = 1) para garantizar comparabilidad.</p>
+<p>Se definió un modelo nulo (sin variables explicativas) y un modelo global (con todas las variables ambientales). Posteriormente, se aplicó un procedimiento de selección hacia adelante (forward selection) mediante la función ordiR2step, que evalúa la inclusión secuencial de predictores en función del incremento en el R² ajustado y su significancia permutacional (999 permutaciones). Finalmente, se evaluó la significancia de las variables seleccionadas por el modelo mediante un PERMANOVA multivariante (adonis2). La visualización de los patrones se realizó mediante un biplot del RDA, de las familias de anfípodos y proyectando los puntos de cada cuadrante</p>
+<p>Por último, para responder la pregunta 3 se llevó a cabo un modelado multivariado con la paquetería “vegan” y el código de PERMANOVA2 previamente utilizado. La variable predictora de hora del día se estableció como un factor categórico (mañana y tarde). Posteriormente, con las variables respuesta se construyó una matriz con los datos de abundancia de la fauna móvil, la cual fue transformada con el método de Hellinger nuevamente. La matriz de disimilitud se construyó con distancias de Bray-Curtis. Previo a correr las pruebas, se evaluó el supuesto de homogeneidad de dispersión multivariada a través de un análisis de dispersión multivariada basada en distancias (PERMDISP) con la función betadisper, también se aplicó un ANOVA y un test permutacional (permutations = 999). Los resultados de PERMANOVA2 se expresaron en términos del estadístico Pseudo-F y el valor de significancia permutacional (p(perm)).</p>
+</section>
+</section>
+<section id="results" class="level1 unnumbered">
+<h1 class="unnumbered">Resultados</h1>
+<section id="algas-y-pastos-marinos" class="level2">
+<h2 class="anchored" data-anchor-id="algas-y-pastos-marinos">Algas y pastos marinos</h2>
+<p>Se identificaron 6 géneros y 4 especies de macroalgas junto con 2 especies de pastos marinos [[tableX]]. La especie de pasto marino con mayor abundancia y cobertura entre cuadrantes es Syringodium filiforme, y la especie de macroalga con mayor abundancia y cobertura entre cuadrantes es Halimeda incrassata, mientras que la especie con menor abundancia entre los cuadrantes es Acanthophora spicifera y el género con menor cobertura es Bryopsis (Fig X y X). Los valores de la altura del dosel variaron entre cuadrantes (Fig X), y el valor con mayor abundancia fue 25 cm, que fue medido en 8 cuadrantes.</p>
+<div id="tbl-especies" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-especies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Tabla 1. Listado de especies y géneros de pastos marinos y macroalgas identificados en el área de estudio
+</figcaption>
+<div aria-describedby="tbl-especies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Pastos marinos</th>
+<th style="text-align: left;">Macroalgas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Thalassia testudinum</em></td>
+<td style="text-align: left;"><em>Cladocephalus sp.</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Syringodium filiforme</em></td>
+<td style="text-align: left;"><em>Laurencia sp.</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;"><em>Dictyota sp.</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;"><em>Bryopsis sp</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;"><em>Avrainvillea sp.</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;"><em>Chaetomorpha sp.</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;"><em>Acanthophora spicifera</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;"><em>Cladophora prolifera</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;"><em>Caulerpa sertularioides</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;"><em>Halimeda incrassata</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Paquetes</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl); <span class="fu">library</span>(tidyverse); <span class="fu">library</span>(vegan); <span class="fu">library</span>(factoextra)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readxl' was built under R version 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyverse' was built under R version 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readr' was built under R version 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'lubridate' was built under R version 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ lubridate 1.9.5     ✔ tibble    3.3.1
+✔ purrr     1.2.1     ✔ tidyr     1.3.2
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ tidyr::extract() masks raster::extract()
+✖ dplyr::filter()  masks stats::filter()
+✖ dplyr::lag()     masks stats::lag()
+✖ dplyr::select()  masks raster::select()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'vegan' was built under R version 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Cargando paquete requerido: permute</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'permute' was built under R version 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'factoextra' was built under R version 4.5.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Welcome to factoextra!
+Want to learn more? See two factoextra-related books at https://www.datanovia.com/en/product/practical-guide-to-principal-component-methods-in-r/</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>anfipodos_raw <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"anfipodos.csv"</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 2. Preparar matriz de abundancias y factor Hora ---</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>anfipodos_raw <span class="ot">&lt;-</span> anfipodos_raw[<span class="sc">-</span><span class="dv">16</span>,]</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>anf_mat <span class="ot">&lt;-</span> anfipodos_raw <span class="sc">%&gt;%</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Cuadrante, <span class="sc">-</span>Dia, <span class="sc">-</span>ID) <span class="sc">%&gt;%</span>     </span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>()</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Extraer factor Hora</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>hora_factor <span class="ot">&lt;-</span> <span class="fu">factor</span>(anfipodos_raw<span class="sc">$</span>Hora, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"M"</span>,<span class="st">"T"</span>))</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 3. Transformación Hellinger (recomendada para abundancias) ---</span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>anf_hell <span class="ot">&lt;-</span> <span class="fu">decostand</span>(anf_mat <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>Hora), <span class="at">method =</span> <span class="st">"hellinger"</span>)</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Funciones preliminares</span></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sum of Squares using Theorem of Huygen</span></span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>  SS <span class="ot">&lt;-</span> <span class="cf">function</span> (d) {</span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>    n <span class="ot">&lt;-</span> <span class="fu">dim</span>(<span class="fu">as.matrix</span>(d))[<span class="dv">1</span>]</span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>    ss <span class="ot">&lt;-</span> <span class="fu">sum</span>(d <span class="sc">^</span> <span class="dv">2</span>) <span class="sc">/</span> n</span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(ss)</span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Multivariate Dispersion</span></span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>v <span class="ot">=</span> <span class="cf">function</span> (d) {</span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">dim</span>(<span class="fu">as.matrix</span>(d))[<span class="dv">1</span>]</span>
+<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a>  ss <span class="ot">&lt;-</span> <span class="fu">sum</span>(d <span class="sc">^</span> <span class="dv">2</span>) <span class="sc">/</span> n</span>
+<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a>  v <span class="ot">&lt;-</span> ss <span class="sc">/</span> (n <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb26-28"><a href="#cb26-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(v)</span>
+<span id="cb26-29"><a href="#cb26-29" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb26-30"><a href="#cb26-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Modified Pseudo-F (Anderson et al., 2017)</span></span>
+<span id="cb26-31"><a href="#cb26-31" aria-hidden="true" tabindex="-1"></a>pseudo.F <span class="ot">&lt;-</span> <span class="cf">function</span> (x, factor, distancia) {</span>
+<span id="cb26-32"><a href="#cb26-32" aria-hidden="true" tabindex="-1"></a>  d <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(x, <span class="at">method =</span> distancia)</span>
+<span id="cb26-33"><a href="#cb26-33" aria-hidden="true" tabindex="-1"></a>  TSS <span class="ot">&lt;-</span> <span class="fu">SS</span>(d)</span>
+<span id="cb26-34"><a href="#cb26-34" aria-hidden="true" tabindex="-1"></a>  group <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(factor)</span>
+<span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a>  x<span class="sc">$</span>grp <span class="ot">&lt;-</span> factor</span>
+<span id="cb26-36"><a href="#cb26-36" aria-hidden="true" tabindex="-1"></a>  factor <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(factor)</span>
+<span id="cb26-37"><a href="#cb26-37" aria-hidden="true" tabindex="-1"></a>  lab <span class="ot">&lt;-</span> <span class="fu">names</span>(<span class="fu">table</span>(group))</span>
+<span id="cb26-38"><a href="#cb26-38" aria-hidden="true" tabindex="-1"></a>  lev <span class="ot">&lt;-</span> <span class="fu">table</span>(group)</span>
+<span id="cb26-39"><a href="#cb26-39" aria-hidden="true" tabindex="-1"></a>  CR <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nlevels</span>(factor))</span>
+<span id="cb26-40"><a href="#cb26-40" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nlevels</span>(factor)) {</span>
+<span id="cb26-41"><a href="#cb26-41" aria-hidden="true" tabindex="-1"></a>    CR[i] <span class="ot">&lt;-</span></span>
+<span id="cb26-42"><a href="#cb26-42" aria-hidden="true" tabindex="-1"></a>      <span class="fu">SS</span>(<span class="fu">vegdist</span>(x[x<span class="sc">$</span>grp <span class="sc">==</span> lab[i], <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(x) <span class="sc">-</span> <span class="dv">1</span>], <span class="at">method =</span> distancia))</span>
+<span id="cb26-43"><a href="#cb26-43" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb26-44"><a href="#cb26-44" aria-hidden="true" tabindex="-1"></a>  RSS <span class="ot">&lt;-</span> <span class="fu">sum</span>(CR)</span>
+<span id="cb26-45"><a href="#cb26-45" aria-hidden="true" tabindex="-1"></a>  Var <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nlevels</span>(factor))</span>
+<span id="cb26-46"><a href="#cb26-46" aria-hidden="true" tabindex="-1"></a>  d.res <span class="ot">&lt;-</span></span>
+<span id="cb26-47"><a href="#cb26-47" aria-hidden="true" tabindex="-1"></a>    <span class="fu">as.data.frame</span>(<span class="fu">matrix</span>(<span class="at">nrow =</span> <span class="fu">length</span>(<span class="fu">levels</span>(factor)), <span class="at">ncol =</span> <span class="dv">3</span>))</span>
+<span id="cb26-48"><a href="#cb26-48" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nlevels</span>(factor)) {</span>
+<span id="cb26-49"><a href="#cb26-49" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb26-50"><a href="#cb26-50" aria-hidden="true" tabindex="-1"></a>    <span class="dv">4</span></span>
+<span id="cb26-51"><a href="#cb26-51" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb26-52"><a href="#cb26-52" aria-hidden="true" tabindex="-1"></a>    Var[i] <span class="ot">&lt;-</span></span>
+<span id="cb26-53"><a href="#cb26-53" aria-hidden="true" tabindex="-1"></a>      <span class="fu">v</span>(<span class="fu">vegdist</span>(x[x<span class="sc">$</span>grp <span class="sc">==</span> lab[i], <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(x) <span class="sc">-</span> <span class="dv">1</span>], <span class="at">method =</span> distancia))</span>
+<span id="cb26-54"><a href="#cb26-54" aria-hidden="true" tabindex="-1"></a>    d.res[i, ] <span class="ot">&lt;-</span> <span class="fu">c</span>(lev[i],</span>
+<span id="cb26-55"><a href="#cb26-55" aria-hidden="true" tabindex="-1"></a>                    Var[i],</span>
+<span id="cb26-56"><a href="#cb26-56" aria-hidden="true" tabindex="-1"></a>                    (<span class="dv">1</span> <span class="sc">-</span> (lev[i] <span class="sc">/</span> <span class="fu">sum</span>(lev))) <span class="sc">*</span> Var[i])</span>
+<span id="cb26-57"><a href="#cb26-57" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb26-58"><a href="#cb26-58" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb26-59"><a href="#cb26-59" aria-hidden="true" tabindex="-1"></a>  den <span class="ot">&lt;-</span> <span class="fu">sum</span>(d.res<span class="sc">$</span>V3)</span>
+<span id="cb26-60"><a href="#cb26-60" aria-hidden="true" tabindex="-1"></a>  ASS <span class="ot">&lt;-</span> TSS <span class="sc">-</span> RSS</span>
+<span id="cb26-61"><a href="#cb26-61" aria-hidden="true" tabindex="-1"></a>  Fobs <span class="ot">&lt;-</span> ASS <span class="sc">/</span> den</span>
+<span id="cb26-62"><a href="#cb26-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(Fobs)</span>
+<span id="cb26-63"><a href="#cb26-63" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb26-64"><a href="#cb26-64" aria-hidden="true" tabindex="-1"></a><span class="do">## PERMANOVA2</span></span>
+<span id="cb26-65"><a href="#cb26-65" aria-hidden="true" tabindex="-1"></a>PERMANOVA2 <span class="ot">&lt;-</span> <span class="cf">function</span>(x, factor, distancia, <span class="at">nperm =</span> <span class="dv">999</span>) {</span>
+<span id="cb26-66"><a href="#cb26-66" aria-hidden="true" tabindex="-1"></a>  control <span class="ot">&lt;-</span> <span class="fu">how</span>(<span class="at">nperm =</span> nperm, <span class="at">within =</span> <span class="fu">Within</span>(<span class="at">type =</span> <span class="st">"free"</span>))</span>
+<span id="cb26-67"><a href="#cb26-67" aria-hidden="true" tabindex="-1"></a>  Fobs <span class="ot">&lt;-</span> <span class="fu">pseudo.F</span>(x, factor, <span class="at">distancia =</span> distancia)</span>
+<span id="cb26-68"><a href="#cb26-68" aria-hidden="true" tabindex="-1"></a>  Nobs <span class="ot">&lt;-</span> <span class="fu">nobs</span>(x)</span>
+<span id="cb26-69"><a href="#cb26-69" aria-hidden="true" tabindex="-1"></a>  F.permu <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="at">length =</span> control<span class="sc">$</span>nperm) <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb26-70"><a href="#cb26-70" aria-hidden="true" tabindex="-1"></a>  F.permu[<span class="dv">1</span>] <span class="ot">&lt;-</span> Fobs</span>
+<span id="cb26-71"><a href="#cb26-71" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Generation of pseudo.F values for H0 using permutations without replacement</span></span>
+<span id="cb26-72"><a href="#cb26-72" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(F.permu)) {</span>
+<span id="cb26-73"><a href="#cb26-73" aria-hidden="true" tabindex="-1"></a>    <span class="do">## return a permutation</span></span>
+<span id="cb26-74"><a href="#cb26-74" aria-hidden="true" tabindex="-1"></a>    want <span class="ot">&lt;-</span> <span class="fu">permute</span>(i, Nobs, control)</span>
+<span id="cb26-75"><a href="#cb26-75" aria-hidden="true" tabindex="-1"></a>    <span class="do">## calculate permuted F</span></span>
+<span id="cb26-76"><a href="#cb26-76" aria-hidden="true" tabindex="-1"></a>    F.permu[i <span class="sc">+</span> <span class="dv">1</span>] <span class="ot">&lt;-</span></span>
+<span id="cb26-77"><a href="#cb26-77" aria-hidden="true" tabindex="-1"></a>      <span class="fu">pseudo.F</span>(x[want, ], factor, <span class="at">distancia =</span> distancia)</span>
+<span id="cb26-78"><a href="#cb26-78" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb26-79"><a href="#cb26-79" aria-hidden="true" tabindex="-1"></a>  <span class="do">## probability for Fobs</span></span>
+<span id="cb26-80"><a href="#cb26-80" aria-hidden="true" tabindex="-1"></a>  pval <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">abs</span>(F.permu) <span class="sc">&gt;=</span> <span class="fu">abs</span>(F.permu[<span class="dv">1</span>])) <span class="sc">/</span> (control<span class="sc">$</span>nperm <span class="sc">+</span> <span class="dv">1</span>)</span>
+<span id="cb26-81"><a href="#cb26-81" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Results</span></span>
+<span id="cb26-82"><a href="#cb26-82" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">data.frame</span>(<span class="st">"Pseudo-F"</span> <span class="ot">=</span> F.permu[<span class="dv">1</span>], <span class="st">"p(perm)"</span> <span class="ot">=</span> pval))</span>
+<span id="cb26-83"><a href="#cb26-83" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb26-84"><a href="#cb26-84" aria-hidden="true" tabindex="-1"></a><span class="do">## Permutation test based on Anderson et al. (2017)</span></span>
+<span id="cb26-85"><a href="#cb26-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-86"><a href="#cb26-86" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb26-87"><a href="#cb26-87" aria-hidden="true" tabindex="-1"></a>res_perm2_hora <span class="ot">&lt;-</span> <span class="fu">PERMANOVA2</span>(<span class="fu">as.data.frame</span>(anf_hell),</span>
+<span id="cb26-88"><a href="#cb26-88" aria-hidden="true" tabindex="-1"></a>                             <span class="at">factor =</span> hora_factor,</span>
+<span id="cb26-89"><a href="#cb26-89" aria-hidden="true" tabindex="-1"></a>                             <span class="at">distancia =</span> <span class="st">"bray"</span>,</span>
+<span id="cb26-90"><a href="#cb26-90" aria-hidden="true" tabindex="-1"></a>                             <span class="at">nperm =</span> <span class="dv">999</span>)</span>
+<span id="cb26-91"><a href="#cb26-91" aria-hidden="true" tabindex="-1"></a>res_perm2_hora</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Pseudo.F p.perm.
+1 1.299584   0.307</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">#RDA PREGUNTA 2</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co">#El Análisis de Redundancia (RDA) no es una cosa o la otra: es ambas cosas a la vez. </span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Se clasifica dentro de las técnicas de ordenación restringida (constrained ordination),</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Cargar librerías necesarias</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vegan)</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a><span class="co"># --- SUPOSICIÓN DE ESTRUCTURA DE DATOS ---</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Asegurar de que las filas coincidan perfectamente por la columna ID.</span></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Cargar matrices de datos </span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>file <span class="ot">&lt;-</span> <span class="st">"EC6ANALISIS.xlsx"</span></span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>cobertura_raw  <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(file, <span class="at">sheet =</span> <span class="st">"Cobertura"</span>)</span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>anfipodos_raw <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"anfipodos.csv"</span>, <span class="at">row.names =</span> <span class="dv">1</span>)</span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>env_raw  <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"ParametrosFQ.csv"</span>, <span class="at">row.names =</span> <span class="dv">1</span>)</span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Aislar únicamente las columnas numéricas de abundancia de anfípodos</span></span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Quitamos columnas de diseño como 'Cuadrante', 'Hora', 'Dia' si están ahí</span></span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a>anf_comunidad <span class="ot">&lt;-</span> (anfipodos_raw[, <span class="dv">4</span><span class="sc">:</span><span class="fu">ncol</span>(anfipodos_raw)])</span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Aplicar pretratamiento (Transformación de Hellinger)</span></span>
+<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a><span class="co">#anf_bray &lt;- vegdist(anf_comunidad, method = "bray")</span></span>
+<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a>anf_hellinger <span class="ot">&lt;-</span> <span class="fu">decostand</span>(anf_comunidad, <span class="at">method =</span> <span class="st">"hellinger"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in decostand(x, "total", MARGIN = MARGIN, na.rm = na.rm): result contains NaN, perhaps due to impossible mathematical
+                 operation</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in decostand(anf_comunidad, method = "hellinger"): result contains NaN, perhaps due to impossible mathematical
+                 operation</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ==========================================================</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. PRETRATAMIENTO DE LOS DATOS</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ==========================================================</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="co"># B. Predictoras Ambientales: Filtrado de multicolinealidad y Escalamiento</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Eliminamos % DO, C -us/cm y TDS mg/L por redundancia con DO mg/L y SAL</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>env_filtrado <span class="ot">&lt;-</span> env_raw <span class="sc">%&gt;%</span></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Hora, <span class="sc">-</span>X..DO, <span class="sc">-</span>C..us.cm, <span class="sc">-</span>TDS.mg.L) </span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>env_escalado <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">scale</span>(env_filtrado))</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a><span class="co"># C. Coberturas: Reducción por PCA para evitar datos composicionales (suma 100%)</span></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>matriz_coberturas <span class="ot">&lt;-</span> cobertura_raw[, <span class="sc">!</span>(<span class="fu">names</span>(cobertura_raw) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"ID"</span>, <span class="st">"Dosel"</span></span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>                                                , <span class="st">"Cuadrante"</span>, <span class="st">"Hora"</span>, <span class="st">"Dia"</span>))]</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>pca_cobertura <span class="ot">&lt;-</span> <span class="fu">rda</span>(matriz_coberturas) <span class="co"># PCA de la vegetación</span></span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Extraemos los dos primeros ejes que resumen la estructura del hábitat</span></span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>habitat_ejes <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">scores</span>(pca_cobertura, <span class="at">choices =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), </span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>                                     <span class="at">display =</span> <span class="st">"sites"</span>))</span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(habitat_ejes) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Habitat_PC1"</span>, <span class="st">"Habitat_PC2"</span>)</span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a><span class="co"># D. Consolidar todas las variables predictoras limpias</span></span>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a>predictores <span class="ot">&lt;-</span> <span class="fu">cbind</span>(</span>
+<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a>  env_escalado,</span>
+<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a>  habitat_ejes,</span>
+<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">Dosel =</span> cobertura_raw<span class="sc">$</span>Dosel,</span>
+<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">Hora =</span> <span class="fu">as.factor</span>(env_raw<span class="sc">$</span>Hora) <span class="co"># Convertir a factor (Mañana/Tarde)</span></span>
+<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in data.frame(..., check.names = FALSE): los nombres de fila se
+encontraron a partir de una variable corta y se descartaron</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ==========================================================</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. ANÁLISIS ESTADÍSTICO Y SELECCIÓN DE VARIABLES</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ==========================================================</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="co"># A. Definir el modelo nulo (sin variables) y el modelo global (con todas)</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(anf_hellinger)       </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 36</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(predictores) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 36</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>anf_hellinger <span class="ot">&lt;-</span> anf_hellinger[<span class="sc">-</span><span class="dv">16</span>,]</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>rda_nulo   <span class="ot">&lt;-</span> <span class="fu">rda</span>(anf_hellinger <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> predictores)</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>predictores <span class="ot">&lt;-</span> predictores[<span class="sc">-</span><span class="dv">16</span>,]</span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>rda_global <span class="ot">&lt;-</span> <span class="fu">rda</span>(anf_hellinger <span class="sc">~</span> ., <span class="at">data =</span> predictores)</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar inflación de varianza remanente en el modelo global (VIF &lt; 5 es ideal)</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a><span class="fu">vif.cca</span>(rda_global)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Temperatura..C..          DO.mg.L              SAL               pH 
+       11.754535         1.151291         3.236218         4.282186 
+     Habitat_PC1      Habitat_PC2            Dosel            HoraT 
+        1.291858         1.165063         1.403678         3.737277 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># VIF de temperatura: 11.754535  </span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="co">#(Correlacionada con otras variables: Hora,pH, DO) </span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ELIMINAR?</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="do">##El VIF (Factor de Inflación de la Varianza) mide el grado de multicolinealidad</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="co">#entre las variables explicativas. En términos sencillos: evalúa si las </span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="co">#variables ambientales están tan correlacionadas entre sí que se están </span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a><span class="co">#"robando" información la una a la otra, lo que desestabilizaría las </span></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a><span class="co">#estimaciones del Análisis de Redundancia (RDA).</span></span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a><span class="co"># B. SELECCIÓN HACIA ADELANTE (Forward Selection)</span></span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Encuentra qué variables explican mejor la variación basándose en R2 ajustado</span></span>
+<span id="cb39-14"><a href="#cb39-14" aria-hidden="true" tabindex="-1"></a>mejor_modelo <span class="ot">&lt;-</span> <span class="fu">ordiR2step</span>(rda_nulo, </span>
+<span id="cb39-15"><a href="#cb39-15" aria-hidden="true" tabindex="-1"></a>                           <span class="at">scope =</span> <span class="fu">formula</span>(rda_global), </span>
+<span id="cb39-16"><a href="#cb39-16" aria-hidden="true" tabindex="-1"></a>                           <span class="at">direction =</span> <span class="st">"forward"</span>, </span>
+<span id="cb39-17"><a href="#cb39-17" aria-hidden="true" tabindex="-1"></a>                           <span class="at">permutations =</span> <span class="dv">999</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Step: R2.adj= 0 
+Call: anf_hellinger ~ 1 
+ 
+                    R2.adjusted
++ Habitat_PC2       0.050828001
+&lt;All variables&gt;     0.030891732
++ Habitat_PC1       0.019417684
++ Dosel             0.014806330
++ SAL               0.003301907
++ Hora              0.001143423
+&lt;model&gt;             0.000000000
++ Temperatura..C.. -0.002743479
++ DO.mg.L          -0.004208299
++ pH               -0.011910487</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver el resumen de las variables seleccionadas y el R2 final</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mejor_modelo)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+rda(formula = anf_hellinger ~ 1, data = predictores) 
+
+Partitioning of variance:
+              Inertia Proportion
+Total          0.3314          1
+Unconstrained  0.3314          1
+
+Eigenvalues, and their contribution to the variance 
+
+Importance of components:
+                          PC1     PC2     PC3     PC4     PC5     PC6     PC7
+Eigenvalue            0.07752 0.06401 0.05462 0.03479 0.02628 0.02417 0.01869
+Proportion Explained  0.23391 0.19313 0.16481 0.10497 0.07930 0.07293 0.05639
+Cumulative Proportion 0.23391 0.42704 0.59185 0.69681 0.77612 0.84904 0.90543
+                          PC8      PC9     PC10     PC11     PC12      PC13
+Eigenvalue            0.01755 0.005412 0.003939 0.002221 0.001895 0.0003241
+Proportion Explained  0.05296 0.016329 0.011886 0.006701 0.005717 0.0009778
+Cumulative Proportion 0.95839 0.974718 0.986604 0.993305 0.999022 1.0000000</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># C. Pruebas de Significancia con PERMANOVA (del modelo óptimo seleccionado)</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Evalúa si los efectos de las variables seleccionadas son reales</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>permanova_resultado <span class="ot">&lt;-</span> <span class="fu">adonis2</span>(<span class="fu">formula</span>(mejor_modelo), <span class="at">data =</span> predictores, <span class="at">permutations =</span> <span class="dv">999</span>, <span class="at">by =</span> <span class="st">"margin"</span>)</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(permanova_resultado)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>No constrained component
+
+adonis2(formula = formula(mejor_modelo), data = predictores, permutations = 999, by = "margin")
+         Df SumOfSqs R2  F Pr(&gt;F)
+Model     0   0.0000  0  0       
+Residual 34   4.3133  1          
+Total    34   4.3133  1          </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(permanova_resultado)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       Df           SumOfSqs           R2               F         Pr(&gt;F)   
+ Min.   : 0.00   Min.   :0.000   Min.   :0.0000   Min.   :0   Min.   : NA  
+ 1st Qu.:17.00   1st Qu.:2.157   1st Qu.:0.5000   1st Qu.:0   1st Qu.: NA  
+ Median :34.00   Median :4.313   Median :1.0000   Median :0   Median : NA  
+ Mean   :22.67   Mean   :2.876   Mean   :0.6667   Mean   :0   Mean   :NaN  
+ 3rd Qu.:34.00   3rd Qu.:4.313   3rd Qu.:1.0000   3rd Qu.:0   3rd Qu.: NA  
+ Max.   :34.00   Max.   :4.313   Max.   :1.0000   Max.   :0   Max.   : NA  
+                                                  NA's   :2   NA's   :3    </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co">#¿Por qué usar adonis2 en lugar de PERMANOVA 2?</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Una restricción matemática fundamental de PERMANOVA2: </span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Está diseñada exclusivamente para evaluar un único factor categórico </span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="co">#(Análisis de una vía / One-way).</span></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Debido a que el denominador calcula varianzas particionadas por grupos discretos </span></span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a><span class="co">#(factor == lab[i]), no pueden meterse variables continuas </span></span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a><span class="co">#(como Temperatura, pH o Salinidad) directamente en esta función, </span></span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a><span class="co">#ni tampoco múltiples variables a la vez.</span></span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a><span class="co"># ==========================================================</span></span>
+<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. VISUALIZACIÓN (Biplot del RDA)</span></span>
+<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a><span class="co"># ==========================================================</span></span>
+<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Graficar el resultado para observar hacia dónde se ordenan las familias </span></span>
+<span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a><span class="co"># de anfípodos en relación a las variables ambientales ganadoras.</span></span>
+<span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mejor_modelo, <span class="at">scaling =</span> <span class="dv">2</span>, <span class="at">main =</span> <span class="st">""</span>)</span>
+<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a><span class="fu">orditorp</span>(mejor_modelo, <span class="at">display =</span> <span class="st">"species"</span>, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">air =</span> <span class="fl">0.5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="PM_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Paquetes necesarios</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vegan)</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 0. Leer la tabla de fauna móvil (archivo CSV adjunto) ---</span></span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>fauna <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Fauna movil.csv"</span>)   <span class="co"># ajusta la ruta si hace falta</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 9 Columns: 14
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (2): ID, Hora
+dbl (12): Caracol redondo, Cerithium sp., Urobatis jamaicensis, Holothuria f...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificar</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(fauna)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 9
+Columns: 14
+$ ID                        &lt;chr&gt; "C1M18", "C1T18", "C2M19", "C2T19", "C3M20",…
+$ Hora                      &lt;chr&gt; "M", "T", "M", "T", "M", "T", "M", "T", "M"
+$ `Caracol redondo`         &lt;dbl&gt; 1, 1, 0, 1, 1, 1, 0, 1, 0
+$ `Cerithium sp.`           &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 0, 1, 0
+$ `Urobatis jamaicensis`    &lt;dbl&gt; 0, 0, 1, 1, 0, 1, 0, 1, 0
+$ `Holothuria floridana`    &lt;dbl&gt; 0, 0, 1, 1, 1, 0, 1, 1, 0
+$ Echinaster                &lt;dbl&gt; 1, 0, 1, 0, 1, 0, 0, 0, 1
+$ Poliqueto                 &lt;dbl&gt; 0, 1, 0, 0, 0, 0, 0, 0, 0
+$ `Sphoeroides testudineus` &lt;dbl&gt; 0, 0, 1, 1, 1, 0, 0, 0, 1
+$ `Eucinostomus sp.`        &lt;dbl&gt; 0, 0, 0, 1, 1, 0, 0, 0, 0
+$ `Gerres cinereus`         &lt;dbl&gt; 0, 0, 0, 1, 1, 0, 0, 0, 1
+$ `Pez negro`               &lt;dbl&gt; 0, 0, 1, 0, 0, 0, 0, 0, 0
+$ `Pez delineado`           &lt;dbl&gt; 0, 1, 0, 0, 0, 0, 0, 0, 0
+$ `pez chico negro`         &lt;dbl&gt; 0, 0, 0, 0, 1, 1, 0, 0, 0</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 1. Preparar matriz de respuesta y factor Hora ---</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Convertir ID a fila y extraer matriz de abundancias (especies)</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>fauna_mat <span class="ot">&lt;-</span> fauna <span class="sc">%&gt;%</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_to_rownames</span>(<span class="st">"ID"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Hora) <span class="sc">%&gt;%</span></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>()</span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Factor Hora (alineado con las filas)</span></span>
+<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a>hora_factor <span class="ot">&lt;-</span> <span class="fu">factor</span>(fauna<span class="sc">$</span>Hora, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"M"</span>,<span class="st">"T"</span>))</span>
+<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 2. Transformación recomendada para datos de abundancia comunitaria ---</span></span>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Hellinger (recomendado para análisis de ordenación y PERMANOVA)</span></span>
+<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a>fauna_hell <span class="ot">&lt;-</span> <span class="fu">decostand</span>(fauna_mat, <span class="at">method =</span> <span class="st">"hellinger"</span>)</span>
+<span id="cb52-14"><a href="#cb52-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-15"><a href="#cb52-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-16"><a href="#cb52-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternativas (si prefieres): log1p o cuarta raíz</span></span>
+<span id="cb52-17"><a href="#cb52-17" aria-hidden="true" tabindex="-1"></a><span class="co"># fauna_log1p &lt;- log1p(fauna_mat)</span></span>
+<span id="cb52-18"><a href="#cb52-18" aria-hidden="true" tabindex="-1"></a><span class="co"># fauna_4th &lt;- sqrt(sqrt(fauna_mat))</span></span>
+<span id="cb52-19"><a href="#cb52-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-20"><a href="#cb52-20" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 3. Distancia de comunidad (Bray-Curtis sobre Hellinger) ---</span></span>
+<span id="cb52-21"><a href="#cb52-21" aria-hidden="true" tabindex="-1"></a>dist_bray_fauna <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(fauna_mat, <span class="at">method =</span> <span class="st">"bray"</span>)</span>
+<span id="cb52-22"><a href="#cb52-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-23"><a href="#cb52-23" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 4. Comprobación de homogeneidad de dispersiones (betadisper) ---</span></span>
+<span id="cb52-24"><a href="#cb52-24" aria-hidden="true" tabindex="-1"></a>bd_hora_fauna <span class="ot">&lt;-</span> <span class="fu">betadisper</span>(dist_bray_fauna, hora_factor)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in betadisper(dist_bray_fauna, hora_factor): some squared distances are
+negative and changed to zero</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(bd_hora_fauna)            <span class="co"># ANOVA sobre dispersión</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: Distances
+          Df   Sum Sq  Mean Sq F value Pr(&gt;F)
+Groups     1 0.061544 0.061544  1.6023 0.2461
+Residuals  7 0.268869 0.038410               </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">permutest</span>(bd_hora_fauna, <span class="at">permutations =</span> <span class="dv">999</span>)  <span class="co"># test permutacional</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Permutation test for homogeneity of multivariate dispersions
+Permutation: free
+Number of permutations: 999
+
+Response: Distances
+          Df   Sum Sq  Mean Sq      F N.Perm Pr(&gt;F)
+Groups     1 0.061544 0.061544 1.6023    999   0.23
+Residuals  7 0.268869 0.038410                     </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 5. Usar funciones: definir las funciones  ---</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Sum of Squares using Theorem of Huygen</span></span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>SS <span class="ot">&lt;-</span> <span class="cf">function</span> (d) {</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">dim</span>(<span class="fu">as.matrix</span>(d))[<span class="dv">1</span>]</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>  ss <span class="ot">&lt;-</span> <span class="fu">sum</span>(d <span class="sc">^</span> <span class="dv">2</span>) <span class="sc">/</span> n</span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(ss)</span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Multivariate Dispersion</span></span>
+<span id="cb58-9"><a href="#cb58-9" aria-hidden="true" tabindex="-1"></a>v <span class="ot">=</span> <span class="cf">function</span> (d) {</span>
+<span id="cb58-10"><a href="#cb58-10" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">dim</span>(<span class="fu">as.matrix</span>(d))[<span class="dv">1</span>]</span>
+<span id="cb58-11"><a href="#cb58-11" aria-hidden="true" tabindex="-1"></a>  ss <span class="ot">&lt;-</span> <span class="fu">sum</span>(d <span class="sc">^</span> <span class="dv">2</span>) <span class="sc">/</span> n</span>
+<span id="cb58-12"><a href="#cb58-12" aria-hidden="true" tabindex="-1"></a>  v <span class="ot">&lt;-</span> ss <span class="sc">/</span> (n <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb58-13"><a href="#cb58-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(v)</span>
+<span id="cb58-14"><a href="#cb58-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb58-15"><a href="#cb58-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Modified Pseudo-F (Anderson et al., 2017)</span></span>
+<span id="cb58-16"><a href="#cb58-16" aria-hidden="true" tabindex="-1"></a>pseudo.F <span class="ot">&lt;-</span> <span class="cf">function</span> (x, factor, distancia) {</span>
+<span id="cb58-17"><a href="#cb58-17" aria-hidden="true" tabindex="-1"></a>  d <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(x, <span class="at">method =</span> distancia)</span>
+<span id="cb58-18"><a href="#cb58-18" aria-hidden="true" tabindex="-1"></a>  TSS <span class="ot">&lt;-</span> <span class="fu">SS</span>(d)</span>
+<span id="cb58-19"><a href="#cb58-19" aria-hidden="true" tabindex="-1"></a>  group <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(factor)</span>
+<span id="cb58-20"><a href="#cb58-20" aria-hidden="true" tabindex="-1"></a>  x<span class="sc">$</span>grp <span class="ot">&lt;-</span> factor</span>
+<span id="cb58-21"><a href="#cb58-21" aria-hidden="true" tabindex="-1"></a>  factor <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(factor)</span>
+<span id="cb58-22"><a href="#cb58-22" aria-hidden="true" tabindex="-1"></a>  lab <span class="ot">&lt;-</span> <span class="fu">names</span>(<span class="fu">table</span>(group))</span>
+<span id="cb58-23"><a href="#cb58-23" aria-hidden="true" tabindex="-1"></a>  lev <span class="ot">&lt;-</span> <span class="fu">table</span>(group)</span>
+<span id="cb58-24"><a href="#cb58-24" aria-hidden="true" tabindex="-1"></a>  CR <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nlevels</span>(factor))</span>
+<span id="cb58-25"><a href="#cb58-25" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nlevels</span>(factor)) {</span>
+<span id="cb58-26"><a href="#cb58-26" aria-hidden="true" tabindex="-1"></a>    CR[i] <span class="ot">&lt;-</span></span>
+<span id="cb58-27"><a href="#cb58-27" aria-hidden="true" tabindex="-1"></a>      <span class="fu">SS</span>(<span class="fu">vegdist</span>(x[x<span class="sc">$</span>grp <span class="sc">==</span> lab[i], <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(x) <span class="sc">-</span> <span class="dv">1</span>], <span class="at">method =</span> distancia))</span>
+<span id="cb58-28"><a href="#cb58-28" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb58-29"><a href="#cb58-29" aria-hidden="true" tabindex="-1"></a>  RSS <span class="ot">&lt;-</span> <span class="fu">sum</span>(CR)</span>
+<span id="cb58-30"><a href="#cb58-30" aria-hidden="true" tabindex="-1"></a>  Var <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nlevels</span>(factor))</span>
+<span id="cb58-31"><a href="#cb58-31" aria-hidden="true" tabindex="-1"></a>  d.res <span class="ot">&lt;-</span></span>
+<span id="cb58-32"><a href="#cb58-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">as.data.frame</span>(<span class="fu">matrix</span>(<span class="at">nrow =</span> <span class="fu">length</span>(<span class="fu">levels</span>(factor)), <span class="at">ncol =</span> <span class="dv">3</span>))</span>
+<span id="cb58-33"><a href="#cb58-33" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nlevels</span>(factor)) {</span>
+<span id="cb58-34"><a href="#cb58-34" aria-hidden="true" tabindex="-1"></a>    Var[i] <span class="ot">&lt;-</span></span>
+<span id="cb58-35"><a href="#cb58-35" aria-hidden="true" tabindex="-1"></a>      <span class="fu">v</span>(<span class="fu">vegdist</span>(x[x<span class="sc">$</span>grp <span class="sc">==</span> lab[i], <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(x) <span class="sc">-</span> <span class="dv">1</span>], <span class="at">method =</span> distancia))</span>
+<span id="cb58-36"><a href="#cb58-36" aria-hidden="true" tabindex="-1"></a>    d.res[i, ] <span class="ot">&lt;-</span> <span class="fu">c</span>(lev[i],</span>
+<span id="cb58-37"><a href="#cb58-37" aria-hidden="true" tabindex="-1"></a>                    Var[i],</span>
+<span id="cb58-38"><a href="#cb58-38" aria-hidden="true" tabindex="-1"></a>                    (<span class="dv">1</span> <span class="sc">-</span> (lev[i] <span class="sc">/</span> <span class="fu">sum</span>(lev))) <span class="sc">*</span> Var[i])</span>
+<span id="cb58-39"><a href="#cb58-39" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb58-40"><a href="#cb58-40" aria-hidden="true" tabindex="-1"></a>  den <span class="ot">&lt;-</span> <span class="fu">sum</span>(d.res<span class="sc">$</span>V3)</span>
+<span id="cb58-41"><a href="#cb58-41" aria-hidden="true" tabindex="-1"></a>  ASS <span class="ot">&lt;-</span> TSS <span class="sc">-</span> RSS</span>
+<span id="cb58-42"><a href="#cb58-42" aria-hidden="true" tabindex="-1"></a>  Fobs <span class="ot">&lt;-</span> ASS <span class="sc">/</span> den</span>
+<span id="cb58-43"><a href="#cb58-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(Fobs)</span>
+<span id="cb58-44"><a href="#cb58-44" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb58-45"><a href="#cb58-45" aria-hidden="true" tabindex="-1"></a><span class="co"># PERMANOVA2</span></span>
+<span id="cb58-46"><a href="#cb58-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-47"><a href="#cb58-47" aria-hidden="true" tabindex="-1"></a>PERMANOVA2 <span class="ot">&lt;-</span> <span class="cf">function</span>(x, factor, distancia, <span class="at">nperm =</span> <span class="dv">999</span>) {</span>
+<span id="cb58-48"><a href="#cb58-48" aria-hidden="true" tabindex="-1"></a>  control <span class="ot">&lt;-</span> <span class="fu">how</span>(<span class="at">nperm =</span> nperm, <span class="at">within =</span> <span class="fu">Within</span>(<span class="at">type =</span> <span class="st">"free"</span>))</span>
+<span id="cb58-49"><a href="#cb58-49" aria-hidden="true" tabindex="-1"></a>  Fobs <span class="ot">&lt;-</span> <span class="fu">pseudo.F</span>(x, factor, <span class="at">distancia =</span> distancia)</span>
+<span id="cb58-50"><a href="#cb58-50" aria-hidden="true" tabindex="-1"></a>  Nobs <span class="ot">&lt;-</span> <span class="fu">nobs</span>(x)</span>
+<span id="cb58-51"><a href="#cb58-51" aria-hidden="true" tabindex="-1"></a>  F.permu <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="at">length =</span> control<span class="sc">$</span>nperm) <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb58-52"><a href="#cb58-52" aria-hidden="true" tabindex="-1"></a>  F.permu[<span class="dv">1</span>] <span class="ot">&lt;-</span> Fobs</span>
+<span id="cb58-53"><a href="#cb58-53" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Generation of pseudo.F values for H0 using permutations without replacement</span></span>
+<span id="cb58-54"><a href="#cb58-54" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(F.permu)) {</span>
+<span id="cb58-55"><a href="#cb58-55" aria-hidden="true" tabindex="-1"></a>    <span class="do">## return a permutation</span></span>
+<span id="cb58-56"><a href="#cb58-56" aria-hidden="true" tabindex="-1"></a>    want <span class="ot">&lt;-</span> <span class="fu">permute</span>(i, Nobs, control)</span>
+<span id="cb58-57"><a href="#cb58-57" aria-hidden="true" tabindex="-1"></a>    <span class="do">## calculate permuted F</span></span>
+<span id="cb58-58"><a href="#cb58-58" aria-hidden="true" tabindex="-1"></a>    F.permu[i <span class="sc">+</span> <span class="dv">1</span>] <span class="ot">&lt;-</span></span>
+<span id="cb58-59"><a href="#cb58-59" aria-hidden="true" tabindex="-1"></a>      <span class="fu">pseudo.F</span>(x[want, ], factor, <span class="at">distancia =</span> distancia)</span>
+<span id="cb58-60"><a href="#cb58-60" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb58-61"><a href="#cb58-61" aria-hidden="true" tabindex="-1"></a>  <span class="do">## probability for Fobs</span></span>
+<span id="cb58-62"><a href="#cb58-62" aria-hidden="true" tabindex="-1"></a>  pval <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">abs</span>(F.permu) <span class="sc">&gt;=</span> <span class="fu">abs</span>(F.permu[<span class="dv">1</span>])) <span class="sc">/</span> (control<span class="sc">$</span>nperm <span class="sc">+</span> <span class="dv">1</span>)</span>
+<span id="cb58-63"><a href="#cb58-63" aria-hidden="true" tabindex="-1"></a>  <span class="do">## Results</span></span>
+<span id="cb58-64"><a href="#cb58-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">data.frame</span>(<span class="st">"Pseudo-F"</span> <span class="ot">=</span> F.permu[<span class="dv">1</span>], <span class="st">"p(perm)"</span> <span class="ot">=</span> pval))</span>
+<span id="cb58-65"><a href="#cb58-65" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb58-66"><a href="#cb58-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-67"><a href="#cb58-67" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 6. Ejecutar PERMANOVA2 sobre la matriz transformada  ---</span></span>
+<span id="cb58-68"><a href="#cb58-68" aria-hidden="true" tabindex="-1"></a><span class="co"># Nota: la función pseudo.F espera la matriz x con las especies en columnas y filas en muestras</span></span>
+<span id="cb58-69"><a href="#cb58-69" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb58-70"><a href="#cb58-70" aria-hidden="true" tabindex="-1"></a>res_perm2_hora <span class="ot">&lt;-</span> <span class="fu">PERMANOVA2</span>(<span class="fu">as.data.frame</span>(fauna_mat), hora_factor, </span>
+<span id="cb58-71"><a href="#cb58-71" aria-hidden="true" tabindex="-1"></a>                             <span class="at">distancia =</span> <span class="st">"bray"</span>, <span class="at">nperm =</span> <span class="dv">999</span>)</span>
+<span id="cb58-72"><a href="#cb58-72" aria-hidden="true" tabindex="-1"></a>res_perm2_hora</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Pseudo.F p.perm.
+1 2.784055   0.042</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 7. Comparación con adonis2 (vegan) para referencia ---</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>adonis_res_hora <span class="ot">&lt;-</span> <span class="fu">adonis2</span>(dist_bray_fauna <span class="sc">~</span> hora_factor, </span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>                           <span class="at">permutations =</span> <span class="dv">999</span>, <span class="at">by =</span> <span class="st">"margin"</span>)</span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>adonis_res_hora</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 999
+
+adonis2(formula = dist_bray_fauna ~ hora_factor, permutations = 999, by = "margin")
+            Df SumOfSqs      R2     F Pr(&gt;F)  
+hora_factor  1  0.45626 0.26479 2.521  0.056 .
+Residual     7  1.26687 0.73521               
+Total        8  1.72312 1.00000               
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 8. Salida resumida ---</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Resultados PERMANOVA2 (pseudo-F y p permutacional):"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Resultados PERMANOVA2 (pseudo-F y p permutacional):"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(res_perm2_hora)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Pseudo.F p.perm.
+1 2.784055   0.042</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  Pseudo.F p.perm.</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="co">#  2.784055   0.042</span></span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a><span class="co"># SIGNIFICATIVO</span></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Resultados adonis2 (Bray ~ Hora):"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Resultados adonis2 (Bray ~ Hora):"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(adonis_res_hora)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Permutation test for adonis under reduced model
+Marginal effects of terms
+Permutation: free
+Number of permutations: 999
+
+adonis2(formula = dist_bray_fauna ~ hora_factor, permutations = 999, by = "margin")
+            Df SumOfSqs      R2     F Pr(&gt;F)  
+hora_factor  1  0.45626 0.26479 2.521  0.056 .
+Residual     7  1.26687 0.73521               
+Total        8  1.72312 1.00000               
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</section>
+<section id="código-algas-y-pastos-3-imagenes" class="level2">
+<h2 class="anchored" data-anchor-id="código-algas-y-pastos-3-imagenes">Código algas y pastos !!! (3 imagenes)</h2>
+</section>
+<section id="anfípodos" class="level2">
+<h2 class="anchored" data-anchor-id="anfípodos">Anfípodos</h2>
+<p>Se registraron un total de 12 familias de anfípodos. De todas ellas, la familia Ampithoidae fue la más abundante con un total de 149 individuos y, asimismo, la más frecuente, registrada en más del 90% de las muestras totales. En contraste, las familias menos frecuentes y abundantes fueron Maeridae, Aordae y Anamixidae, con una frecuencia de aparición menor al 5% y representadas únicamente por un individuo cada una (Figura X y Figura X).</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="do">### Gráfico de frecuencia ----------------------------------------------- </span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Cargar los datos</span></span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"anfipodos.csv"</span>)</span>
+<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Procesar datos para Frecuencia (Corregido)</span></span>
+<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a>frecuencia_df <span class="ot">&lt;-</span> datos <span class="sc">%&gt;%</span> <span class="co"># Seleccionar las familias</span></span>
+<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Anamixidae<span class="sc">:</span>Isopodae) <span class="sc">%&gt;%</span> <span class="co"># Pasamos de formato ancho a largo</span></span>
+<span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"Familia"</span>, <span class="at">values_to =</span> <span class="st">"Conteo"</span>) <span class="sc">%&gt;%</span> <span class="co"># Limpiamr espacios en blanco </span></span>
+<span id="cb70-11"><a href="#cb70-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Familia =</span> <span class="fu">trimws</span>(Familia)) <span class="sc">%&gt;%</span>  <span class="co"># Agrupamos por familia</span></span>
+<span id="cb70-12"><a href="#cb70-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Familia) <span class="sc">%&gt;%</span> <span class="co"># Calculamos frecuencia</span></span>
+<span id="cb70-13"><a href="#cb70-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb70-14"><a href="#cb70-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">Muestras_Presente =</span> <span class="fu">sum</span>(Conteo <span class="sc">&gt;</span> <span class="dv">0</span>),</span>
+<span id="cb70-15"><a href="#cb70-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">Total_Muestras =</span> <span class="fu">n</span>(),</span>
+<span id="cb70-16"><a href="#cb70-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">Porcentaje_Frecuencia =</span> (Muestras_Presente <span class="sc">/</span> Total_Muestras) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb70-17"><a href="#cb70-17" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb70-18"><a href="#cb70-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(Porcentaje_Frecuencia))</span>
+<span id="cb70-19"><a href="#cb70-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-20"><a href="#cb70-20" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Graficar Frecuencia</span></span>
+<span id="cb70-21"><a href="#cb70-21" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(frecuencia_df, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Familia, Porcentaje_Frecuencia), <span class="at">y =</span> Porcentaje_Frecuencia, <span class="at">fill =</span> Porcentaje_Frecuencia)) <span class="sc">+</span></span>
+<span id="cb70-22"><a href="#cb70-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb70-23"><a href="#cb70-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span> </span>
+<span id="cb70-24"><a href="#cb70-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_c</span>(<span class="at">option =</span> <span class="st">"YlOrRd"</span>) <span class="sc">+</span></span>
+<span id="cb70-25"><a href="#cb70-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb70-26"><a href="#cb70-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Familia"</span>,</span>
+<span id="cb70-27"><a href="#cb70-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Porcentaje de frecuencia en las muestras(%)"</span></span>
+<span id="cb70-28"><a href="#cb70-28" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb70-29"><a href="#cb70-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in viridisLite::viridis(n, alpha, begin, end, direction, option):
+Option 'YlOrRd' does not exist. Defaulting to 'viridis'.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="PM_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="do">##### Gráfico de abundancia</span></span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Procesar datos para Abundancia</span></span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>abundancia_df <span class="ot">&lt;-</span> datos <span class="sc">%&gt;%</span></span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Anamixidae<span class="sc">:</span>Isopodae) <span class="sc">%&gt;%</span> </span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"Familia"</span>, <span class="at">values_to =</span> <span class="st">"Conteo"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Familia) <span class="sc">%&gt;%</span></span>
+<span id="cb72-7"><a href="#cb72-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Abundancia_Total =</span> <span class="fu">sum</span>(Conteo)) <span class="sc">%&gt;%</span></span>
+<span id="cb72-8"><a href="#cb72-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(Abundancia_Total))</span>
+<span id="cb72-9"><a href="#cb72-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb72-10"><a href="#cb72-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Graficar Abundancia</span></span>
+<span id="cb72-11"><a href="#cb72-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(abundancia_df, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Familia, Abundancia_Total), <span class="at">y =</span> Abundancia_Total, <span class="at">fill =</span> Abundancia_Total)) <span class="sc">+</span></span>
+<span id="cb72-12"><a href="#cb72-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb72-13"><a href="#cb72-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span> </span>
+<span id="cb72-14"><a href="#cb72-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_c</span>(<span class="at">option =</span> <span class="st">"viridis"</span>) <span class="sc">+</span></span>
+<span id="cb72-15"><a href="#cb72-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb72-16"><a href="#cb72-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Familia"</span>,</span>
+<span id="cb72-17"><a href="#cb72-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Número de individuos"</span></span>
+<span id="cb72-18"><a href="#cb72-18" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb72-19"><a href="#cb72-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="PM_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="comunidad-bentónica-y-peces" class="level2">
+<h2 class="anchored" data-anchor-id="comunidad-bentónica-y-peces">Comunidad bentónica y peces</h2>
+<p>Se identificaron nueve especies bentónicas (excluyendo a Amphipoda) y 14 especies de peces así como la familia Belonidae y diversas familias de sardinas (Tabla X). En la mañana, la especie con mayor porcentaje de presencia fue la estrella de mar (Echinaster, 80%), seguida por el pepino de mar (Holothuria floridana) y el caracol (Cerithium sp.) ambos con un 60%. En el horario vespertino, por otro lado, dos especies de caracol (Cerithium sp y Modulus modulus) alcanzaron el 100% de presencia, seguidas por la raya amarilla (Urobatis jamaicensis) con 75% y el pepino de mar (Holothuria floridana) con el 50% de las observaciones. También se registraron especies exclusivas para cada horario. En la mañana, solo estuvieron presentes la estrella de mar (Echinaster), la esponja (Haliclona sp.) y el mero carbonero (Hypoplectrus nigricans). Mientras que en la tarde, se registró Poliqueto sp. y el organismo registrado como “pez delineado”, debido a su identificación inexacta, tuvieron avistamientos únicamente vespertinos (Figura X).</p>
+<div id="tb2-especies">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Comunidad bentónica</th>
+<th style="text-align: left;">Peces</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Cerithium sp.</em></td>
+<td style="text-align: left;"><em>Abudefduf saxatilis</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Echinaster</em></td>
+<td style="text-align: left;"><em>Anisotremus virginicus</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Ecteinascidia turbinata</em></td>
+<td style="text-align: left;"><em>Archosargus probatocephalus</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Eucinostomus sp.</em></td>
+<td style="text-align: left;"><em>Archosargus rhomboidalis</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Haliclona sp.</em></td>
+<td style="text-align: left;"><em>Centropomus undecimalis</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Holothuria floridana</em></td>
+<td style="text-align: left;"><em>Haemulon parra</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Modulus modulus</em></td>
+<td style="text-align: left;"><em>Kyphosus sp.</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Platelminto</td>
+<td style="text-align: left;"><em>Lutjanus griseus</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Urobatis jamaicensis</em></td>
+<td style="text-align: left;"><em>Mayaheros urophthalmus</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>Opsanus beta</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>Sparisoma frondosum</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>Sphoeroides testudineus</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>Sphyraena barracuda</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>Familias de sardinas: Atherinidae, Clupeidae y Engraulidae</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>Familia de peces aguja: </em>Belonidae*</td>
+</tr>
+</tbody>
+</table>
+<p>Tabla 2. Listado de especies de la comunidad bentónica y peces observados en el muestreo</p>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="do">#### Fauna bentónica </span></span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-5"><a href="#cb73-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Cargar los nuevos datos</span></span>
+<span id="cb73-6"><a href="#cb73-6" aria-hidden="true" tabindex="-1"></a>datos_fauna <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"fauna.csv"</span>)</span>
+<span id="cb73-7"><a href="#cb73-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Procesar los datos</span></span>
+<span id="cb73-8"><a href="#cb73-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Calcularemos qué % de los muestreos de la Mañana y qué % de la Tarde registran cada especie</span></span>
+<span id="cb73-9"><a href="#cb73-9" aria-hidden="true" tabindex="-1"></a>fauna_horario <span class="ot">&lt;-</span> datos_fauna <span class="sc">%&gt;%</span></span>
+<span id="cb73-10"><a href="#cb73-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Pasamos a formato largo manteniendo la columna 'Hora'</span></span>
+<span id="cb73-11"><a href="#cb73-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span>Hora, <span class="at">names_to =</span> <span class="st">"Especie"</span>, <span class="at">values_to =</span> <span class="st">"Presencia"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb73-12"><a href="#cb73-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Limpiamos nombres de especies por si tienen espacios extras</span></span>
+<span id="cb73-13"><a href="#cb73-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Especie =</span> <span class="fu">trimws</span>(Especie)) <span class="sc">%&gt;%</span></span>
+<span id="cb73-14"><a href="#cb73-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Agrupamos por Hora (M/T) y por Especie</span></span>
+<span id="cb73-15"><a href="#cb73-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Hora, Especie) <span class="sc">%&gt;%</span></span>
+<span id="cb73-16"><a href="#cb73-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb73-17"><a href="#cb73-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">Muestras_Presente =</span> <span class="fu">sum</span>(Presencia <span class="sc">&gt;</span> <span class="dv">0</span>),</span>
+<span id="cb73-18"><a href="#cb73-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">Total_Muestras_Horario =</span> <span class="fu">n</span>(),</span>
+<span id="cb73-19"><a href="#cb73-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">Porcentaje_Presencia =</span> (Muestras_Presente <span class="sc">/</span> Total_Muestras_Horario) <span class="sc">*</span> <span class="dv">100</span>,</span>
+<span id="cb73-20"><a href="#cb73-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">'drop'</span></span>
+<span id="cb73-21"><a href="#cb73-21" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb73-22"><a href="#cb73-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-23"><a href="#cb73-23" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Graficar la comparación</span></span>
+<span id="cb73-24"><a href="#cb73-24" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(fauna_horario, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(Especie, Porcentaje_Presencia), <span class="at">y =</span> Porcentaje_Presencia, <span class="at">fill =</span> Hora)) <span class="sc">+</span></span>
+<span id="cb73-25"><a href="#cb73-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 'position = position_dodge()' pone las barras de M y T una al lado de la otra</span></span>
+<span id="cb73-26"><a href="#cb73-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.8</span>), <span class="at">width =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb73-27"><a href="#cb73-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span> </span>
+<span id="cb73-28"><a href="#cb73-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(</span>
+<span id="cb73-29"><a href="#cb73-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"M"</span> <span class="ot">=</span> <span class="st">"#F1C40F"</span>, <span class="st">"T"</span> <span class="ot">=</span> <span class="st">"#75C3ff"</span>), </span>
+<span id="cb73-30"><a href="#cb73-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"M"</span> <span class="ot">=</span> <span class="st">"Mañana"</span>, <span class="st">"T"</span> <span class="ot">=</span> <span class="st">"Tarde"</span>)</span>
+<span id="cb73-31"><a href="#cb73-31" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb73-32"><a href="#cb73-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb73-33"><a href="#cb73-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Especie / Fauna"</span>,</span>
+<span id="cb73-34"><a href="#cb73-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Porcentaje de Presencia (%)"</span>,</span>
+<span id="cb73-35"><a href="#cb73-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">"Horario"</span></span>
+<span id="cb73-36"><a href="#cb73-36" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb73-37"><a href="#cb73-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="PM_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="hay-diferencia-en-la-composición-de-anfípodos-en-los-diferentes-horarios" class="level1">
+<h1>1) ¿Hay diferencia en la composición de anfípodos en los diferentes horarios?</h1>
+<p>Retenemos la H0 pues no encontramos diferencias estadísticamente significativas en la composición de anfípodos respecto a los diferentes horarios (p = 0.357).</p>
+</section>
+<section id="hay-variable-o-variables-explican-mejor-la-variación-de-cambio-de-composición-de-la-comunidad-de-anfípodos" class="level1">
+<h1>2) ¿Hay variable o variables explican mejor la variación de cambio de composición de la comunidad de anfípodos?</h1>
+<p>La comunidad de anfípodos estuvo presente en un amplio intervalo de variables ambientales para el caso del OD (5.9-118% y 0.91-7.56mg/L). Por otro lado, factores como temperatura, conductividad, total de sólidos disueltos (TDS), salinidad y pH no tuvieron diferencias entre transectos ni horas del día. Solamente la temperatura mostró un comportamiento de temperaturas más bajas por la mañana, pero estas diferencias solo eran de 1 o 2°C. Tras realizar el RDA, el procedimiento de “foward selection” no identificó variables explicativas que contribuyeran significativamente a la variación observada en la matriz de respuesta, por lo que el subsecuente PERMANOVA no pudo evaluar la significancia de alguna de estas variables. Debido a lo anterior la H0 se retuvo.</p>
+</section>
+<section id="hay-un-cambio-en-la-composición-de-la-comunidad-de-fauna-móvil-en-diferentes-horarios" class="level1">
+<h1>3) ¿Hay un cambio en la composición de la comunidad de fauna móvil en diferentes horarios?</h1>
+<p>El grupo considerado “fauna móvil” comprendía todos los organismos de la comunidad bentónica a excepción de la esponja morada (Haliclona sp.). La prueba estadística PERMANOVA 2 identificó diferencias significativas en la composición de la fauna móvil en diferentes horarios (p = 0.042) por lo que la H0 se rechazó.</p>
+</section>
+<section id="discussion" class="level1 unnumbered">
+<h1 class="unnumbered">Discusión</h1>
+<section id="algas-y-pastos-marinos-1" class="level2">
+<h2 class="anchored" data-anchor-id="algas-y-pastos-marinos-1">Algas y pastos marinos</h2>
+<p>La caracterización de las praderas reveló una dominancia de Syringodium filiforme, Halimeda incrassata y Thalassia testudinum, un patrón de composición que coincide con lo reportado previamente para la región (Rosado-Espinosa et al., 2012; Raz-Guzmán &amp; Soto, 2017; Correia et al., 2022). Asimismo, la composición del paisaje y la altura de la vegetación se alinean con las descripciones de Rosado-Espinosa y colaboradores (2012). Estos autores señalan que las macroalgas pardas y rojas tubulares en Dzilam del Bravo superan los 30 cm de altura debido a su crecimiento tipo estructural y hábito erecto. En contraste, las algas verdes, las algas rojas filamentosas y los pastos marinos mantienen tallas menores a los 30 cm. Por otro lado, el gradiente de distribución desde la línea de costa hacia mar adentro mostró una similitud con lo descrito para la zona: una franja inicial de Syringodium y algas verdes (clase VIII), seguido de parches de Thalasia y algas (IX) y finalmente pastos y algas verdes. De acuerdo con Correia y colaboradores (2022) S. filiforme es una de las especies más comunes en el Golfo de México; en el presente muestreo, dicho taxón registró la mayor abundancia y cobertura entre cuadrantes. La relevancia de este pasto radica en su papel como especie pionera clave para la colonización de zonas perturbadas o con sedimentos inestables, pues ayuda a fijar el sustrato marino y facilita el establecimiento de praderas estables y complejas.</p>
+</section>
+<section id="anfípodos-1" class="level2">
+<h2 class="anchored" data-anchor-id="anfípodos-1">Anfípodos</h2>
+<p>Debido a la complejidad morfológica durante sus ciclos de vida, así como a las lagunas taxonómicas, bioecológicas y biogeográficas existentes en diversas especies de anfípodos, los individuos colectados solo se identificaron a nivel de familia (Thomas y Klebba,2007; White, 2011). Se reconocieron 12 familias, siendo Ampithoidae la más abundante (149 individuos) y frecuente, registrándose en más del 90% de las muestras. En contraste, familias como Maeridae, Aordae y Anamixidae fueron menos frecuentes y abundantes. Los anfípodos al ser herbívoros activos consumen macroalgas vivas y tejidos de los pastos marinos, la preferencia alimentaria puede moldear la estructura, abundancia y composición de las especies de algas en la comunidad costera. Además, estos organismos utilizan el sustrato como sitios de forrajeo, protección y reproducción (Lowry y Stoddart,2003). Nuestros hallazgos concuerdan con inventarios previos en el Golfo de México. Raz-Guzmán y Soto (2017) identificaron 14 familias de anfípodos en la región occidental, siendo las más frecuentes Ampithoidae, Amphilochidae, Dexaminidae, Hyalidae, Melitidae, Talitridae y Aoridae. Del mismo modo, Winfield y colaboradores (2016) reportaron 16 familias donde, al igual que en este estudio, Ampithoidae fue una de las más abundantes y frecuentes (13%). Esta persistente dominancia se atribuye a su amplia distribución costera la cual puede abarcar desde los 0.5 hasta los 10 m de profundidad (Winfield, 2016). Melitidae fue otra de las familias compartidas entre este estudio y otras investigaciones. Sus miembros habitan en aguas someras tropicales asociadas a fondos blandos y macroalgas, sitios que les proveen refugio, protección y zonas de reproducción (Winfield, 2016). A diferencia de otros trabajos desarrollados en el Golfo de México, este estudio no realizó una comparación estacional. No obstante, Violante-Huerta y colaboradores (2025) encontraron que el incremento de descargas ricas en nutrientes durante la temporada de nortes resultó en una mayor densidad de zooplancton y, consecuentemente, en una mayor densidad de anfípodos. Explorar esta variable en futuros estudios complementaría información para la zona de Dzilam del Bravo. En resumen, dado que los anfípodos, junto con poliquetos y bivalvos, constituyen el 77% de las comunidades bentónicas, su estudio es fundamental (Raz-Guzmán &amp; Soto, 2017). Estos crustáceos operan como polinizadores, recurso alimenticio e indicadores de estrés ambiental (White et al., 2011) por lo que caracterizar su comunidad suma al conocimiento sobre la diversidad de los ecosistemas costeros.</p>
+</section>
+<section id="hay-diferencia-en-la-composición-de-anfípodos-en-los-diferentes-horarios-1" class="level2">
+<h2 class="anchored" data-anchor-id="hay-diferencia-en-la-composición-de-anfípodos-en-los-diferentes-horarios-1">1) ¿Hay diferencia en la composición de anfípodos en los diferentes horarios?</h2>
+<p>Al no encontrar diferencias significativas en la composición de anfípodos en diferentes horarios, estos hallazgos se podrían atribuir a la conducta migratoria de los anfípodos. Violante-Huerta y colaboradores (2025) mencionan que la migración diurna-nocturna puede variar entre ambientes neríticos y oceánicos porque el rango de migración vertical de los anfípodos pelágicos tiende a ser de 100 m. Debido a que el muestreo se realizó en áreas someras de máximo 2 m de profundidad los efectos de dicha migración no serían visibles y por lo tanto significativos.</p>
+</section>
+<section id="hay-variable-o-variables-explican-mejor-la-variación-de-cambio-en-la-abundancia-de-la-comunidad-de-anfípodos" class="level2">
+<h2 class="anchored" data-anchor-id="hay-variable-o-variables-explican-mejor-la-variación-de-cambio-en-la-abundancia-de-la-comunidad-de-anfípodos">2) ¿Hay variable o variables explican mejor la variación de cambio en la abundancia de la comunidad de anfípodos?</h2>
+<p>El modelo no retuvo variables significativas que pudieran explicar mejor la abundancia de la comunidad de anfípodos. Esto pudo ocasionarse debido a falta de poder estadístico, dado que los puntos donde se tomaron los valores no comprendía grandes distancias (10-15 m), los valores ambientales no mostraban grandes diferencias entre ellos y estos solamente se midieron por transecto y no por cuadrante. Diversos estudios de anfípodos han demostrado que las variables ambientales que afectan el desarrollo de los anfípodos son principalmente la temperatura, la salinidad, el oxígeno disuelto (OD) y el pH (Peralta Soriano, 2006; Espinosa-Leal, 2014; Burridge et al., 2017; Violante-Huerta et al., 2025) y se destaca emplear estudios a grandes escalas con el fin de encontrar diferencias significativas. Las limitaciones metodológicas de este estudio no reflejan probablemente todo el efecto que cada una de ellas incide en la abundancia de la comunidad de anfípodos. Como recomendación, investigaciones que tomen en cuenta estas variables podrían aumentar la distancia entre sitios, integrar más horas de muestreo e incluso diversos sitios de la zona de Dzilam del Bravo.</p>
+</section>
+<section id="hay-un-cambio-en-la-composición-de-la-comunidad-de-fauna-móvil-asociada-a-pastos-marinos-en-diferentes-horarios" class="level2">
+<h2 class="anchored" data-anchor-id="hay-un-cambio-en-la-composición-de-la-comunidad-de-fauna-móvil-asociada-a-pastos-marinos-en-diferentes-horarios">3) ¿Hay un cambio en la composición de la comunidad de fauna móvil (asociada a pastos marinos) en diferentes horarios?</h2>
+<p>La comunidad bentónica registrada en los transectos está compuesta por nueve especies macrobentónicas y 14 especies de peces, junto con familias como Belonidae y Clupeidae (sardinas). Estos hallazgos evidencian el papel clave de los pastos marinos como áreas de crianza, refugio y forrajeo en la Península de Yucatán (Vega-Cendejas et al., 2013). Se observó una variación temporal en la fauna móvil. Especies como la estrella de mar (Echinaster sp.) y el pepino de mar (Holothuria floridana) dominaron en la mañana, mientras que gasterópodos Cerithium sp. y Modulus modulus fueron principalmente detectados en el horario vespertino, lo cual podría ser producto de las estrategias ecológicas de partición de nicho para optimizar la alimentación y minimizar la depredación (Armenteros et al., 2012). De igual forma, la presencia de depredadores bentónicos superiores, como la raya amarilla Urobatis jamaicensis, demuestra la conectividad de estas praderas. Los pastos marinos son utilizados cíclicamente por otros peces, como el mero carbonero Hypoplectrus nigricans, los cuales se desplazan hacia la franja costera para aprovechar la disponibilidad de presas bentónicas, tales como los anfípodos y poliquetos (Valdez-Hernández et al., 2014). No obstante, las condiciones meteorológicas, corrientes de viento fuertes, el paisaje poco visible debido al agua revuelta del mar y la falta de réplicas fueron factores que afectaron el análisis. Específicamente la falta de réplicas limita el poder estadístico por lo que se recomendaría aumentar su número en estudios futuros.</p>
+<div class="thebibliography">
+<p>16</p>
+<ol type="1">
+<li><p>Armenteros, M., et al.&nbsp;(2012). Benthic macrofauna associated with seagrass beds in coastal lagoons of the Yucatan Peninsula. Marine Ecology, 33(2), 177–189. https://doi.org/10.1111/j.1439-0485.2011.00480.</p></li>
+<li><p>Burridge, A. K., et al.&nbsp;(2017). Diversity and distribution of hyperiid amphipods along a latitudinal transect in the Atlantic Ocean. Progress in Oceanography, 158, 224–235. https://doi.org/10.1016/j.pocean.2016.08.003</p></li>
+<li><p>Correia, K. M., et al.&nbsp;(2022). Drift macroalgal distribution in northern Gulf of Mexico seagrass meadows. PeerJ, 10, Artículo e13855. http://doi.org/10.7717/peerj.13855</p></li>
+<li><p>Espinosa Leal, L. L. (2014). Variación estacional de los anfípodos hipéridos en la zona frente a Punta Eugenia - Punta Abreojos, Baja California durante un año frío [Tesis de maestría, Centro de Investigación Científica y de Educación Superior de Ensenada]. Repositorio Institucional del CICESE. https://cicese.repositorioinstitucional.mx/jspui/bitstream/1007/1538/1/236511.pdf</p></li>
+<li><p>Herzka, S., et al.&nbsp;(2020). Atlas de línea base ambiental del Golfo de México: Tomo VI. Pastos marinos. CIGoM.</p></li>
+<li><p>Instituto Nacional de Estadística y Geografía [INEGI]. (2010). Compendio de información geográfica municipal 2010: Dzilam de Bravo, Yucatán. https://www.inegi.org.mx/contenidos/app/mexicocifras/datos_geograficos/31/31028.pdf</p></li>
+<li><p>LeCroy, S. (2000). An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida: Volume 1. Families Gammaridae, Hadziidae, Isaeidae, Melitidae and Oedicerotidae. Florida Department of Environmental Protection.</p></li>
+<li><p>LeCroy, S. (2002). An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida: Volume 2. Families Ampeliscidae, Amphilochidae, Ampithoidae, Aoridae, Argissidae and Haustoriidae. Florida Department of Environmental Protection.</p></li>
+<li><p>Littler, M., et al.&nbsp;(1989). Marine plants of the Caribbean: A field guide from Florida to Brazil. Smithsonian Institution Press.</p></li>
+<li><p>Odériz, I., et al.&nbsp;(2020). Understanding drivers of connectivity and resilience under tropical cyclones in coastal ecosystems at Puerto Morelos, Mexico. Journal of Coastal Research, 95(sp1), 143–147. https://doi.org/10.2112/SI95-028.1</p></li>
+<li><p>Peralta Soriano, L. (2006). Ecología de los anfípodos (Crustacea: Amphipoda) litorales de los lagos maars de Puebla, México [Tesis de maestría, Universidad Nacional Autónoma de México]. Repositorio Institucional de la UNAM. https://ru.dgb.unam.mx/server/api/core/bitstreams/bc864de5-0d37-45e5-99be-f8af7d00757a/content</p></li>
+<li><p>Raz-Guzmán, A., &amp; Soto, L. A. (2017). Comunidades de macroinvertebrados bentónicos asociadas a praderas de Thalassia testudinum en sistemas estuarinos del sur del golfo de México. Revista Mexicana de Biodiversidad, 88(3), 715–734. https://doi.org/10.1016/j.rmb.2017.07.013</p></li>
+<li><p>Renán, X., et al.&nbsp;(2003). Probable nursery areas for juvenile groupers along the northern coast of the Yucatan Peninsula, Mexico. Proceedings of the Gulf and Caribbean Fisheries Institute, 54, 496–505.</p></li>
+<li><p>Valdez-Hernández, E. F., et al.&nbsp;(2014). Ictiofauna de los sistemas costeros de la Península de Yucatán: diversidad y estructura comunitaria. Revista Mexicana de Biodiversidad, 85(2), 490–504. https://doi.org/10.7550/rmb.37856</p></li>
+<li><p>Vega-Cendejas, M. E., et al.&nbsp;(2013). Biological connectivity and coastal fish assemblages in the southern Gulf of Mexico. Bulletin of Marine Science, 89(1), 155–173. https://doi.org/10.5343/bms.2011.1118</p></li>
+<li><p>Violante-Huerta, M., et al.&nbsp;(2025). Cross-shelf and vertical structure of pelagic amphipods (Crustacea) related to hydro-meteorological conditions in the neritic zone, southern Gulf of Mexico. PLoS ONE, 20(12), Artículo e0336930. https://doi.org/10.1371/journal.pone.0336930</p></li>
+</ol>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
