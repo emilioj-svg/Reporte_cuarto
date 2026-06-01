@@ -451,11 +451,13 @@ in Oceanography, 158, 224–235. https://doi.org/10.1016/j.pocean.2016.08.003
 http://doi.org/10.7717/peerj.13855
 
 4. Espinosa Leal, L. L. (2014). Variación estacional de los anfípodos hipéridos en la zona frente a Punta Eugenia - Punta Abreojos, Baja California 
-durante un año frío [Tesis de maestría, Centro de Investigación Científica y de Educación Superior de Ensenada]. Repositorio Institucional del CICESE. https://cicese.repositorioinstitucional.mx/jspui/bitstream/1007/1538/1/236511.pdf
+durante un año frío [Tesis de maestría, Centro de Investigación Científica y de Educación Superior de Ensenada]. Repositorio Institucional del CICESE. 
+https://cicese.repositorioinstitucional.mx/jspui/bitstream/1007/1538/1/236511.pdf
 
 5. Herzka, S., et al. (2020). Atlas de línea base ambiental del Golfo de México: Tomo VI. Pastos marinos. CIGoM.
 
-6. Instituto Nacional de Estadística y Geografía [INEGI]. (2010). Compendio de información geográfica municipal 2010: Dzilam de Bravo, Yucatán. https://www.inegi.org.mx/contenidos/app/mexicocifras/datos_geograficos/31/31028.pdf
+6. Instituto Nacional de Estadística y Geografía [INEGI]. (2010). Compendio de información geográfica municipal 2010: Dzilam de Bravo, Yucatán. 
+https://www.inegi.org.mx/contenidos/app/mexicocifras/datos_geograficos/31/31028.pdf
 
 7. LeCroy, S. (2000). An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida: Volume 1. Families 
 Gammaridae, Hadziidae, Isaeidae, Melitidae and Oedicerotidae. Florida Department of Environmental Protection.
@@ -469,7 +471,8 @@ Ampeliscidae, Amphilochidae, Ampithoidae, Aoridae, Argissidae and Haustoriidae. 
 Mexico. Journal of Coastal Research, 95(sp1), 143–147. https://doi.org/10.2112/SI95-028.1
 
 11. Peralta Soriano, L. (2006). Ecología de los anfípodos (Crustacea: Amphipoda) litorales de los lagos maars de Puebla, México [Tesis de maestría, 
-Universidad Nacional Autónoma de México]. Repositorio Institucional de la UNAM. https://ru.dgb.unam.mx/server/api/core/bitstreams/bc864de5-0d37-45e5-99be-f8af7d00757a/content
+Universidad Nacional Autónoma de México]. Repositorio Institucional de la UNAM. 
+https://ru.dgb.unam.mx/server/api/core/bitstreams/bc864de5-0d37-45e5-99be-f8af7d00757a/content
 
 12. Raz-Guzmán, A., & Soto, L. A. (2017). Comunidades de macroinvertebrados bentónicos asociadas a praderas de Thalassia testudinum en sistemas 
 estuarinos del sur del golfo de México. Revista Mexicana de Biodiversidad, 88(3), 715–734. https://doi.org/10.1016/j.rmb.2017.07.013
