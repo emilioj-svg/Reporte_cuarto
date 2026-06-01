@@ -398,8 +398,9 @@ mismo modo, Winfield y colaboradores (2016) reportaron 16 familias donde, al igu
 y frecuentes (13%). Esta persistente dominancia se atribuye a su amplia distribución costera la cual puede abarcar desde los 0.5 hasta los 10 m 
 de profundidad (Winfield, 2016). Melitidae fue otra de las familias compartidas entre este estudio y otras investigaciones. Sus miembros habitan 
 en aguas someras tropicales asociadas a fondos blandos y macroalgas, sitios que les proveen refugio, protección y zonas de reproducción (Winfield, 2016). 
-A diferencia de otros trabajos desarrollados en el Golfo de México, este estudio no realizó una comparación estacional. No obstante, Violante-Huerta y colaboradores (2025) encontraron que el incremento de descargas ricas en nutrientes durante la temporada de nortes resultó en una mayor densidad 
-de zooplancton y, consecuentemente, en una mayor densidad de anfípodos. Explorar esta variable en futuros estudios complementaría información 
+A diferencia de otros trabajos desarrollados en el Golfo de México, este estudio no realizó una comparación estacional. No obstante, 
+Violante-Huerta y colaboradores (2025) encontraron que el incremento de descargas ricas en nutrientes durante la temporada de nortes resultó en una mayor 
+densidad de zooplancton y, consecuentemente, en una mayor densidad de anfípodos. Explorar esta variable en futuros estudios complementaría información 
 para la zona de Dzilam del Bravo. En resumen, dado que los anfípodos, junto con poliquetos y bivalvos, constituyen el 77% de las comunidades 
 bentónicas, su estudio es fundamental (Raz-Guzmán & Soto, 2017). Estos crustáceos operan como polinizadores, recurso alimenticio e indicadores de 
 estrés ambiental (White et al., 2011) por lo que caracterizar su comunidad suma al conocimiento sobre la diversidad de los ecosistemas costeros.  
@@ -438,46 +439,52 @@ aumentar su número en estudios futuros.
 
 
 ::: thebibliography
-10
+16
 
-Armenteros, M., et al. (2012). Benthic macrofauna associated with seagrass beds in coastal lagoons of the Yucatan Peninsula. Marine Ecology, 
-33(2), 177-189. (Ideal para justificar el comportamiento y abundancia de caracoles como Cerithium, estrellas de mar y pepinos como H. floridana).
+1. Armenteros, M., et al. (2012). Benthic macrofauna associated with seagrass beds in coastal lagoons of the Yucatan Peninsula. Marine Ecology,
+33(2), 177–189. https://doi.org/10.1111/j.1439-0485.2011.00480.
 
-Burridge AK, Tump M, Vonk R, Goetze E, Peijnenburg KTCA (2017). Diversity and distribution of hyperiid amphipods along a latitudinal transect in 
-the Atlantic Ocean. Progr Oceanogr. 2017. 158:224–35. https://doi.org/10.1016/j.pocean.2016.08.003
+2. Burridge, A. K., et al. (2017). Diversity and distribution of hyperiid amphipods along a latitudinal transect in the Atlantic Ocean. Progress 
+in Oceanography, 158, 224–235. https://doi.org/10.1016/j.pocean.2016.08.003
 
-Correia KM, Alford SB, Belgrad BA, Darnell KM, Darnell MZ, Furman BT, Hall MO, Hayes CT, Martin CW,McDonaldAM,SmeeDL. (2022). Drift macroalgal 
-distribution in northern Gulf of Mexico seagrass meadows. PeerJ 10:e13855 http://doi.org/10.7717/peerj.13855  
+3. Correia, K. M., et al. (2022). Drift macroalgal distribution in northern Gulf of Mexico seagrass meadows. PeerJ, 10, Artículo e13855. 
+http://doi.org/10.7717/peerj.13855
 
-Espinosa Leal, L. L. (2014). Variación estacional de los anfípodos hipéridos en la zona frente a Punta Eugenia - Punta Abreojos, Baja California 
-durante un año frío (Masteruppsats, Centro de Investigación Científica y de Educación Superior de Ensenada). Repositorio Institucional del CICESE. https://cicese.repositorioinstitucional.mx/jspui/bitstream/1007/1538/1/236511.pdf  
+4. Espinosa Leal, L. L. (2014). Variación estacional de los anfípodos hipéridos en la zona frente a Punta Eugenia - Punta Abreojos, Baja California 
+durante un año frío [Tesis de maestría, Centro de Investigación Científica y de Educación Superior de Ensenada]. Repositorio Institucional del CICESE. https://cicese.repositorioinstitucional.mx/jspui/bitstream/1007/1538/1/236511.pdf
 
-Herzka S., Zaragoza R., Peters E., Hernández G. (2020). ATLAS DE LÍNEA BASE AMBIENTAL DEL GOLFO DE MÉXICO TOMO VI: PASTOS MARINOS. CIGoM 
+5. Herzka, S., et al. (2020). Atlas de línea base ambiental del Golfo de México: Tomo VI. Pastos marinos. CIGoM.
 
-INEGI (2010). Compendio de información geográfica municipal 2010. Dzilam de Bravo, Yucatán. https://www.inegi.org.mx/contenidos/app/mexicocifras/datos_geograficos/31/31028.pdf 
+6. Instituto Nacional de Estadística y Geografía [INEGI]. (2010). Compendio de información geográfica municipal 2010: Dzilam de Bravo, Yucatán. https://www.inegi.org.mx/contenidos/app/mexicocifras/datos_geograficos/31/31028.pdf
 
-Lecroy S. (2000). An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida. Volume 1. 
-Families Gammaridae, Hadziidae, Isaeidae, Melitidae and Oedicerotidae. Florida Department of Environmental Protection 
+7. LeCroy, S. (2000). An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida: Volume 1. Families 
+Gammaridae, Hadziidae, Isaeidae, Melitidae and Oedicerotidae. Florida Department of Environmental Protection.
 
-Lecroy S. (2002). An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida. Volume 2. 
-Families Ampeliscidae, Amphilochidae, Ampithoidae, Aoridae, Argissidae and Haustoriidae. Florida Department of Environmental ProtectionLittler D.,
-Littler M., Bucher K. & Norris J. (1989). Marine plants of the Caribbean: A field guide from Florida to Brazil. Smithsonian Institution Press.
+8. LeCroy, S. (2002). An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida: Volume 2. Families 
+Ampeliscidae, Amphilochidae, Ampithoidae, Aoridae, Argissidae and Haustoriidae. Florida Department of Environmental Protection.
 
-Odériz I., Gómez I., Ventura Y., Díaz V., Escalante A., Gómez D., Bouma T., Silva R. (2020). Understanding Drivers of Connectivity and Resilience Under Tropical Cyclones in Coastal Ecosystems at Puerto Morelos, Mexico. Journal of Coastal Research. 95.
+9. Littler, M., et al. (1989). Marine plants of the Caribbean: A field guide from Florida to Brazil. Smithsonian Institution Press.
 
-Peralta Soriano, L. (2006). Ecología de los anfípodos (Crustacea: Amphipoda) litorales de los lagos maars de Puebla, México (Tesis de maestría, Universidad Nacional Autónoma de México). Repositorio Institucional de la UNAM. https://ru.dgb.unam.mx/server/api/core/bitstreams/bc864de5-0d37-45e5-99be-f8af7d00757a/content 
+10. Odériz, I., et al. (2020). Understanding drivers of connectivity and resilience under tropical cyclones in coastal ecosystems at Puerto Morelos, 
+Mexico. Journal of Coastal Research, 95(sp1), 143–147. https://doi.org/10.2112/SI95-028.1
 
-Raz-Guzmán A. & Soto L.A. (2017). Revista Mexicana de Biodiversidad 88  715–734
+11. Peralta Soriano, L. (2006). Ecología de los anfípodos (Crustacea: Amphipoda) litorales de los lagos maars de Puebla, México [Tesis de maestría, 
+Universidad Nacional Autónoma de México]. Repositorio Institucional de la UNAM. https://ru.dgb.unam.mx/server/api/core/bitstreams/bc864de5-0d37-45e5-99be-f8af7d00757a/content
 
-Renán X., Cervera K & Brulé T. (2003). Probable nursery areas for juvenile groupers along the northern coast of the Yucatan Peninsula, Mexico. Proceedings of the Gulf and Caribbean Fisheries Institute 54:496-505.
+12. Raz-Guzmán, A., & Soto, L. A. (2017). Comunidades de macroinvertebrados bentónicos asociadas a praderas de Thalassia testudinum en sistemas 
+estuarinos del sur del golfo de México. Revista Mexicana de Biodiversidad, 88(3), 715–734. https://doi.org/10.1016/j.rmb.2017.07.013
 
-Valdez-Hernández, E. F., Vega-Cendejas, M. E., & de Santillana, M. H. (2014). Ictiofauna de los sistemas costeros de la Península de Yucatán: diversidad y estructura comunitaria. Revista Mexicana de Biodiversidad, 85(2), 490-504. (Sustenta la presencia de las familias de peces, las sardinas, el mero carbonero e identifica los hábitos alimentarios litorales). 
+13. Renán, X., et al. (2003). Probable nursery areas for juvenile groupers along the northern coast of the Yucatan Peninsula, Mexico. Proceedings 
+of the Gulf and Caribbean Fisheries Institute, 54, 496–505.
 
-Vega-Cendejas, M. E., et al. (2013). Biological connectivity and coastal fish assemblages in the southern Gulf of Mexico. Bulletin of Marine Science, 89(1), 155-173. (Perfecto para respaldar cómo los peces juveniles usan la costa de Dzilam de Bravo como guardería). 
+14. Valdez-Hernández, E. F., et al. (2014). Ictiofauna de los sistemas costeros de la Península de Yucatán: diversidad y estructura comunitaria. 
+Revista Mexicana de Biodiversidad, 85(2), 490–504. https://doi.org/10.7550/rmb.37856
 
+15. Vega-Cendejas, M. E., et al. (2013). Biological connectivity and coastal fish assemblages in the southern Gulf of Mexico. Bulletin of Marine 
+Science, 89(1), 155–173. https://doi.org/10.5343/bms.2011.1118
 
-Violante-Huerta M, Sanvicente-Añorve L, Alatorre-Mendieta M, Guerra-Castro E (2025) Cross-shelf and vertical structure of pelagic amphipods (Crustacea) related to hydro-meteorological conditions in the neritic zone, southern Gulf of Mexico. PLoS One 20(12): e0336930. https://doi. org/10.1371/journal.pone.0336930  
-
+16. Violante-Huerta, M., et al. (2025). Cross-shelf and vertical structure of pelagic amphipods (Crustacea) related to hydro-meteorological conditions 
+in the neritic zone, southern Gulf of Mexico. PLoS ONE, 20(12), Artículo e0336930. https://doi.org/10.1371/journal.pone.0336930
 :::
 
 
