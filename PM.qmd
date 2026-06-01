@@ -176,7 +176,7 @@ Previo a  correr las pruebas, se evaluó el supuesto de homogeneidad de dispersi
 # Resultados {#results .unnumbered}
 
 ## Algas y pastos marinos
-Se identificaron 6 géneros y 4 especies de macroalgas junto con 2 especies de pastos marinos [\[tableX\]]. La especie de 
+Se identificaron 6 géneros y 4 especies de macroalgas junto con 2 especies de pastos marinos (Tabla 1). La especie de 
 pasto marino con mayor abundancia y cobertura entre cuadrantes es Syringodium filiforme, y la especie de macroalga con 
 mayor abundancia y cobertura entre cuadrantes es Halimeda incrassata, mientras que la especie con menor abundancia entre
 los cuadrantes es Acanthophora spicifera y el género con menor cobertura es Bryopsis (Fig X y X). Los valores de la 
@@ -612,7 +612,7 @@ ggplot(abundancia_df, aes(x = reorder(Familia, Abundancia_Total), y = Abundancia
 
 ## Comunidad bentónica y peces 
 Se identificaron nueve especies bentónicas (excluyendo a Amphipoda) y 14 especies de peces así como la familia Belonidae
-y diversas familias de sardinas (Tabla X). En la mañana, la especie con mayor porcentaje de presencia fue la estrella de
+y diversas familias de sardinas (Tabla 2). En la mañana, la especie con mayor porcentaje de presencia fue la estrella de
 mar (Echinaster, 80%), seguida por el pepino de mar (Holothuria floridana) y el caracol (Cerithium sp.) ambos con un 60%.
 En el horario vespertino, por otro lado, dos especies de caracol (Cerithium sp y Modulus modulus) alcanzaron el 100% de 
 presencia, seguidas por la raya amarilla (Urobatis jamaicensis) con 75% y el pepino de mar (Holothuria floridana) con el 
