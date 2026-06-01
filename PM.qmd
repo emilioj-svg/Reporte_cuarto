@@ -380,26 +380,24 @@ sustrato marino y facilita el establecimiento de praderas estables y complejas.
 
 ## Anfípodos 
 Debido a la complejidad morfológica durante sus ciclos de vida, así como a las lagunas taxonómicas, bioecológicas y biogeográficas 
-existentes en diversas especies de anfípodos, los individuos colectados solo se identificaron a nivel de familia (Thomas y Klebba,
-2007; White, 2011). A pesar de esto, se reconocieron 12 familias, siendo Ampithoidae la más abundante (149 individuos) y frecuente, 
-registrándose en más del 90% de las muestras. En contraste, familias como Maeridae, Aordae y Anamixidae fueron menos frecuentes y 
-abundantes. Los anfípodos al ser herbívoros activos consumen macroalgas vivas y tejidos de los pastos marinos, la preferencia alimentaria 
-puede moldear la estructura, abundancia y composición de las especies de algas en la comunidad costera. Además, estos organismos utilizan 
-el sustrato como sitios de forrajeo, protección y reproducción (Lowry y Stoddart,2003). 
-Nuestros hallazgos concuerdan con inventarios previos en el Golfo de México. Raz-Guzmán y Soto (2017) identificaron 14 familias de
-anfípodos en la región occidental, siendo las más frecuentes Ampithoidae, Amphilochidae, Dexaminidae, Hyalidae, Melitidae, Talitridae 
-y Aoridae. Del mismo modo, Winfield y colaboradores (2016) reportaron 16 familias donde, al igual que en este estudio, Ampithoidae fue 
-una de las más abundantes y frecuentes (13%). Esta persistente dominancia se atribuye a su amplia distribución costera que puede abarcar 
-desde los 0.5 hasta los 10 m de profundidad (Winfield, 2016). Melitidae fue otra de las familias compartidas entre este estudio y otras 
-investigaciones. Sus miembros habitan en aguas someras tropicales asociadas a fondos blandos y macroalgas, sitios que les proveen refugio, 
-protección y zonas de reproducción (Winfield, 2016). 
-A diferencia de otros trabajos desarrollados en el Golfo de México, este estudio no realizó una comparación estacional. No obstante, 
-Violante-Huerta y colaboradores (2025) encontraron que el incremento de descargas ricas en nutrientes durante la temporada de nortes 
-resultó en una mayor densidad de zooplancton y, consecuentemente, en una mayor densidad de anfípodos. Explorar esta variable en futuros 
-estudios complementaría información para la zona de Dzilam del Bravo. En resumen, dado que los anfípodos, junto con poliquetos y bivalvos,
-constituyen el 77% de las comunidades bentónicas, su estudio es fundamental (Raz-Guzmán & Soto, 2017). Estos crustáceos operan como 
-polinizadores, recurso alimenticio e indicadores de estrés ambiental (White et al., 2011) por lo que caracterizar su comunidad suma al 
-conocimiento sobre la diversidad de los ecosistemas costeros.  
+existentes en diversas especies de anfípodos, los individuos colectados solo se identificaron a nivel de familia (Thomas y Klebba,2007; 
+White, 2011). Se reconocieron 12 familias, siendo Ampithoidae la más abundante (149 individuos) y frecuente, registrándose en más del 90% 
+de las muestras. En contraste, familias como Maeridae, Aordae y Anamixidae fueron menos frecuentes y abundantes. 
+Los anfípodos al ser herbívoros activos consumen macroalgas vivas y tejidos de los pastos marinos, la preferencia alimentaria puede moldear 
+la estructura, abundancia y composición de las especies de algas en la comunidad costera. Además, estos organismos utilizan el sustrato como 
+sitios de forrajeo, protección y reproducción (Lowry y Stoddart,2003). 
+Nuestros hallazgos concuerdan con inventarios previos en el Golfo de México. Raz-Guzmán y Soto (2017) identificaron 14 familias de anfípodos 
+en la región occidental, siendo las más frecuentes Ampithoidae, Amphilochidae, Dexaminidae, Hyalidae, Melitidae, Talitridae y Aoridae. Del 
+mismo modo, Winfield y colaboradores (2016) reportaron 16 familias donde, al igual que en este estudio, Ampithoidae fue una de las más abundantes 
+y frecuentes (13%). Esta persistente dominancia se atribuye a su amplia distribución costera la cual puede abarcar desde los 0.5 hasta los 10 m 
+de profundidad (Winfield, 2016). Melitidae fue otra de las familias compartidas entre este estudio y otras investigaciones. Sus miembros habitan 
+en aguas someras tropicales asociadas a fondos blandos y macroalgas, sitios que les proveen refugio, protección y zonas de reproducción (Winfield, 2016). 
+A diferencia de otros trabajos desarrollados en el Golfo de México, este estudio no realizó una comparación estacional. No obstante, Violante-Huerta y colaboradores (2025) encontraron que el incremento de descargas ricas en nutrientes durante la temporada de nortes resultó en una mayor densidad 
+de zooplancton y, consecuentemente, en una mayor densidad de anfípodos. Explorar esta variable en futuros estudios complementaría información 
+para la zona de Dzilam del Bravo. En resumen, dado que los anfípodos, junto con poliquetos y bivalvos, constituyen el 77% de las comunidades 
+bentónicas, su estudio es fundamental (Raz-Guzmán & Soto, 2017). Estos crustáceos operan como polinizadores, recurso alimenticio e indicadores de 
+estrés ambiental (White et al., 2011) por lo que caracterizar su comunidad suma al conocimiento sobre la diversidad de los ecosistemas costeros.  
+
 
 ## 1) ¿Hay diferencia en la composición de anfípodos en los diferentes horarios? 
 Al no encontrar diferencias significativas en la composición de anfípodos en diferentes horarios, estos hallazgos se podrían atribuir a la 
