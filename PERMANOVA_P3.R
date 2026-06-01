@@ -23,6 +23,7 @@ hora_factor <- factor(fauna$Hora, levels = c("M","T"))
 # Hellinger (recomendado para análisis de ordenación y PERMANOVA)
 fauna_hell <- decostand(fauna_mat, method = "hellinger")
 
+
 # Alternativas (si prefieres): log1p o cuarta raíz
 # fauna_log1p <- log1p(fauna_mat)
 # fauna_4th <- sqrt(sqrt(fauna_mat))

@@ -153,48 +153,20 @@ y el telson), y con ayuda de claves dicotómicas especializadas para crustáceos
 los ejemplares hasta el nivel de familia. Todos los datos fueron anotados en una bitácora.
 
 ## Análisis estadísticos 
-Todos los análisis estadísticos se realizaron con Rstudio V 4.5.2. Las variables respuesta medidas en campo son la riqueza 
-y abundancia de anfípodos (composición de comunidad), riqueza de la fauna bentónica y riqueza y abundancia de algas y como 
-variables predictoras se tomó la hora del día (mañana o tarde), la altura del dosel (cm), el porcentaje de cobertura del 
-cuadrante con las especies de alga y pastos marinos correspondientes.
-Para poder contestar las primeras dos preguntas primero se limpiaron y dieron estructura a los datos usando las librerías 
-“tidyverse” y “readxl”. Para el análisis se llevaron a cabo un análisis de componentes principales (PCA) y análisis de varianza 
-multivariante permutacional (PERMANOVA) con el paquete “vegan” y para las representaciones gráficas (biplots) fueron usados los
-paquetes “ggplot2” y “factorextra”.
-Se creó una matriz para las variables predictoras, las especies vegetales se acomodaron en dos grupos, pastos marinos (que 
-incluye a las especies Thalassia testudinum y Syringodium filiforme) y macroalgas (que incluye a los géneros Halimeda, Caulerpa, 
-Cladophora, Cladocephalus, Laurencia, Dictyota, Bryopsis, Avrainvillea, Acanthophora y Chaetomorpha), posteriormente se calculó 
-su cobertura total y su presencia/ausencia (1 o 0) por cuadrante. La variable de hora se transformó en un factor categórico 
-binario (Mañana o tarde) mientras que la altura del dosel se mantuvo como una variable cuantitativa continua.
-Se construyó una matriz de abundancia con los datos de las familias de anfípodos (variable respuesta). Para evitar problemas 
-causados por la desproporción de datos en los registros la matriz se filtró para excluir aquellos cuadrantes que presentaron 
-una abundancia total de 0 (cuadrante C4T19). Para evitar efectos por la desigualdad en las abundancias entre familias la matriz 
-se sometió a una transformación de distancias de Hellinger.
-Para aplicar el PCA se usó la función prcomp sin escalado y con centrado de datos, se evaluaron los autovalores y la proporción 
-de la varianza explicada acumulada para determinar la significancia de los primeros ejes de ordenación. Además, se realizó un 
-análisis de ajuste de vectores y factores ambientales sobre el espacio de ordenación del PCA usando la función envfit con 999 
-permutaciones aleatorias, esto para evaluar la relación entre las variables ambientales y la estructura comunitaria de los anfípodos. 
-Posteriormente, se evaluó el cumplimiento del supuesto multivariado de homogeneidad de varianzas con un análisis de dispersión 
-multivariada basada en distancias (PERMDISP) con la función betadisper. La significancia estadística de las diferencias en la 
-dispersión de los sitios con respecto a sus centroides para el factor de la hora (mañana o tarde) se determinó mediante una prueba 
-de permutación no paramétrica con la función permutest con 999 permutaciones aleatorias. 
-Para poder responder si la composición y abundancia de la comunidad de anfípodos varía significativamente con respecto a las 
-variantes medidas entre cuadrantes se usó la función adonis2 para correr un modelo de PERMANOVA. Fueron estructurados dos modelos 
-(ambiental y temporal) evaluados con 999 permutaciones de Monte Carlo. El estadístico pseudo F y el coeficiente de determinación R2
-fueron usados para cuantificar la proporción de la varianza comunitaria explicada por cada modelo. Para visualizar el resultado se 
-realizó otro PCA sobre la matriz comunitaria mediante un biplot.
+Los análisis estadísticos se realizaron con Rstudio V 4.5.2. Las variables respuesta medidas en campo son la riqueza 
+y abundancia de anfípodos (composición de comunidad) y abundancia de la fauna bentónica, como variables predictoras se tomó la hora del día (mañana o tarde), la altura del dosel (cm), el porcentaje de cobertura de cada cuadrante con las especies de alga y pastos marinos correspondientes así como parametros fisicoquímicos como Oxígeno disuelto D.O m.g/l, SAL , pH.Los datos fueron estructurados usando las librerías “tidyverse” y “readxl”. 
+Para evaluar los cambios en la composición de la comunidad de anfípodos entre horarios de muestreo (mañana y tarde), se construyó una matriz de abundancias a partir de los registros de familias de anfípodos. La variable categórica Hora se definió como factor con dos niveles (M = mañana, T = tarde) Para evitar problemas causados por la desproporción de datos en los registros la matriz se filtró para excluir aquellos cuadrantes que presentaron una abundancia total de 0 (cuadrante C4T19 eliminado).
 
-Por último, para responder la pregunta 3 se llevó a cabo un modelado multivariado mediante una modificación del PERMANOVA, 
-un PERMANOVA de dos vías, con la paquetería “vegan” y un código personalizado. Los datos se estructuraron con las paqueterías “readr” 
-y “tidyverse”. Como las variables predictoras se estableció un factor categórico binario que corresponde a la hora (mañana y tarde), y 
-las variables respuesta se construyó una matriz con los datos de abundancia de la fauna móvil. Para el tratamiento de los datos la matriz 
-de fauna fue transformada a distancias de Hellinger con la función decostand. Después, se calculó la matriz de disimilitud de Bray-Curtis 
-con la función vegdist.
-Antes de correr las pruebas se evaluó el supuesto de homogeneidad de dispersión multivariadas a través de un análisis de dispersión 
-multivariada basada en distancias (PERMDISP) con la función betadisper. Además, se hizo un ANOVA clásico y una prueba de permutación no 
-paramétrica con 999 permutaciones aleatorias con la función permutest. Para la prueba se usó un PERMANOVA de dos vías que consta de tres 
-subfunciones clave, suma de cuadrados, dispersión multivariada y 
-pseudo F modificado, para poder usar la función PERMANOVA2 con la que se evalúa la significancia estadística del pseudo F modificado. 
+Dado que los datos de abundancia presentan alta heterogeneidad y marcadas diferencias en escala entre familias (siendo Amphitoidae la familia más abundatne de todas), se aplicó la transformación de Hellinger (Legendre & Gallagher, 2001), recomendada para análisis de comunidades ecológicas, con el fin de reducir la influencia de taxones dominantes y permitir el uso de distancias euclidianas y Bray–Curtis.Posteriormente, se implementó un análisis de varianza permutacional multivariante (PERMANOVA) siguiendo el enfoque de Anderson et al. (2017). Para ello se programaron funciones personalizadas en R que calculan la suma de cuadrados mediante el teorema de Huygen, la dispersión multivariante y un estadístico pseudo-F modificado. El procedimiento incluyó la generación de distribuciones nulas mediante 999 permutaciones aleatorias sin reemplazo, lo que permitió estimar la probabilidad de obtener un valor de pseudo-F igual o mayor al observado bajo la hipótesis nula de ausencia de diferencias en la composición entre horarios.
+El análisis se realizó sobre la matriz transformada de anfípodos utilizando distancia de Bray–Curtis. Los resultados se expresaron en términos del estadístico Pseudo-F y el valor de significancia permutacional (p(perm)).
+
+Para evaluar la relación entre la composición de la comunidad de anfípodos y las variables ambientales, se aplicó un Análisis de Redundancia (RDA).La matriz de anfípodos volvió a transformarse con el método de Hellinger. Las variables ambientales predictoras incluyeron parámetros fisicoquímicos (temperatura, pH, oxígeno disuelto, salinidad), la altura del dosel y la cobertura de algas y pastos marinos. Para evitar problemas de multicolinealidad, se eliminaron variables redundantes (p. ej. % de oxígeno disuelto, conductividad y sólidos disueltos totales) y se verificó el Factor de Inflación de la Varianza (VIF), considerando aceptables valores menores a 5.La matriz de coberturas de vegetación, al tratarse de datos composicionales que suman 100%, se redujo mediante un Análisis de Componentes Principales (PCA), del cual se extrajeron los dos primeros ejes (Habitat_PC1 y Habitat_PC2) como predictores sintéticos de la estructura del hábitat. Todas las variables continuas fueron estandarizadas (media = 0, desviación estándar = 1) para garantizar comparabilidad.
+
+Se definió un modelo nulo (sin variables explicativas) y un modelo global (con todas las variables ambientales). Posteriormente, se aplicó un procedimiento de selección hacia adelante (forward selection) mediante la función ordiR2step, que evalúa la inclusión secuencial de predictores en función del incremento en el R² ajustado y su significancia permutacional (999 permutaciones). Finalmente, se evaluó la significancia de las variables seleccionadas por el modelo  mediante un PERMANOVA multivariante (adonis2). 
+La visualización de los patrones se realizó mediante un biplot del RDA, de las familias de anfípodos y proyectando los puntos de cada cuadrante
+
+Por último, para responder la pregunta 3 se llevó a cabo un modelado multivariado con la paquetería “vegan” y el código de PERMANOVA2  previamente utilizado. La variable predictora de hora del día  se estableció como un factor categórico (mañana y tarde). Posteriormente, con las variables respuesta se construyó una matriz con los datos de abundancia de la fauna móvil, la cual fue transformada con el método de Hellinger nuevamente. La matriz de disimilitud se construyó con distancias de Bray-Curtis.
+Previo a  correr las pruebas, se evaluó el supuesto de homogeneidad de dispersión multivariada a través de un análisis de dispersión multivariada basada en distancias (PERMDISP) con la función betadisper, también se aplicó un ANOVA y un test permutacional (permutations = 999). Los resultados de PERMANOVA2 se expresaron en términos del estadístico Pseudo-F y el valor de significancia permutacional (p(perm)).
 
 
 # Resultados {#results .unnumbered}

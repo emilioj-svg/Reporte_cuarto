@@ -115,6 +115,6 @@ mejor_modelo$
 # ==========================================================
 # Graficar el resultado para observar hacia dónde se ordenan las familias 
 # de anfípodos en relación a las variables ambientales ganadoras.
-plot(mejor_modelo, scaling = 2, main = "RDA de la Comunidad de Anfípodos")
+plot(mejor_modelo, scaling = 2, main = "")
 orditorp(mejor_modelo, display = "species", col = "red", air = 0.5)
 text(mejor_modelo, display = "bp", col = "blue", cex = 1.2, font = 2)
