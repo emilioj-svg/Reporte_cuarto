@@ -207,6 +207,9 @@ mayor abundancia y cobertura entre cuadrantes es Halimeda incrassata, mientras q
 los cuadrantes es Acanthophora spicifera y el género con menor cobertura es Bryopsis (Fig X y X). Los valores de la 
 altura del dosel variaron entre cuadrantes (Fig X), y el valor con mayor abundancia fue 25 cm, que fue medido en 8 cuadrantes.
 
+
+##tabla ---------
+
 ## Anfípodos 
 Se registraron un total de 12 familias de anfípodos. De todas ellas, la familia Ampithoidae fue la más abundante con un 
 total de 149 individuos y, asimismo, la más frecuente, registrada en más del 90% de las muestras totales. En contraste,
@@ -339,117 +342,126 @@ ggplot(fauna_horario, aes(x = reorder(Especie, Porcentaje_Presencia), y = Porcen
 Tabla 1. Listado de especies de la comunidad bentónica y peces observados en el muestreo
 :::
 
-Nulla mi mi, venenatis sed ipsum varius,
-Table [\[table1\]](#table1){reference-type="ref" reference="table1"}
-volutpat euismod diam. Proin rutrum vel massa non gravida. Quisque
-tempor sem et dignissim rutrum. Lorem ipsum dolor sit amet, consectetur
-adipiscing elit. Morbi at justo vitae nulla elementum commodo eu id
-massa. In vitae diam ac augue semper tincidunt eu ut eros. Fusce
-fringilla erat porttitor lectus cursus, vel sagittis arcu lobortis.
-Aliquam in enim semper, aliquam massa id, cursus neque. Praesent
-faucibus semper libero.
-
-::: adjustwidth
--2.25in0in
-
-::: tabular
-\|l+l\|l\|l\|l\|l\|l\|l\| &\
-$cell1 row1$ & cell2 row 1 & cell3 row 1 & cell4 row 1 & cell5 row 1 &
-cell6 row 1 & cell7 row 1 & cell8 row 1\
-$cell1 row2$ & cell2 row 2 & cell3 row 2 & cell4 row 2 & cell5 row 2 &
-cell6 row 2 & cell7 row 2 & cell8 row 2\
-$cell1 row3$ & cell2 row 3 & cell3 row 3 & cell4 row 3 & cell5 row 3 &
-cell6 row 3 & cell7 row 3 & cell8 row 3\
+##código ***
 
 
-::: flushleft
-Table notes Phasellus venenatis, tortor nec vestibulum mattis, massa
-tortor interdum felis, nec pellentesque metus tortor nec nisl. Ut ornare
-mauris tellus, vel dapibus arcu suscipit sed.
-:::
+# 1) ¿Hay diferencia en la composición de anfípodos en los diferentes horarios?
+Retenemos la H0 pues no encontramos diferencias estadísticamente significativas en la composición de anfípodos 
+respecto a los diferentes horarios (p = 0.357). 
 
-[]{#table1 label="table1"}
-:::
+# 2) ¿Hay variable o variables explican mejor la variación de cambio de composición de la comunidad de anfípodos? 
 
-## **LOREM** and **IPSUM** nunc blandit a tortor {#lorem-and-ipsum-nunc-blandit-a-tortor .unnumbered}
-
-### 3rd level heading {#rd-level-heading .unnumbered}
+# 3) ¿Hay un cambio en la composición de la comunidad de fauna móvil en diferentes horarios? 
+El grupo considerado “fauna móvil” comprendía todos los organismos de la comunidad bentónica a excepción de la 
+esponja morada (Haliclona sp.). La prueba estadística PERMANOVA 2 identificó diferencias significativas en la
+composición de la fauna móvil en diferentes horarios (p = 0.042) por lo que la H0 se rechazó. 
 
 
 # Discusión {#discussion .unnumbered}
 
-El presente estudio representa la implementación práctica del “Protocolo para el monitoreo ecosistémico de en 
-Áreas Naturales Protegidas 2022” para pastos marinos en las playas de Dzilam de Bravo, Yucatán, logrando 
-identificar 6 géneros y 4 especies de macroalgas junto con 2 especies de pastos marinos. La especie de pasto
-marino con mayor abundancia y cobertura entre cuadrantes fue Syringodium filiforme, especie pionera muy
-importante que coloniza zonas perturbadas o con sedimentos inestables, ayudando a fijar el sustrato marino 
-y abriendo paso al establecimiento de praderas estables y complejas de pastos marinos.De un total de 12 familias 
-de anfípodos reconocidas en este trabajo,registradas, Ampithoidae es la más abundante con un total de 149 individuos
-y, asimismo, la más frecuente, registrada en más del 90% de las muestras totales. Al ser herbívoros activos consumen
-directamente macroalgas vivas y los tejidos de los pastos marinos.  Por ello, la preferencia alimentaria puede moldear
-la estructura, abundancia y composición de las especies de algas en la comunidad costera. 
+## Algas y pastos marinos 
+La caracterización de las praderas reveló una dominancia de Syringodium filiforme, Halimeda incrassata y Thalassia 
+testudinum, un patrón de composición  que coincide con lo reportado previamente para la región (Rosado-Espinosa et al., 2012;
+Raz-Guzmán & Soto, 2017; Correia  et al., 2022). Asimismo, la composición del paisaje y la altura de la vegetación se alinean
+con las descripciones de Rosado-Espinosa y colaboradores (2012). Estos autores señalan que las macroalgas pardas y rojas tubulares 
+en Dzilam del Bravo superan los 30 cm de altura debido a su crecimiento tipo estructural y hábito erecto. En contraste, las algas 
+verdes, las algas rojas filamentosas y los pastos marinos mantienen tallas menores a los 30 cm. 
+Por otro lado, el gradiente de distribución desde la línea de costa hacia mar adentro mostró una similitud con lo descrito para la 
+zona: una franja inicial de Syringodium y algas verdes (clase VIII), seguido de parches de Thalasia y algas (IX) y finalmente pastos 
+y algas verdes. De acuerdo con Correia y colaboradores (2022) S. filiforme es una de las especies más comunes en el Golfo de México; 
+en el presente muestreo, dicho taxón registró la mayor abundancia y cobertura entre cuadrantes. La relevancia de este pasto radica en 
+su papel como especie pionera clave para la colonización de zonas perturbadas o con sedimentos inestables, pues ayuda a fijar el 
+sustrato marino y facilita el establecimiento de praderas estables y complejas. 
+
+## Anfípodos 
+Debido a la complejidad morfológica durante sus ciclos de vida, así como a las lagunas taxonómicas, bioecológicas y biogeográficas 
+existentes en diversas especies de anfípodos, los individuos colectados solo se identificaron a nivel de familia (Thomas y Klebba,
+2007; White, 2011). A pesar de esto, se reconocieron 12 familias, siendo Ampithoidae la más abundante (149 individuos) y frecuente, 
+registrándose en más del 90% de las muestras. En contraste, familias como Maeridae, Aordae y Anamixidae fueron menos frecuentes y 
+abundantes. Los anfípodos al ser herbívoros activos consumen macroalgas vivas y tejidos de los pastos marinos, la preferencia alimentaria 
+puede moldear la estructura, abundancia y composición de las especies de algas en la comunidad costera. Además, estos organismos utilizan 
+el sustrato como sitios de forrajeo, protección y reproducción (Lowry y Stoddart,2003). 
+Nuestros hallazgos concuerdan con inventarios previos en el Golfo de México. Raz-Guzmán y Soto (2017) identificaron 14 familias de
+anfípodos en la región occidental, siendo las más frecuentes Ampithoidae, Amphilochidae, Dexaminidae, Hyalidae, Melitidae, Talitridae 
+y Aoridae. Del mismo modo, Winfield y colaboradores (2016) reportaron 16 familias donde, al igual que en este estudio, Ampithoidae fue 
+una de las más abundantes y frecuentes (13%). Esta persistente dominancia se atribuye a su amplia distribución costera que puede abarcar 
+desde los 0.5 hasta los 10 m de profundidad (Winfield, 2016). Melitidae fue otra de las familias compartidas entre este estudio y otras 
+investigaciones. Sus miembros habitan en aguas someras tropicales asociadas a fondos blandos y macroalgas, sitios que les proveen refugio, 
+protección y zonas de reproducción (Winfield, 2016). 
+A diferencia de otros trabajos desarrollados en el Golfo de México, este estudio no realizó una comparación estacional. No obstante, 
+Violante-Huerta y colaboradores (2025) encontraron que el incremento de descargas ricas en nutrientes durante la temporada de nortes 
+resultó en una mayor densidad de zooplancton y, consecuentemente, en una mayor densidad de anfípodos. Explorar esta variable en futuros 
+estudios complementaría información para la zona de Dzilam del Bravo. En resumen, dado que los anfípodos, junto con poliquetos y bivalvos,
+constituyen el 77% de las comunidades bentónicas, su estudio es fundamental (Raz-Guzmán & Soto, 2017). Estos crustáceos operan como 
+polinizadores, recurso alimenticio e indicadores de estrés ambiental (White et al., 2011) por lo que caracterizar su comunidad suma al 
+conocimiento sobre la diversidad de los ecosistemas costeros.  
+
+## 1) ¿Hay diferencia en la composición de anfípodos en los diferentes horarios? 
+Al no encontrar diferencias significativas en la composición de anfípodos en diferentes horarios, estos hallazgos se podrían atribuir a la 
+conducta migratoria de los anfípodos. Violante-Huerta y colaboradores (2025) mencionan que la migración diurna-nocturna puede variar entre 
+ambientes neríticos y oceánicos porque el rango de migración vertical de los anfípodos pelágicos tiende a ser de 100 m. Debido a que el 
+muestreo se realizó en áreas someras  de máximo 2 m de profundidad los efectos de dicha migración no serían visibles y por lo tanto significativos. 
+
+## 2) ¿Hay variable o variables explican mejor la variación de cambio en la abundancia de la comunidad de anfípodos? 
 
 
+## 3) ¿Hay un cambio en la composición de la comunidad de fauna móvil (asociada a pastos marinos) en diferentes horarios? 
+La comunidad bentónica registrada en los transectos está compuesta por nueve especies macrobentónicas y 14 especies de peces, junto con 
+familias como Belonidae y Clupeidae (sardinas). Estos hallazgos evidencian el papel clave de los pastos marinos como áreas de crianza, 
+refugio y forrajeo en la Península de Yucatán (Vega-Cendejas et al., 2013). Se observó una variación temporal en la fauna móvil. Especies 
+como la estrella de mar (Echinaster sp.) y el pepino de mar (Holothuria floridana) dominaron en la mañana, mientras que gasterópodos 
+Cerithium sp. y Modulus modulus fueron principalmente detectados en el horario vespertino, lo cual podría ser producto de las estrategias 
+ecológicas de partición de nicho para optimizar la alimentación y minimizar la depredación (Armenteros et al., 2012). De igual forma, la 
+presencia de depredadores bentónicos superiores, como la raya amarilla Urobatis jamaicensis, demuestra la conectividad de estas praderas. 
+Los pastos marinos son utilizados cíclicamente por otros peces, como el mero carbonero Hypoplectrus nigricans, los cuales se desplazan hacia
+la franja costera para aprovechar la disponibilidad de presas bentónicas, tales como los anfípodos y poliquetos (Valdez-Hernández et al., 2014). 
+No obstante, las condiciones meteorológicas, corrientes de viento fuertes, el paisaje poco visible debido al agua revuelta del mar y la falta de
+réplicas fueron factores que afectaron el análisis. Específicamente la falta de réplicas limita el poder estadístico por lo que se recomendaría
+aumentar su número en estudios futuros.    	
 
-# Supporting information {#supporting-information .unnumbered}
-
-#### S1 Fig. {#S1_Fig .unnumbered}
-
-**Bold the title sentence.** Add descriptive text after the title of the
-item (optional).
-
-#### S2 Fig. {#S2_Fig .unnumbered}
-
-**Lorem ipsum.** Maecenas convallis mauris sit amet sem ultrices
-gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
-ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
-consectetur pellentesque.
-
-#### S1 File. {#S1_File .unnumbered}
-
-**Lorem ipsum.** Maecenas convallis mauris sit amet sem ultrices
-gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
-ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
-consectetur pellentesque.
-
-#### S1 Video. {#S1_Video .unnumbered}
-
-**Lorem ipsum.** Maecenas convallis mauris sit amet sem ultrices
-gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
-ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
-consectetur pellentesque.
-
-#### S1 Appendix. {#S1_Appendix .unnumbered}
-
-**Lorem ipsum.** Maecenas convallis mauris sit amet sem ultrices
-gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
-ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
-consectetur pellentesque.
-
-#### S1 Table. {#S1_Table .unnumbered}
-
-**Lorem ipsum.** Maecenas convallis mauris sit amet sem ultrices
-gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas
-ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus
-consectetur pellentesque.
-
-# Acknowledgments {#acknowledgments .unnumbered}
-
-Cras egestas velit mauris, eu mollis turpis pellentesque sit amet.
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam id
-pretium nisi. Sed ac quam id nisi malesuada congue. Sed interdum aliquet
-augue, at pellentesque quam rhoncus vitae.
 
 ::: thebibliography
 10
 
-Conant GC, Wolfe KH. . Nat Rev Genet. 2008 Dec;9(12):938--950.
+Armenteros, M., et al. (2012). Benthic macrofauna associated with seagrass beds in coastal lagoons of the Yucatan Peninsula. Marine Ecology, 
+33(2), 177-189. (Ideal para justificar el comportamiento y abundancia de caracoles como Cerithium, estrellas de mar y pepinos como H. floridana).
 
-Ohno S. Evolution by gene duplication. London: George Alien & Unwin Ltd.
-Berlin, Heidelberg and New York: Springer-Verlag.; 1970.
+Burridge AK, Tump M, Vonk R, Goetze E, Peijnenburg KTCA (2017). Diversity and distribution of hyperiid amphipods along a latitudinal transect in 
+the Atlantic Ocean. Progr Oceanogr. 2017. 158:224–35. https://doi.org/10.1016/j.pocean.2016.08.003
 
-Magwire MM, Bayer F, Webster CL, Cao C, Jiggins FM. . PLoS Genet. 2011
-Oct;7(10):e1002337.
+Correia KM, Alford SB, Belgrad BA, Darnell KM, Darnell MZ, Furman BT, Hall MO, Hayes CT, Martin CW,McDonaldAM,SmeeDL. (2022). Drift macroalgal 
+distribution in northern Gulf of Mexico seagrass meadows. PeerJ 10:e13855 http://doi.org/10.7717/peerj.13855  
+
+Espinosa Leal, L. L. (2014). Variación estacional de los anfípodos hipéridos en la zona frente a Punta Eugenia - Punta Abreojos, Baja California 
+durante un año frío (Masteruppsats, Centro de Investigación Científica y de Educación Superior de Ensenada). Repositorio Institucional del CICESE. https://cicese.repositorioinstitucional.mx/jspui/bitstream/1007/1538/1/236511.pdf  
+
+Herzka S., Zaragoza R., Peters E., Hernández G. (2020). ATLAS DE LÍNEA BASE AMBIENTAL DEL GOLFO DE MÉXICO TOMO VI: PASTOS MARINOS. CIGoM 
+
+INEGI (2010). Compendio de información geográfica municipal 2010. Dzilam de Bravo, Yucatán. https://www.inegi.org.mx/contenidos/app/mexicocifras/datos_geograficos/31/31028.pdf 
+
+Lecroy S. (2000). An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida. Volume 1. 
+Families Gammaridae, Hadziidae, Isaeidae, Melitidae and Oedicerotidae. Florida Department of Environmental Protection 
+
+Lecroy S. (2002). An illustrated identification guide to the nearshore marine and estuarine gammaridean Amphipoda of Florida. Volume 2. 
+Families Ampeliscidae, Amphilochidae, Ampithoidae, Aoridae, Argissidae and Haustoriidae. Florida Department of Environmental ProtectionLittler D.,
+Littler M., Bucher K. & Norris J. (1989). Marine plants of the Caribbean: A field guide from Florida to Brazil. Smithsonian Institution Press.
+
+Odériz I., Gómez I., Ventura Y., Díaz V., Escalante A., Gómez D., Bouma T., Silva R. (2020). Understanding Drivers of Connectivity and Resilience Under Tropical Cyclones in Coastal Ecosystems at Puerto Morelos, Mexico. Journal of Coastal Research. 95.
+
+Peralta Soriano, L. (2006). Ecología de los anfípodos (Crustacea: Amphipoda) litorales de los lagos maars de Puebla, México (Tesis de maestría, Universidad Nacional Autónoma de México). Repositorio Institucional de la UNAM. https://ru.dgb.unam.mx/server/api/core/bitstreams/bc864de5-0d37-45e5-99be-f8af7d00757a/content 
+
+Raz-Guzmán A. & Soto L.A. (2017). Revista Mexicana de Biodiversidad 88  715–734
+
+Renán X., Cervera K & Brulé T. (2003). Probable nursery areas for juvenile groupers along the northern coast of the Yucatan Peninsula, Mexico. Proceedings of the Gulf and Caribbean Fisheries Institute 54:496-505.
+
+Valdez-Hernández, E. F., Vega-Cendejas, M. E., & de Santillana, M. H. (2014). Ictiofauna de los sistemas costeros de la Península de Yucatán: diversidad y estructura comunitaria. Revista Mexicana de Biodiversidad, 85(2), 490-504. (Sustenta la presencia de las familias de peces, las sardinas, el mero carbonero e identifica los hábitos alimentarios litorales). 
+
+Vega-Cendejas, M. E., et al. (2013). Biological connectivity and coastal fish assemblages in the southern Gulf of Mexico. Bulletin of Marine Science, 89(1), 155-173. (Perfecto para respaldar cómo los peces juveniles usan la costa de Dzilam de Bravo como guardería). 
+
+
+Violante-Huerta M, Sanvicente-Añorve L, Alatorre-Mendieta M, Guerra-Castro E (2025) Cross-shelf and vertical structure of pelagic amphipods (Crustacea) related to hydro-meteorological conditions in the neritic zone, southern Gulf of Mexico. PLoS One 20(12): e0336930. https://doi. org/10.1371/journal.pone.0336930  
+
 :::
+
 
 
